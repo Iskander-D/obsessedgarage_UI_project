@@ -1,6 +1,8 @@
 package test;
 
+import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
+import io.qameta.allure.Story;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -25,6 +27,8 @@ public class MainPageTest { //сделать extend tast Base
 
     @Owner("Aleksandr Drozenko")
     @CsvFileSource(resources = "/testData/searchResultShouldContainExpectedText.csv", delimiter = '|')
+    @Feature("Поисковые запросы")
+    @Story("Проверка наличия значений в посковой строке")
     @DisplayName("Проверка необходимых значений в поисковой строке")
     @ParameterizedTest(name = "Для поискового запроса {0} есть карточка с именем {1}")
     @Tag("all-test")
@@ -38,46 +42,52 @@ public class MainPageTest { //сделать extend tast Base
     }
 
 
+    @Test
     @Owner("Aleksandr Drozenko")
     @Tag("all-test")
     @Tag("simple")
-    @Test
-    @DisplayName("Проверка наличия элемента Garage Design в меню главной страницы")
+    @Feature("Навигационная панель")
+    @Story("Проверка наличия элемента навигационной панели")
+    @DisplayName("Проверка наличия элемента Garage Design в навигационной панели главной страницы")
     void checkMainPageIcon() {
-        // step("Открываем главную страницу Obsessed Garage", () -> {
-        // mainPage.openPage();
-        // });
+        step("Открываем главную страницу Obsessed Garage", () -> {
+            mainPage.openPage();
+        });
         step("Проверяем наличие элемента Garage Design в списке ссылок ", () -> {
             $("#shopify-section-header").shouldHave(text("Garage Design"));
         });
     }
 
+    @Test
     @Owner("Aleksandr Drozenko")
     @Tag("all-test")
     @Tag("simple")
-    @Test
-    @DisplayName("Проверка наличия элемента из списка For the obsessed в меню главной страницы")
+    @Feature("Навигационная панель")
+    @Story("Проверка наличия элемента в выпадающем списке")
+    @DisplayName("Проверка наличия элемента из списка For the obsessed в навигационной панели главной страницы")
     void checkContainMainPageIcon() {
-        // step("Открываем главную страницу Obsessed Garage", () -> {
-        // mainPage.openPage();
-        // });
-        step("Проверяем наличие элемента For Customers в выпадающем списке", () -> {
+        step("Открываем главную страницу Obsessed Garage", () -> {
+            mainPage.openPage();
+        });
+        step("Проверяем наличие элемента For Customers в выпадающем списке FOR THE OBSESSED", () -> {
             $$(".site-nav__item").find(text("FOR THE OBSESSED"))
                     .hover().shouldHave(text("For Customers"));
         });
     }
 
+    @Test
     @Owner("Aleksandr Drozenko")
     @Tag("all-test")
     @Tag("simple")
-    @Test
+    @Feature("Добавление товара в корзину")
+    @Story("Проверка наличия товара в корзине")
     @DisplayName("Проверка наличия товара в корзине после его добавления")
     void putItemInCart() {
         // step("Открываем главную страницу Obsessed Garage", () -> {
         // mainPage.openPage();
         // });
         step("Вбиваем в поисе название товара", () -> {
-            mainPage.searchNewItem();
+            $(".site-header__search-input").setValue("Foam").pressEnter();
         });
         step("Выбираем товар ", () -> {
             $$("a.grid-item__link").findBy(text("CARPRO Reset")).click();
@@ -97,5 +107,27 @@ public class MainPageTest { //сделать extend tast Base
 
     }
 
+    @Test
+    @Owner("Aleksandr Drozenko")
+    @Tag("all-test")
+    @Tag("simple")
+    @Feature("Навигационная панель")
+    @Story("Проверка кликабельности элементов навигационной панели")
+    @DisplayName("Проверка кликабельности элементов страницы")
+    void checkPageHeader() {
+        step("Открываем главную страницу Obsessed Garage", () -> {
+            mainPage.openPage();
+        });
+        step("Открываем ссылку Open Box/Discount", () -> {
+            $$(".site-nav__item").find(text("Open Box/Discount")).click();
+        });
+        step("Проверяем наличие заголовка открывшейся страницы Matty's Trinkets & Treasures ", () -> {
+            $("h1.section-header__title").shouldHave(text("Matty's Trinkets & Treasures"));
+        });
+    }
+
 
 }
+
+
+

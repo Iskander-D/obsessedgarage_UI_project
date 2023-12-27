@@ -17,9 +17,8 @@ public class MainPage {
             userEmailInput = $("#Email"),
             userPassword = $("#CreatePassword"),
             buttonCreateAccount = $(".btn--full"),
-            checkAccount = $(".grid"),
-            searchItem = $(".site-header__search-input").setValue("Foam"),
-            chooseItem = $$("a.grid-item__link").findBy(text("CARPRO Reset"));
+            checkAccount = $(".grid");
+
 
     public MainPage openPage() {
         open(baseUrl);
@@ -66,15 +65,6 @@ public class MainPage {
         return this;
     }
 
-    public MainPage searchNewItem() {
-        searchItem.pressEnter();
-        return this;
-    }
-
-    public MainPage chooseNewItem() {
-        chooseItem.click();
-        return this;
-    }
-
 }
+
 

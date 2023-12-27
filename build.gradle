@@ -9,7 +9,7 @@ repositories {
 def allureVersion = "2.21.0",
     selenideVersion = "6.19.1"
 
-compileTestJava{
+compileTestJava {
     options.encoding = 'UTF-8'
 }
 allure {
@@ -61,5 +61,14 @@ task all_test(type: Test) {
     useJUnitPlatform {
         includeTags("all-test")
     }
+    task simple_test(type: Test) {
+        useJUnitPlatform {
+            includeTags("simple")
+        }
+        task smoke_test(type: Test) {
+            useJUnitPlatform {
+                includeTags("smoke")
+            }
+        }
+    }
 }
-

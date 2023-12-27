@@ -1,6 +1,7 @@
 package test;
 
 import data.TestDataFakers;
+import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -8,6 +9,7 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.MainPage;
 
+import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
@@ -22,8 +24,9 @@ public class RegistrationPageTest {
 
     @Test
     @Tag("all-test")
-    @Tag("SMOKE")
+    @Tag("smoke")
     @Owner("Aleksandr Drozenko")
+    @Feature("Регистрация пользователя")
     @DisplayName("Регистрация нового пользователя")
     void registrationTest() {
         // step("Открываем главную страницу Obsessed Garage", () -> {
@@ -51,5 +54,32 @@ public class RegistrationPageTest {
             mainPage.checkInfoAccount();
         });
     }
-}
 
+
+    @Test
+    @Tag("all-test")
+    @Tag("smoke")
+    @Owner("Aleksandr Drozenko")
+    @Feature("Авторизация пользователя")
+    @DisplayName("Авторизация нового пользователя")
+    void loginTest() {
+        // step("Открываем главную страницу Obsessed Garage", () -> {
+        //   mainPage.openPage();
+        // });
+        step("Открываем ссылку Account", () -> {
+            mainPage.iconAccount();
+        });
+        step("Вводим Email пользователя ", () -> {
+            $("#CustomerEmail").setValue("drozenko21@gmail.com");
+        });
+        step("Вводим Password пользователя ", () -> {
+            $("#CustomerPassword").setValue("363000000").pressEnter();
+        });
+        step("Открываем ссылку Account", () -> {
+            mainPage.iconAccount();
+        });
+        step("Проверяем что данные о новом Пользователе отображаются", () -> {
+            mainPage.checkInfoAccount();
+        });
+    }
+}
