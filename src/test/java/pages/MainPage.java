@@ -3,11 +3,12 @@ package pages;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 
+import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Configuration.baseUrl;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.Selenide.*;
 
 public class MainPage {
+
     private final SelenideElement
             searchIconAccount = $(".site-nav__link:nth-child(2) > .site-nav__icon-label"),
             searchIconRegister = $("#customer_register_link"),
@@ -16,7 +17,9 @@ public class MainPage {
             userEmailInput = $("#Email"),
             userPassword = $("#CreatePassword"),
             buttonCreateAccount = $(".btn--full"),
-            checkAccount = $(".grid");
+            checkAccount = $(".grid"),
+            searchItem = $(".site-header__search-input").setValue("Foam"),
+            chooseItem = $$("a.grid-item__link").findBy(text("CARPRO Reset"));
 
     public MainPage openPage() {
         open(baseUrl);
@@ -57,9 +60,21 @@ public class MainPage {
         buttonCreateAccount.click();
         return this;
     }
+
     public MainPage checkInfoAccount() {
         checkAccount.should(Condition.visible);
         return this;
     }
+
+    public MainPage searchNewItem() {
+        searchItem.pressEnter();
+        return this;
+    }
+
+    public MainPage chooseNewItem() {
+        chooseItem.click();
+        return this;
+    }
+
 }
 
