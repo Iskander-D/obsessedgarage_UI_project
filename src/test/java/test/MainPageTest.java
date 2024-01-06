@@ -12,14 +12,13 @@ import static io.qameta.allure.Allure.step;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 @Epic("UI")
+@Owner("Aleksandr Drozenko")
+@Feature("Тестирование общего функционала страници")
+@Tags({@Tag("ui"), @Tag("all_page_test")})
 public class MainPageTest extends TestBase {
 
     @Test
-    @Tag("all-test")
-    @Tag("simple")
     @Severity(SeverityLevel.NORMAL)
-    @Owner("Aleksandr Drozenko")
-    @Feature("Титл главной страницы")
     @Story("Проверка титла ")
     @DisplayName("Проверка заголовка главной страницы")
     void checkPageTitle() {
@@ -35,8 +34,6 @@ public class MainPageTest extends TestBase {
 
     @CsvFileSource(resources = "/testData/searchResultShouldContainExpectedText.csv", delimiter = '|')
     @Severity(SeverityLevel.NORMAL)
-    @Owner("Aleksandr Drozenko")
-    @Feature("Поисковые запросы")
     @Story("Проверка наличия значений в посковой строке")
     @DisplayName("Проверка необходимых значений в поисковой строке")
     @ParameterizedTest(name = "Для поискового запроса {0} есть карточка с именем {1}")
@@ -52,11 +49,8 @@ public class MainPageTest extends TestBase {
 
 
     @Test
-    @Tag("all-test")
-    @Tag("simple")
     @Severity(SeverityLevel.NORMAL)
     @Owner("Aleksandr Drozenko")
-    @Feature("Добавление товара в корзину")
     @Story("Проверка наличия товара в корзине")
     @DisplayName("Проверка наличия товара в корзине после его добавления")
     void putItemInCart() {

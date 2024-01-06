@@ -3,6 +3,7 @@ package test;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.text;
@@ -10,14 +11,13 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 import static io.qameta.allure.Allure.step;
 @Epic("UI")
+@Owner("Aleksandr Drozenko")
+@Feature("Проверка элементов навигационной панели")
+@Tags({@Tag("ui"), @Tag("Навигационная панель")})
 public class NavigationPanelTest extends TestBase{
 
     @Test
-    @Tag("all-test")
-    @Tag("simple")
     @Severity(SeverityLevel.NORMAL)
-    @Owner("Aleksandr Drozenko")
-    @Feature("Навигационная панель")
     @Story("Проверка наличия элемента навигационной панели")
     @DisplayName("Проверка наличия элемента Garage Design в навигационной панели главной страницы")
     void checkMainPageIcon() {
@@ -30,11 +30,7 @@ public class NavigationPanelTest extends TestBase{
     }
 
     @Test
-    @Tag("all-test")
-    @Tag("simple")
     @Severity(SeverityLevel.NORMAL)
-    @Owner("Aleksandr Drozenko")
-    @Feature("Навигационная панель")
     @Story("Проверка наличия элемента в выпадающем списке")
     @DisplayName("Проверка наличия элемента из списка For the obsessed в навигационной панели главной страницы")
     void checkContainMainPageIcon() {
@@ -47,11 +43,7 @@ public class NavigationPanelTest extends TestBase{
         });
     }
     @Test
-    @Tag("all-test")
-    @Tag("simple")
     @Severity(SeverityLevel.NORMAL)
-    @Owner("Aleksandr Drozenko")
-    @Feature("Навигационная панель")
     @Story("Проверка кликабельности элементов навигационной панели")
     @DisplayName("Проверка кликабельности элементов страницы")
     void checkPageHeader() {

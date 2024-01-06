@@ -3,18 +3,18 @@ package test;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.api.Test;
 import static io.qameta.allure.Allure.step;
 
 @Epic("UI")
+@Owner("Aleksandr Drozenko")
+@Feature("Регистрация и авторизация пользователя")
+@Tags({@Tag("ui"), @Tag("registration-authorisation")})
 public class RegistrationPageTest extends TestBase {
 
     @Test
-    @Tag("all-test")
-    @Tag("smoke")
     @Severity(SeverityLevel.CRITICAL)
-    @Owner("Aleksandr Drozenko")
-    @Feature("Регистрация пользователя")
     @DisplayName("Регистрация нового пользователя")
     void registrationTest() {
         step("Открываем главную страницу Obsessed Garage", () -> {
@@ -44,11 +44,8 @@ public class RegistrationPageTest extends TestBase {
     }
 
     @Test
-    @Tag("all-test")
-    @Tag("smoke")
+
     @Severity(SeverityLevel.CRITICAL)
-    @Owner("Aleksandr Drozenko")
-    @Feature("Авторизация пользователя")
     @DisplayName("Авторизация нового пользователя")
     void loginTest() {
         step("Открываем главную страницу Obsessed Garage", () -> {

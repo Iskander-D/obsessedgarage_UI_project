@@ -58,18 +58,10 @@ tasks.withType(Test) {
     }
 }
 
-task all_test(type: Test) {
+task ui_test(type: Test) {
     useJUnitPlatform {
-        includeTags("all-test")
-    }
-    task simple_test(type: Test) {
-        useJUnitPlatform {
-            includeTags("simple")
-        }
-        task smoke_test(type: Test) {
-            useJUnitPlatform {
-                includeTags("smoke")
-            }
-        }
+        includeTags("ui")
     }
 }
+
+
