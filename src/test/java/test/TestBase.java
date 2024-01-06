@@ -3,15 +3,19 @@ package test;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
+import data.TestDataFakers;
 import helpers.Attach;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import pages.RegistrationPage;
 
 import java.util.Map;
 
 public class TestBase {
+    RegistrationPage registrationPage = new RegistrationPage();
+    TestDataFakers testDataFakers = new TestDataFakers();
     @BeforeAll
     static void beforeAll() {
         Configuration.remote = System.getProperty("selenoid", "https://user1:1234@selenoid.autotests.cloud/wd/hub");

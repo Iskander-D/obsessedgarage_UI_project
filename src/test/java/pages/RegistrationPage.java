@@ -2,12 +2,12 @@ package pages;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
+import io.qameta.allure.Step;
 
-import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Configuration.baseUrl;
 import static com.codeborne.selenide.Selenide.*;
 
-public class MainPage {
+public class RegistrationPage {
 
     private final SelenideElement
             searchIconAccount = $(".site-nav__link:nth-child(2) > .site-nav__icon-label"),
@@ -17,54 +17,64 @@ public class MainPage {
             userEmailInput = $("#Email"),
             userPassword = $("#CreatePassword"),
             buttonCreateAccount = $(".btn--full"),
-            checkAccount = $(".grid");
+            checkAccount = $(".grid"),
+            customerEmail = $("#CustomerEmail"),
+            customerPassword = $("#CustomerPassword");
 
-
-    public MainPage openPage() {
+    public RegistrationPage openPage() {
         open(baseUrl);
         return this;
     }
 
-    public MainPage iconAccount() {
+    public RegistrationPage iconAccount() {
         searchIconAccount.click();
         return this;
     }
 
-    public MainPage iconRegister() {
+    public RegistrationPage iconRegister() {
         searchIconRegister.click();
         return this;
     }
 
-    public MainPage setFirstName(String value) {
+    public RegistrationPage setFirstName(String value) {
         firstNameInput.setValue(value);
         return this;
     }
 
-    public MainPage setLastName(String value) {
+    public RegistrationPage setLastName(String value) {
         lastNameInput.setValue(value);
         return this;
     }
 
-    public MainPage setUserEmail(String value) {
+    public RegistrationPage setUserEmail(String value) {
         userEmailInput.setValue(value);
         return this;
     }
 
-    public MainPage setUserPassword(String value) {
+    public RegistrationPage setUserPassword(String value) {
         userPassword.setValue(value);
         return this;
     }
 
-    public MainPage buttonCreate() {
+    public RegistrationPage buttonCreate() {
         buttonCreateAccount.click();
         return this;
     }
 
-    public MainPage checkInfoAccount() {
-        checkAccount.should(Condition.visible);
+    public RegistrationPage checkInfoAccount() {
+        checkAccount.should(Condition.exist);
         return this;
     }
 
+    public RegistrationPage setCustomerEmail() {
+        customerEmail.setValue("drozenko21@gmail.com");
+        return this;
+    }
+
+    public RegistrationPage setCustomerPassword() {
+        customerPassword.setValue("363000000").pressEnter();
+        return this;
+    }
 }
 
 
