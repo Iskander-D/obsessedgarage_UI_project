@@ -4,6 +4,7 @@ import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import data.TestDataFakers;
+import drivers.WebDriverProvider;
 import helpers.Attach;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
@@ -16,14 +17,10 @@ import java.util.Map;
 public class TestBase {
     RegistrationPage registrationPage = new RegistrationPage();
     TestDataFakers testDataFakers = new TestDataFakers();
+
     @BeforeAll
     static void beforeAll() {
-        Configuration.remote = System.getProperty("selenoid", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
-        Configuration.baseUrl = System.getProperty("baseUrl", "https://www.obsessedgarage.com/");
-        Configuration.browser = System.getProperty("browser", "chrome");
-        Configuration.browserVersion = System.getProperty("browserVersion", "100.0");
-        Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
-
+        WebDriverProvider.config();
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.<String, Object>of(

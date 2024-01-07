@@ -54,8 +54,12 @@ ____
 ## :keyboard: Запуск автотестов
 
 ***Локальный запуск тестов:***
-```bash  
-gradle clean all_test
+```
+gradle clean test -DenvWeb=local
+```
+***Удаленный запуск тестов:***
+```
+gradle clean test -DenvWeb=remote
 ```
 ____
 <a id="jenkins"></a>

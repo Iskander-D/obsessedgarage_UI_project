@@ -32,7 +32,7 @@ public class MainPageTest extends TestBase {
         });
     }
 
-    @CsvFileSource(resources = "/testData/searchResultShouldContainExpectedText.csv", delimiter = '|')
+    @CsvFileSource(resources = "/searchResultShouldContainExpectedText.csv", delimiter = '|')
     @Severity(SeverityLevel.NORMAL)
     @Story("Проверка наличия значений в посковой строке")
     @DisplayName("Проверка необходимых значений в поисковой строке")
