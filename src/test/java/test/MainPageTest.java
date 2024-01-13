@@ -21,7 +21,7 @@ public class MainPageTest extends TestBase {
     @Severity(SeverityLevel.NORMAL)
     @Story("Проверка титла ")
     @DisplayName("Проверка заголовка главной страницы")
-    void checkPageTitle() {
+    void checkPageTitleTest() {
         step("Открываем главную страницу Obsessed Garage", () -> {
             registrationPage.openPage();
         });
@@ -39,12 +39,16 @@ public class MainPageTest extends TestBase {
     @ParameterizedTest(name = "Для поискового запроса {0} есть карточка с именем {1}")
     @Tag("all-test")
     @Tag("simple")
-    void searchResultShouldContainText(String searchQuery, String expectedName) {
+    void searchResultShouldContainTextTest(String searchQuery, String expectedName) {
         step("Открываем главную страницу Obsessed Garage", () -> {
             registrationPage.openPage();
         });
+        step("Вводим поисковой запрос", () -> {
         $(".site-header__search-input").setValue(searchQuery).pressEnter();
+        });
+        step("Проверяем наличие товаров по запросу", () -> {
         $("#MainContent").shouldHave(text(expectedName));
+        });
     }
 
 
@@ -53,7 +57,7 @@ public class MainPageTest extends TestBase {
     @Owner("Aleksandr Drozenko")
     @Story("Проверка наличия товара в корзине")
     @DisplayName("Проверка наличия товара в корзине после его добавления")
-    void putItemInCart() {
+    void putItemInCartTest() {
         step("Открываем главную страницу Obsessed Garage", () -> {
             registrationPage.openPage();
         });

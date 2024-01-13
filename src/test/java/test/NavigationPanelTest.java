@@ -20,7 +20,7 @@ public class NavigationPanelTest extends TestBase{
     @Severity(SeverityLevel.NORMAL)
     @Story("Проверка наличия элемента навигационной панели")
     @DisplayName("Проверка наличия элемента Garage Design в навигационной панели главной страницы")
-    void checkMainPageIcon() {
+    void checkMainPageIconTest() {
         step("Открываем главную страницу Obsessed Garage", () -> {
             registrationPage.openPage();
         });
@@ -33,7 +33,7 @@ public class NavigationPanelTest extends TestBase{
     @Severity(SeverityLevel.NORMAL)
     @Story("Проверка наличия элемента в выпадающем списке")
     @DisplayName("Проверка наличия элемента из списка For the obsessed в навигационной панели главной страницы")
-    void checkContainMainPageIcon() {
+    void checkContainMainPageIconTest() {
         step("Открываем главную страницу Obsessed Garage", () -> {
             registrationPage.openPage();
         });
@@ -46,7 +46,7 @@ public class NavigationPanelTest extends TestBase{
     @Severity(SeverityLevel.NORMAL)
     @Story("Проверка кликабельности элементов навигационной панели")
     @DisplayName("Проверка кликабельности элементов страницы")
-    void checkPageHeader() {
+    void checkPageHeaderTest() {
         step("Открываем главную страницу Obsessed Garage", () -> {
             registrationPage.openPage();
         });
