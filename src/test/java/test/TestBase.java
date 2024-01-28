@@ -10,6 +10,7 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import pages.MainPage;
 import pages.RegistrationPage;
 
 import java.util.Map;
@@ -17,6 +18,7 @@ import java.util.Map;
 public class TestBase {
     RegistrationPage registrationPage = new RegistrationPage();
     TestDataFakers testDataFakers = new TestDataFakers();
+    MainPage mainPage = new MainPage();
 
     @BeforeAll
     static void beforeAll() {

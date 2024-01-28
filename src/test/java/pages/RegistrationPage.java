@@ -6,6 +6,7 @@ import io.qameta.allure.Step;
 
 import static com.codeborne.selenide.Configuration.baseUrl;
 import static com.codeborne.selenide.Selenide.*;
+import static org.openqa.selenium.remote.tracing.EventAttribute.setValue;
 
 public class RegistrationPage {
 
@@ -19,10 +20,16 @@ public class RegistrationPage {
             buttonCreateAccount = $(".btn--full"),
             checkAccount = $(".grid"),
             customerEmail = $("#CustomerEmail"),
-            customerPassword = $("#CustomerPassword");
+            customerPassword = $("#CustomerPassword"),
+            search = $(".site-header__search-input");
 
     public RegistrationPage openPage() {
         open(baseUrl);
+        return this;
+    }
+
+    public RegistrationPage searchItem() {
+        search.setValue("Foam").pressEnter();
         return this;
     }
 
