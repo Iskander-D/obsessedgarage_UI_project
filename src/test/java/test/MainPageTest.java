@@ -5,8 +5,8 @@ import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
-import static com.codeborne.selenide.Condition.exist;
-import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Condition.*;
+import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
@@ -55,7 +55,7 @@ public class MainPageTest extends TestBase {
     @Test
     @Severity(SeverityLevel.NORMAL)
     @Owner("Aleksandr Drozenko")
-    @Story("Проверка наличия товара в корзине")
+    @Story("Добавление товара в корзину")
     @DisplayName("Проверка наличия товара в корзине после его добавления")
     void putItemInCartTest() {
         step("Открываем главную страницу Obsessed Garage", () -> {
@@ -70,16 +70,45 @@ public class MainPageTest extends TestBase {
         step("Добавляем товар в корзину ", () -> {
             $(".product-single__form").click();
         });
-        step("Закрываем окно добавления товара", () -> {
-            $(".site-nav__close-cart").click();
-        });
         step("Переходим в корзину ", () -> {
-            $("#HeaderCartTrigger").click();
+            $(byText("View cart")).click();
         });
         step("Проверяем наличие товара в корзине ", () -> {
-            $(".cart__item-title").shouldBe(exist);
+            $(".cart__item").shouldBe(exist);
         });
 
+
+    }
+    @Test
+    @Severity(SeverityLevel.NORMAL)
+    @Owner("Aleksandr Drozenko")
+    @Story("Удаление товара из корзины")
+    @DisplayName("Проверка наличия товара в корзине после его удаления")
+    void deleteItemInCartTest() {
+        step("Открываем главную страницу Obsessed Garage", () -> {
+            registrationPage.openPage();
+        });
+        step("Вбиваем в поисе название товара", () -> {
+            $(".site-header__search-input").setValue("Foam").pressEnter();
+        });
+        step("Выбираем товар ", () -> {
+            $$("a.grid-item__link").findBy(text("CARPRO Reset")).click();
+        });
+        step("Добавляем товар в корзину ", () -> {
+            $(".product-single__form").click();
+        });
+        step("Переходим в корзину ", () -> {
+            $(byText("View cart")).click();
+        });
+        step("Проверяем наличие товара в корзине ", () -> {
+            $(".cart__item").shouldBe(exist);
+        });
+        step("Удаляем товар из корзины ", () -> {
+            $(byText("Clear cart")).click();
+        });
+        step("Проверяем что товар отсутствует в корзине ", () -> {
+            $("#shopify-section-template--16098691350679__main").shouldBe(visible).shouldHave(text("Your cart is currently empty"));
+        });
     }
 
 
