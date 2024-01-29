@@ -46,7 +46,6 @@ public class MainPageTest extends TestBase {
         });
     }
 
-
     @Test
     @Severity(SeverityLevel.NORMAL)
     @Owner("Aleksandr Drozenko")
@@ -60,22 +59,6 @@ public class MainPageTest extends TestBase {
                 .addToBasket()
                 .openBasket()
                 .checkBasket();
-
-
-//        step("Выбираем товар ", () -> {
-//            $$("a.grid-item__link").findBy(text("CARPRO Reset")).click();
-//        });
-//        step("Добавляем товар в корзину ", () -> {
-//            $(".product-single__form").click();
-//        });
-//        step("Переходим в корзину ", () -> {
-//            $(byText("View cart")).click();
-//        });
-//        step("Проверяем наличие товара в корзине ", () -> {
-//            $(".cart__item").shouldBe(exist);
-//        });
-
-
     }
 
     @Test
@@ -92,29 +75,6 @@ public class MainPageTest extends TestBase {
                 .checkBasket()
                 .clearBasket()
                 .finalCheckBasket();
-
-
-//        step("Вбиваем в поисе название товара", () -> {
-//            $(".site-header__search-input").setValue("Foam").pressEnter();
-//        });
-//        step("Выбираем товар ", () -> {
-//            $$("a.grid-item__link").findBy(text("CARPRO Reset")).click();
-//        });
-//        step("Добавляем товар в корзину ", () -> {
-//            $(".product-single__form").click();
-//        });
-//        step("Переходим в корзину ", () -> {
-//            $(byText("View cart")).click();
-//        });
-//        step("Проверяем наличие товара в корзине ", () -> {
-//            $(".cart__item").shouldBe(exist);
-//        });
-//        step("Удаляем товар из корзины ", () -> {
-//            $(byText("Clear cart")).click();
-//        });
-//        step("Проверяем что товар отсутствует в корзине ", () -> {
-//            $("#shopify-section-template--16098691350679__main").shouldBe(visible).shouldHave(text("Your cart is currently empty"));
-//        });
     }
 
 

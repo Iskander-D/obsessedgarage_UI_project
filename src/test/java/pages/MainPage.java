@@ -15,8 +15,8 @@ public class MainPage {
             addBasket = $(".product-single__form"),
             openToBasket = $(byText("View cart")),
             checkToBasket = $(".cart__item"),
-    clearToBasket = $(byText("Clear cart")),
-    finalCheckToBasket = $("#shopify-section-template--16098691350679__main");
+            clearToBasket = $(byText("Clear cart")),
+            finalCheckToBasket = $("#shopify-section-template--16098691350679__main");
 
     @Step("Открываем главную страницу")
     public MainPage openPage() {
@@ -53,11 +53,13 @@ public class MainPage {
         checkToBasket.shouldBe(exist);
         return this;
     }
+
     @Step("Удаляем товар из корзины ")
     public MainPage clearBasket() {
         clearToBasket.click();
         return this;
     }
+
     @Step("Проверяем что товар отсутствует в корзине")
     public MainPage finalCheckBasket() {
         finalCheckToBasket.shouldBe(visible).shouldHave(text("Your cart is currently empty"));
