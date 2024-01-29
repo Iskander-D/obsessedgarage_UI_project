@@ -7,6 +7,7 @@ import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Configuration.baseUrl;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
+import static org.assertj.core.error.ShouldBe.shouldBe;
 
 public class MainPage {
     private final SelenideElement
@@ -16,7 +17,13 @@ public class MainPage {
             openToBasket = $(byText("View cart")),
             checkToBasket = $(".cart__item"),
             clearToBasket = $(byText("Clear cart")),
-            finalCheckToBasket = $("#shopify-section-template--16098691350679__main");
+            finalCheckToBasket = $("#shopify-section-template--16098691350679__main"),
+            contactUS = $(byText("CONTACT US")),
+            checkToPage = $(".container");
+
+
+
+
 
     @Step("Открываем главную страницу")
     public MainPage openPage() {
@@ -65,6 +72,20 @@ public class MainPage {
         finalCheckToBasket.shouldBe(visible).shouldHave(text("Your cart is currently empty"));
         return this;
     }
+
+    @Step("Находим ссылку Связаться с нами ")
+    public MainPage contactMenu() {
+        contactUS.click();
+        return this;
+    }
+
+    @Step("Проверяем что открылась страница для отправки запроса")
+    public MainPage checkPage() {
+        checkToPage.shouldBe(visible).shouldHave(text("Submit a request"));
+        return this;
+    }
+
+
 }
 
 

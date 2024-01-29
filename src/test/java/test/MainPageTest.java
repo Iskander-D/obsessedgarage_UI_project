@@ -48,7 +48,6 @@ public class MainPageTest extends TestBase {
 
     @Test
     @Severity(SeverityLevel.NORMAL)
-    @Owner("Aleksandr Drozenko")
     @Story("Добавление товара в корзину")
     @DisplayName("Проверка наличия товара в корзине после его добавления")
     void putItemToBasketTest() {
@@ -63,7 +62,6 @@ public class MainPageTest extends TestBase {
 
     @Test
     @Severity(SeverityLevel.NORMAL)
-    @Owner("Aleksandr Drozenko")
     @Story("Удаление товара из корзины")
     @DisplayName("Проверка наличия товара в корзине после его удаления")
     void deleteItemInBasketTest() {
@@ -77,7 +75,15 @@ public class MainPageTest extends TestBase {
                 .finalCheckBasket();
     }
 
-
+    @Test
+    @Severity(SeverityLevel.NORMAL)
+    @Story("Проверка открытия страницы <Связаться с нами>  ")
+    @DisplayName("Проверка отображения формы для отправки запроса")
+    void emailSubscribeTest() {
+        mainPage.openPage()
+                .contactMenu()
+                .checkPage();
+    }
 }
 
 
