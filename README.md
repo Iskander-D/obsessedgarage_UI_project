@@ -1,6 +1,8 @@
 # Проект по автоматизации тестирования для компании [Obsessedgarage](https://www.obsessedgarage.com/)
 
-<img alt="Garage" src="/media/screenshots/ObGar.png">
+<p align="center">  
+<img alt="Garage" src="/media/screenshots/OG.jpeg">
+
 
 > Obsessed Garage открывает и разрабатывает продукты и решения высочайшего качества с акцентом на удобство использования.
 
@@ -66,7 +68,7 @@ ____
 <a id="jenkins"></a>
 ## <img alt="Jenkins" height="25" src="media/logo/Jenkins.svg" width="25"/></a><a name="Сборка"></a>Сборка в [Jenkins](https://jenkins.autotests.cloud/job/garage_UI_project/)</a>
 <p align="center">  
-<a href="https://jenkins.autotests.cloud/job/garage_UI_project/"><img src="media/screenshots/jenkins.png" alt="Jenkins"/></a>  
+<a href="https://jenkins.autotests.cloud/job/garage_UI_project/"><img src="media/screenshots/Jenkins.png" alt="Jenkins"/></a>  
 </p>
 
 <a id="allure"></a>
@@ -75,7 +77,7 @@ ____
 ### *Основная страница отчёта*
 
 <p align="center">  
-<img title="Allure Overview Dashboard" src="media/screenshots/allureReport.png">  
+<img title="Allure Overview Dashboard" src="media/screenshots/AllureRep.png">  
 </p>  
 
 <a id="allure-testops"></a>
@@ -83,35 +85,35 @@ ____
 ### *Allure TestOps Dashboard*
 
 <p align="center">  
-<img title="Allure TestOps Dashboard" src="media/screenshots/allureTestOps.png">  
+<img title="Allure TestOps Dashboard" src="media/screenshots/AllureTO.png">  
 </p>  
 
-### *Автотесты*
+### *Параметризованные тесты*
 
 
 <p align="center">  
-<img title="Allure TestOps Tests" src="media/screenshots/allureAutoTest.png">  
+<img title="Allure TestOps Tests" src="media/screenshots/AllureP.png">  
 </p>
 
 <a id="jira"></a>
-## <img src="media/logo/Jira.svg" width="25" height="25"  alt="Allure"/></a>Интеграция с <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-1004">Jira</a>
+## <img src="media/logo/Jira.svg" width="25" height="25"  alt="Allure"/></a>Интеграция с <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-1098">Jira</a>
 
 <p align="center">  
-<img title="Jira" src="media/screenshots/jira.png">  
+<img title="Jira" src="media/screenshots/Jira.png">  
 </p>
 
 <a id="telegram"></a>
 ## <img src="media/logo/Telegram.svg" width="25" height="25"  alt="Allure"/></a>Уведомление в Telegram 
 
 <p align="center">  
-<img title="Allure Overview Dashboard" src="media/screenshots/telegram.png">  
+<img title="Allure Overview Dashboard" src="media/screenshots/TG.png">  
 </p>
 
 <a id="video"></a>
 ## <img src="media/logo/Selenoid.svg" width="25" height="25"  alt="Selenoid"/></a> Примеры видео выполнения тестов на Selenoid
 
 
-
-<img title="Selenoid Video" src="media/screenshots/Video.gif" width="650" height="350"  alt="video">  
+<p align="center"> 
+<img title="Selenoid Video" src="media/video/Video.gif" width="650" height="350"  alt="video">  
 
 [Наверх ⬆](#наверх)
