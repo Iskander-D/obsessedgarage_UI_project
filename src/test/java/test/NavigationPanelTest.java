@@ -14,7 +14,7 @@ import static io.qameta.allure.Allure.step;
 @Epic("UI")
 @Owner("Aleksandr Drozenko")
 @Feature("Проверка элементов навигационной панели")
-@Tags({@Tag("ui"), @Tag("Навигационная панель")})
+@Tag("ui")
 public class NavigationPanelTest extends TestBase {
 
     @Test

@@ -13,7 +13,7 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 @Epic("UI")
 @Owner("Aleksandr Drozenko")
 @Feature("Тестирование общего функционала страници")
-@Tags({@Tag("ui"), @Tag("all_page_test")})
+@Tag("ui")
 public class MainPageTest extends TestBase {
 
     @Test
