@@ -12,15 +12,16 @@ public interface WebDriverConfig extends Config {
     @DefaultValue("https://www.obsessedgarage.com/")
     String getBaseUrl();
 
-    @Key("browser")
+    @Key("browserName")
     @DefaultValue("CHROME")
-    Browser getBrowser();
+    String getBrowserName();
 
     @Key("browserVersion")
     @DefaultValue("100.0")
     String getBrowserVersion();
 
     @Key("remoteUrl")
+    @DefaultValue("https://user1:1234@selenoid.autotests.cloud/wd/hub")
     String getRemoteUrl();
 
     @Key("browserSize")
