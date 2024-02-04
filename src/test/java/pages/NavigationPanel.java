@@ -11,9 +11,9 @@ import static com.codeborne.selenide.Selenide.$$;
 public class NavigationPanel {
     private final SelenideElement
             checkToElement = $("#shopify-section-header"),
-            checkToElementInList = $$(".site-nav__item").find(text("OBSESSED DESIGN")),
-            openToLink = $$(".site-nav__item").find(text("SHOP DISCOUNTS")),
-            checkToHeader = $("h1.section-header__title");
+            checkToElementInList = $$("#meteor-desktop-nav").find(text("OBSESSED DESIGN")),
+            openToLink = $$("#meteor-desktop-nav").find(text("SHOP LIFE")),
+            checkToHeader = $(".hero__text-wrap");
 
     @Step("Проверяем наличие элемента SHOP GARAGE в списке ссылок ")
     public NavigationPanel checkElement() {
@@ -33,9 +33,9 @@ public class NavigationPanel {
         return this;
     }
 
-    @Step("Проверяем наличие заголовка открывшейся страницы Matty's Trinkets & Treasures ")
+    @Step("Проверяем наличие заголовка открывшейся страницы MERCHANDISE ")
     public NavigationPanel checkHeader() {
-        checkToHeader.shouldHave(text("Matty's Trinkets & Treasures"));
+        checkToHeader.shouldHave(text("MERCHANDISE"));
         return this;
     }
 }

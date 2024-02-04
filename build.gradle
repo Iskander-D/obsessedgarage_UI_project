@@ -1,6 +1,7 @@
 plugins {
     id 'java-library'
     id 'io.qameta.allure' version '2.11.2'
+    id "io.freefair.lombok" version "6.0.0-m2"
 }
 
 repositories {
@@ -44,7 +45,8 @@ dependencies {
             "org.slf4j:slf4j-simple:$slf4jVersion",
             "org.assertj:assertj-core:$assertjCoreVersion",
             "io.github.bonigarcia:webdrivermanager:$webdriverVersion",
-            "org.aeonbits.owner:owner:$ownerVersion"
+            "org.aeonbits.owner:owner:$ownerVersion",
+            "commons-io:commons-io:2.6"
 
     )
     dependencies {
