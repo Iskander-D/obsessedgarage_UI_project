@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 import static io.qameta.allure.Allure.step;
 
 @Owner("Aleksandr Drozenko")
-
+@Tag("ui")
 public class ManualTest {
     @Test
     @Tag("manual")

@@ -1,6 +1,6 @@
 # Проект по автоматизации тестирования для компании [Obsessedgarage](https://www.obsessedgarage.com/)
 
-<img alt="OTP" src="src/media/screenshots/bankPage.png">
+<img alt="Garage" src="/media/screenshots/ObGar.png">
 
 > Obsessed Garage открывает и разрабатывает продукты и решения высочайшего качества с акцентом на удобство использования.
 
@@ -64,13 +64,13 @@ gradle clean test -DenvWeb=remote
 ```
 ____
 <a id="jenkins"></a>
-## <img alt="Jenkins" height="25" src="media/logo/Jenkins.svg" width="25"/></a><a name="Сборка"></a>Сборка в [Jenkins](https://jenkins.autotests.cloud/job/BankOTP/)</a>
+## <img alt="Jenkins" height="25" src="media/logo/Jenkins.svg" width="25"/></a><a name="Сборка"></a>Сборка в [Jenkins](https://jenkins.autotests.cloud/job/garage_UI_project/)</a>
 <p align="center">  
-<a href="https://jenkins.autotests.cloud/job/BankOTP/"><img src="media/screenshots/jenkins.png" alt="Jenkins"/></a>  
+<a href="https://jenkins.autotests.cloud/job/garage_UI_project/"><img src="media/screenshots/jenkins.png" alt="Jenkins"/></a>  
 </p>
 
 <a id="allure"></a>
-## <img src="media/logo/Allure.svg" width="25" height="25"  alt="Allure"/></a> Allure <a target="_blank" href="https://jenkins.autotests.cloud/job/BankOTP/allure/">отчёт</a>
+## <img src="media/logo/Allure.svg" width="25" height="25"  alt="Allure"/></a> Allure <a target="_blank" href="https://jenkins.autotests.cloud/job/garage_UI_project/allure/">отчёт</a>
 
 ### *Основная страница отчёта*
 
@@ -79,7 +79,7 @@ ____
 </p>  
 
 <a id="allure-testops"></a>
-## <img src="media/logo/Allure_TO.svg" width="25" height="25"  alt="Allure"/></a>Интеграция с <a target="_blank" href="https://allure.autotests.cloud/project/3879/dashboards">Allure TestOps</a>
+## <img src="media/logo/Allure_TO.svg" width="25" height="25"  alt="Allure"/></a>Интеграция с <a target="_blank" href="https://allure.autotests.cloud/project/4020/dashboards">Allure TestOps</a>
 ### *Allure TestOps Dashboard*
 
 <p align="center">  
