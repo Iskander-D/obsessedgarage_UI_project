@@ -14,7 +14,7 @@ public interface WebDriverConfig extends Config {
 
     @Key("browser")
     @DefaultValue("CHROME")
-    String getBrowser();
+    Browser getBrowser();
 
     @Key("browserVersion")
     @DefaultValue("100.0")

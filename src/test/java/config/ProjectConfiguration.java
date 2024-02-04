@@ -23,6 +23,7 @@ public class ProjectConfiguration {
 
         if (webConfig.isRemote()) {
             Configuration.remote = webConfig.getRemoteUrl();
+
             DesiredCapabilities capabilities = new DesiredCapabilities();
             capabilities.setCapability("selenoid:options", Map.<String, Object>of(
                     "enableVNC", true,
