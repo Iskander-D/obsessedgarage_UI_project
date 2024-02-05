@@ -1,16 +1,15 @@
-# Проект по автоматизации тестирования для компании [Obsessedgarage](https://www.obsessedgarage.com/)
+# Проект по автоматизации тестирования для компании [Obsessedgarage](https://reqres.in/)
 
 <p align="center">  
 <img alt="Garage" src="/media/screenshots/OG.jpeg">
 
-
-> Obsessed Garage открывает и разрабатывает продукты и решения высочайшего качества с акцентом на удобство использования.
+> Reqres.in — отличный ресурс, предоставляющий общедоступный API, который вы можете использовать для создания и тестирования своих приложений.
 
 <a name="наверх"></a>
 
 ## :scroll: Содержание:
 * <a href="#tools">Используемый стек</a>
-* <a href="#cases">Примеры автоматизированных тест-кейсов</a>
+* <a href="#cases">Примеры API тестов </a>
 * <a href="#console">Запуск из терминала</a>
 * <a href="#jenkins">Сборка в Jenkins</a>
 * <a href="#allure">Allure отчет</a>
@@ -19,8 +18,6 @@
 
 * <a href="#telegram">Уведомление в Telegram при помощи бота</a>
 
-* <a href="#video">Примеры видео выполнения тестов на Selenoid</a>
-
 ____
 <a id="tools"></a>
 ## :computer:<a name="Используемый стек">**Используемый стек:**</a>
@@ -28,7 +25,6 @@ ____
 <p align="center">
 <a href="https://www.java.com/"><img width="6%" title="Java" src="media/logo/Java.svg"></a>
 <a href="https://selenide.org/"><img width="6%" title="Selenide" src="media/logo/Selenide.svg"></a>
-<a href="https://aerokube.com/selenoid/"><img width="6%" title="Selenoid" src="media/logo/Selenoid.svg"></a>
 <a href="https://github.com/allure-framework/allure2"><img width="6%" title="Allure Report" src="media/logo/Allure.svg"></a>
 <a href="https://qameta.io/"><img width="5%" title="Allure TestOps" src="media/logo/Allure_TO.svg"></a>
 <a href="https://gradle.org/"><img width="6%" title="Gradle" src="media/logo/Gradle.svg"></a>
@@ -43,13 +39,12 @@ ____
 <a id="cases"></a>
 ## <a name="Примеры автоматизированных тест-кейсов">**Примеры автоматизированных тест-кейсов:**</a>
 ____
-- ✓ *Проверка заголовка главной страницы*
-- ✓ *Проверка наличия значений в посковой строке*
-- ✓ *Проверка наличия элементов навигационной панели*
-- ✓ *Проверка наличия товара в корзине после его добавления*
-- ✓ *Проверка наличия товара в корзине после его удаления*
-- ✓ *Проверка кликабельности элементов навигационной панели*
-- ✓ *Проверка открытия страницы - Связаться с нами*
+- ✓ *Проверка списка пользователей*
+- ✓ *Проверка "Пользователь не найден"*
+- ✓ *Создание нового пользователя*
+- ✓ *Удаление пользователя*
+- ✓ *Успешная регистрация пользователя*
+
 
 
 
@@ -58,11 +53,11 @@ ____
 
 ***Локальный запуск тестов:***
 ```
-gradle clean test -DenvWeb=local
+gradle clean test 
 ```
 ***Удаленный запуск тестов:***
 ```
-gradle clean test -DenvWeb=remote
+clean test 
 ```
 ____
 <a id="jenkins"></a>
@@ -88,12 +83,6 @@ ____
 <img title="Allure TestOps Dashboard" src="media/screenshots/AllureTO.png">  
 </p>  
 
-### *Параметризованные тесты*
-
-
-<p align="center">  
-<img title="Allure TestOps Tests" src="media/screenshots/AllureP.png">  
-</p>
 
 <a id="jira"></a>
 ## <img src="media/logo/Jira.svg" width="25" height="25"  alt="Allure"/></a>Интеграция с <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-1098">Jira</a>
@@ -109,8 +98,6 @@ ____
 <img title="Allure Overview Dashboard" src="media/screenshots/TG.png">  
 </p>
 
-<a id="video"></a>
-## <img src="media/logo/Selenoid.svg" width="25" height="25"  alt="Selenoid"/></a> Примеры видео выполнения тестов на Selenoid
 
 
 <p align="center"> 
