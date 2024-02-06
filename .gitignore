@@ -38,14 +38,6 @@ bin/
 ### VS Code ###
 .vscode/
 
-### Mac OS ###
-.DS_Store
-\.idea
-\.gradle
-\gradlew
-\gradlew.bat
-\build
-
 # Project gen files
 .idea
 .allure/
