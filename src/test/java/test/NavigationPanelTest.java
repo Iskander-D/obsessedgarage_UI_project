@@ -28,21 +28,25 @@ public class NavigationPanelTest extends TestBase {
 
     @Test
     @Severity(SeverityLevel.NORMAL)
-    @Story("Проверка наличия ссылки OBSESSED DESIGN")
-    @DisplayName("Проверка наличия ссылки OBSESSED DESIGN в навигационной панели главной страницы")
-    void checkContainMainPageIconTest() {
+    @Story("Проверка открытия страницы New Products")
+    @DisplayName("Проверка отображения элементов страницы New Products")
+    void checkContainListPagesTest() {
         mainPage.openPage();
-        navigationPanel.checkElementInList();
+        navigationPanel.checkElementInList()
+                       .checkList();
+
+
     }
 
     @Test
     @Severity(SeverityLevel.NORMAL)
-    @Story("Проверка кликабельности элементов навигационной панели")
-    @DisplayName("Проверка кликабельности элементов страницы")
+    @Story("Проверка открытия страницы из выпадающего списка")
+    @DisplayName("Проверка открытия страницы Audio")
     void checkPageHeaderTest() {
         mainPage.openPage();
         navigationPanel.openLink()
-                .checkHeader();
+                       .byAudio()
+                       .checkPage();
 
     }
 
