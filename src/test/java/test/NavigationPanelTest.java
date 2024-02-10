@@ -3,18 +3,15 @@ package test;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
-import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.api.Test;
 
-import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.$$;
-import static io.qameta.allure.Allure.step;
+
 
 @Epic("UI")
 @Owner("Aleksandr Drozenko")
 @Feature("Проверка элементов навигационной панели")
 @Tag("ui")
+@DisplayName("Тестирование функционала навигационной панели")
 public class NavigationPanelTest extends TestBase {
 
     @Test

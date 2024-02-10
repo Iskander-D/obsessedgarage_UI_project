@@ -14,6 +14,7 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 @Owner("Aleksandr Drozenko")
 @Feature("Тестирование общего функционала страници")
 @Tag("ui")
+@DisplayName("Тестирование функционала главной страницы")
 public class MainPageTest extends TestBase {
 
     @Test
