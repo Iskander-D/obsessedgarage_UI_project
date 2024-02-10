@@ -28,7 +28,7 @@ public class NavigationPanel {
         return this;
     }
     @Step("Проверяем отображение не пустого списка эементов")
-    public NavigationPanel checkList() {
+    public NavigationPanel findElementInList() {
         checkTolist.shouldBe(visible);
         return this;
     }

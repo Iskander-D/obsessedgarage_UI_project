@@ -29,8 +29,8 @@ public class NavigationPanelTest extends TestBase {
     @DisplayName("Проверка отображения элементов страницы New Products")
     void checkContainListPagesTest() {
         mainPage.openPage();
-        navigationPanel.checkElementInList()
-                       .checkList();
+        navigationPanel.findElementInList()
+                       .checkElementInList();
 
 
     }
