@@ -50,7 +50,6 @@ public class NavigationPanel {
         return this;
     }
 
-
     @Step("Открываем ссылку SHOP GARAGE")
     public NavigationPanel openLink() {
         openToLink.hover();

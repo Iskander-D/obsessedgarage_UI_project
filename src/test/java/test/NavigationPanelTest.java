@@ -32,8 +32,6 @@ public class NavigationPanelTest extends TestBase {
         navigationPanel.findElementInList()
                        .checkElementInList();
 
-
-
     }
 
     @Test
@@ -56,6 +54,5 @@ public class NavigationPanelTest extends TestBase {
         navigationPanel.openDesignPage()
                        .openPayment()
                        .checkTypePayment();
-
     }
 }
