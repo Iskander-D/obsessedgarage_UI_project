@@ -47,5 +47,15 @@ public class NavigationPanelTest extends TestBase {
                        .checkPage();
 
     }
+    @Test
+    @Severity(SeverityLevel.NORMAL)
+    @Story("Проверка открытия страницы Obsessed Design")
+    @DisplayName("Проверка открытия страницы способов оплаты")
+    void checkOptionsPaymentsTest() {
+        mainPage.openPage();
+        navigationPanel.openDesignPage()
+                       .openPayment()
+                       .checkTypePayment();
 
+    }
 }

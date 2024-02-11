@@ -14,8 +14,12 @@ public class NavigationPanel {
             findToElementInList = $$(".Meteor-Navigation__Link__desktop").findBy(text("NEW PRODUCTS")),
             checkToList = $("#CollectionAjaxContent"),
             openToLink = $$(".Meteor-Navigation__Link__desktop").findBy(text("SHOP GARAGE")),
+            openToDesignPage = $$(".Meteor-Navigation__Link__desktop").findBy(text("OBSESSED DESIGN")),
             findToByBrand = $(".m-layout").$(byText("Audio")),
+            checkingToTypePayment = $("#OnePageFrame"),
+            openToPayment = $$(".shopify-payment-button__more-options").findBy(text("More payment options")),
             checkToPage = $("#PageContainer");
+
     @Step("Проверяем наличие элемента SHOP GARAGE в списке ссылок ")
     public NavigationPanel checkElement() {
         checkToElement.shouldHave(text("SHOP GARAGE"));
@@ -27,6 +31,19 @@ public class NavigationPanel {
         findToElementInList.click();
         return this;
     }
+
+    @Step("Открываем страницу Obsessed Design ")
+    public NavigationPanel openDesignPage() {
+        openToDesignPage.click();
+        return this;
+    }
+
+    @Step("Открываем ссылку способов оплаты ")
+    public NavigationPanel openPayment() {
+        openToPayment.click();
+        return this;
+    }
+
     @Step("Проверяем отображение не пустого списка эементов")
     public NavigationPanel checkElementInList() {
         checkToList.click();
@@ -42,12 +59,19 @@ public class NavigationPanel {
 
     @Step("Открываем ссылку Audio")
     public NavigationPanel byAudio() {
-       findToByBrand.click();
+        findToByBrand.click();
         return this;
     }
+
     @Step("Проверяем что страница отображается")
-    public NavigationPanel  checkPage() {
+    public NavigationPanel checkPage() {
         checkToPage.shouldBe(visible);
+        return this;
+    }
+
+    @Step("Проверяем что страница способов оплаты отображается")
+    public NavigationPanel checkTypePayment() {
+        checkingToTypePayment.shouldBe(visible);
         return this;
     }
 }
