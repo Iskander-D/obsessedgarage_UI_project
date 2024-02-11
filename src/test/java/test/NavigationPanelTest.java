@@ -33,6 +33,7 @@ public class NavigationPanelTest extends TestBase {
                        .checkElementInList();
 
 
+
     }
 
     @Test

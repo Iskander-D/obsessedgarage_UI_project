@@ -11,10 +11,10 @@ import static com.codeborne.selenide.Selenide.$$;
 public class NavigationPanel {
     private final SelenideElement
             checkToElement = $("#shopify-section-header"),
-            checkToElementInList = $$("a.Meteor-Navigation__Link__desktop").findBy(text("New Products")),
-            checkTolist = $("#CollectionAjaxContent"),
-            openToLink = $$("a.Meteor-Navigation__Link__desktop").find(text("SHOP GARAGE")),
-            findToByBrand = $("[class=m-links-container]").$(byText("Audio")),
+            findToElementInList = $$(".Meteor-Navigation__Link__desktop").findBy(text("NEW PRODUCTS")),
+            checkToList = $("#CollectionAjaxContent"),
+            openToLink = $$(".Meteor-Navigation__Link__desktop").findBy(text("SHOP GARAGE")),
+            findToByBrand = $(".m-layout").$(byText("Audio")),
             checkToPage = $("#PageContainer");
     @Step("Проверяем наличие элемента SHOP GARAGE в списке ссылок ")
     public NavigationPanel checkElement() {
@@ -23,13 +23,13 @@ public class NavigationPanel {
     }
 
     @Step("Открываем ссылку New Products")
-    public NavigationPanel checkElementInList() {
-        checkToElementInList.click();
+    public NavigationPanel findElementInList() {
+        findToElementInList.click();
         return this;
     }
     @Step("Проверяем отображение не пустого списка эементов")
-    public NavigationPanel findElementInList() {
-        checkTolist.shouldBe(visible);
+    public NavigationPanel checkElementInList() {
+        checkToList.click();
         return this;
     }
 
