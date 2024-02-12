@@ -12,6 +12,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 
 import org.junit.jupiter.api.BeforeEach;
+import pages.BasketPage;
 import pages.MainPage;
 import pages.NavigationPanel;
 
@@ -22,6 +23,8 @@ public class TestBase {
 
     MainPage mainPage = new MainPage();
     NavigationPanel navigationPanel = new NavigationPanel();
+    BasketPage basketPage = new BasketPage();
+
     private static final WebConfig config = ConfigReader.Instance.read();
 
 

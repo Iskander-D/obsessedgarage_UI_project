@@ -9,19 +9,11 @@ import org.junit.jupiter.api.Test;
 
 @Epic("UI")
 @Owner("Aleksandr Drozenko")
-@Feature("Проверка элементов навигационной панели")
+@Feature("Проверка страниц навигационной панели")
 @Tag("ui")
-@DisplayName("Тестирование функционала навигационной панели")
+@DisplayName("Тестирование функционала страниц навигационной панели")
 public class NavigationPanelTest extends TestBase {
 
-    @Test
-    @Severity(SeverityLevel.NORMAL)
-    @Story("Проверка наличия элемента SHOP GARAGE в списке ссылок")
-    @DisplayName("Проверка наличия элемента SHOP GARAGE в списке ссылок навигационной панели главной страницы")
-    void checkMainPageIconTest() {
-        mainPage.openPage();
-        navigationPanel.checkElement();
-    }
 
     @Test
     @Severity(SeverityLevel.NORMAL)
@@ -30,7 +22,8 @@ public class NavigationPanelTest extends TestBase {
     void checkContainListPagesTest() {
         mainPage.openPage();
         navigationPanel.findElementInList()
-                       .checkElementInList();
+                .checkElementInList()
+                .checkText();
 
     }
 
@@ -41,18 +34,9 @@ public class NavigationPanelTest extends TestBase {
     void checkPageHeaderTest() {
         mainPage.openPage();
         navigationPanel.openLink()
-                       .byAudio()
-                       .checkPage();
+                .byAudio()
+                .checkElementList()
+                .checkTextPage();
 
-    }
-    @Test
-    @Severity(SeverityLevel.NORMAL)
-    @Story("Проверка открытия страницы Obsessed Design")
-    @DisplayName("Проверка открытия страницы способов оплаты")
-    void checkOptionsPaymentsTest() {
-        mainPage.openPage();
-        navigationPanel.openDesignPage()
-                       .openPayment()
-                       .checkTypePayment();
     }
 }

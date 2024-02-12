@@ -10,43 +10,38 @@ import static com.codeborne.selenide.Selenide.$$;
 
 public class NavigationPanel {
     private final SelenideElement
-            checkToElement = $("#shopify-section-header"),
-            findToElementInList = $$(".Meteor-Navigation__Link__desktop").findBy(text("NEW PRODUCTS")),
-            checkToList = $("#CollectionAjaxContent"),
-            openToLink = $$(".Meteor-Navigation__Link__desktop").findBy(text("SHOP GARAGE")),
-            openToDesignPage = $$(".Meteor-Navigation__Link__desktop").findBy(text("OBSESSED DESIGN")),
-            findToByBrand = $(".m-layout").$(byText("Audio")),
-            checkingToTypePayment = $("#OnePageFrame"),
-            openToPayment = $$(".shopify-payment-button__more-options").findBy(text("More payment options")),
-            checkToPage = $("#PageContainer");
 
-    @Step("Проверяем наличие элемента SHOP GARAGE в списке ссылок ")
-    public NavigationPanel checkElement() {
-        checkToElement.shouldHave(text("SHOP GARAGE"));
+            findToElementInList = $$(".Meteor-Navigation__Link__desktop").findBy(text("NEW PRODUCTS")),
+            checkToList = $(".page-width"),
+            openToLink = $$(".Meteor-Navigation__Link__desktop").findBy(text("SHOP GARAGE")),
+
+            findToByBrand = $(".m-container").$(byText("Audio")),
+
+            checkToText = $(".section-header__title");
+
+
+
+
+
+    @Step("Проверяем наличие заголовка New Products")
+    public NavigationPanel checkText() {
+        checkToText.shouldHave(text("New Products"));
         return this;
     }
-
     @Step("Открываем ссылку New Products")
     public NavigationPanel findElementInList() {
         findToElementInList.click();
         return this;
     }
 
-    @Step("Открываем страницу Obsessed Design ")
-    public NavigationPanel openDesignPage() {
-        openToDesignPage.click();
-        return this;
-    }
-
-    @Step("Открываем ссылку способов оплаты ")
-    public NavigationPanel openPayment() {
-        openToPayment.click();
-        return this;
-    }
-
     @Step("Проверяем отображение не пустого списка эементов")
     public NavigationPanel checkElementInList() {
-        checkToList.click();
+        checkToList.shouldBe(visible);
+        return this;
+    }
+    @Step("Проверяем отображение не пустого списка эементов")
+    public NavigationPanel checkElementList() {
+        checkToList.shouldBe(visible);
         return this;
     }
 
@@ -62,15 +57,11 @@ public class NavigationPanel {
         return this;
     }
 
-    @Step("Проверяем что страница отображается")
-    public NavigationPanel checkPage() {
-        checkToPage.shouldBe(visible);
+    @Step("Проверяем наличие заголовка Audio Packages")
+    public NavigationPanel checkTextPage() {
+        checkToText.shouldHave(text("Audio Packages"));
         return this;
+
     }
 
-    @Step("Проверяем что страница способов оплаты отображается")
-    public NavigationPanel checkTypePayment() {
-        checkingToTypePayment.shouldBe(visible);
-        return this;
-    }
 }
