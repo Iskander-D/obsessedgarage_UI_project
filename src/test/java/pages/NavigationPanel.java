@@ -13,12 +13,11 @@ public class NavigationPanel {
 
             findToElementInList = $$(".Meteor-Navigation__Link__desktop").findBy(text("NEW PRODUCTS")),
             checkToList = $(".page-width"),
-            openToLink = $$(".Meteor-Navigation__Link__desktop").findBy(text("SHOP GARAGE")),
+            openToLink = $$(".Meteor-Navigation__Link__desktop").findBy(text("SHOP HOME")),
 
-            findToByBrand = $(".meteor-menu").$(byText("Audio")),
+            openToItem= $(".page-container").$(byText("SHOP Coffee Products")),
 
             checkToText = $(".section-header__title");
-
 
 
 
@@ -28,15 +27,15 @@ public class NavigationPanel {
         checkToText.shouldHave(text("New Products"));
         return this;
     }
-    @Step("Открываем ссылку New Products")
+    @Step("Открываем страницу New Products")
     public NavigationPanel findElementInList() {
         findToElementInList.click();
         return this;
     }
 
-    @Step("Проверяем отображение не пустого списка эементов")
-    public NavigationPanel checkElementInList() {
-        checkToList.shouldBe(visible);
+    @Step("Открываем товар  SHOP Coffee Products")
+    public NavigationPanel openItem() {
+        openToItem.click();
         return this;
     }
     @Step("Проверяем отображение не пустого списка эементов")
@@ -45,21 +44,16 @@ public class NavigationPanel {
         return this;
     }
 
-    @Step("Открываем ссылку SHOP GARAGE")
+    @Step("Открываем страницу SHOP HOME")
     public NavigationPanel openLink() {
-        openToLink.hover();
+        openToLink.click();
         return this;
     }
 
-    @Step("Открываем ссылку Audio")
-    public NavigationPanel byAudio() {
-        findToByBrand.click();
-        return this;
-    }
 
-    @Step("Проверяем наличие заголовка Audio Packages")
+    @Step("Проверяем наличие заголовка Coffee")
     public NavigationPanel checkTextPage() {
-        checkToText.shouldHave(text("Audio Packages"));
+        checkToText.shouldHave(text("Coffee"));
         return this;
 
     }

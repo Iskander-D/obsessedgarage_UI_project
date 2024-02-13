@@ -10,7 +10,7 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 @Feature("Тестирование функционала поиска")
 @Tag("ui")
 @DisplayName("Тестирование функционала поиска")
-public class SearchTest extends TestBase {
+public class SearchMenuTest extends TestBase {
 
     @CsvFileSource(resources = "/searchResultShouldContainExpectedText.csv", delimiter = '|')
     @Severity(SeverityLevel.NORMAL)

@@ -14,11 +14,10 @@ import org.junit.jupiter.api.Test;
 @DisplayName("Тестирование функционала страниц навигационной панели")
 public class NavigationPanelTest extends TestBase {
 
-
     @Test
     @Severity(SeverityLevel.NORMAL)
     @Story("Проверка открытия страницы New Products")
-    @DisplayName("Проверка отображения элементов страницы New Products")
+    @DisplayName("Проверка элементов страницы New Products")
     void checkContainListPagesTest() {
         mainPage.openPage();
         navigationPanel.findElementInList()
@@ -29,12 +28,12 @@ public class NavigationPanelTest extends TestBase {
 
     @Test
     @Severity(SeverityLevel.NORMAL)
-    @Story("Проверка открытия страницы из выпадающего списка")
-    @DisplayName("Проверка открытия страницы Audio")
+    @Story("Проверка открытия страницы SHOP Coffee Products")
+    @DisplayName("Проверка элементов страницы SHOP Coffee Products")
     void checkPageHeaderTest() {
         mainPage.openPage();
         navigationPanel.openLink()
-                .byAudio()
+                .openItem()
                 .checkElementList()
                 .checkTextPage();
 
