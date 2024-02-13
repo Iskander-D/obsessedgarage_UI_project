@@ -34,7 +34,7 @@ public class MainPage {
         return this;
     }
 
-    @Step("Открываем ссылку Support")
+    @Step("Открыть ссылку Support")
     public MainPage openSupport() {
         openFooterMenus.find(byText("Support")).click();
         return this;
