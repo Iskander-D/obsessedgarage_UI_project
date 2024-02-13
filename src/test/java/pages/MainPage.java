@@ -22,7 +22,7 @@ public class MainPage {
         return this;
     }
 
-    @Step("Вводим запрос в меню поиска")
+    @Step("Ввести запрос в меню поиска")
     public MainPage searchItem(String searchQuery) {
         search.setValue(searchQuery).pressEnter();
         return this;

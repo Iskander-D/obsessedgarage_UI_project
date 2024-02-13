@@ -16,7 +16,7 @@ public class BasketPageTest extends TestBase {
     @ValueSource(strings = {"sonic", "carpro"})
     @ParameterizedTest(name = "Добавляем товар: {0}")
     @Story("Добавление товара в корзину")
-    @DisplayName("Проверка наличия товара в корзине после его добавления")
+    @DisplayName("Проверка наличия товара в корзине после его добавления.")
     void putItemToBasketTest(String searchQuery) {
         mainPage.openPage()
                 .searchItem(searchQuery);
@@ -30,7 +30,7 @@ public class BasketPageTest extends TestBase {
     @ValueSource(strings = {"koch", "tool grid"})
     @ParameterizedTest(name = "Добавляем товар: {0}")
     @Story("Удаление товара из корзины")
-    @DisplayName("Проверка наличия товара в корзине после его удаления")
+    @DisplayName("Проверка наличия товара в корзине после его удаления.")
     void deleteItemFromBasketTest(String value) {
         mainPage.openPage()
                 .searchItem(value);

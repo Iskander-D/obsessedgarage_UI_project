@@ -18,37 +18,37 @@ public class NavigationPanel {
             checkToText = $(".section-header__title");
 
 
-    @Step("Проверяем наличие заголовка New Products")
+    @Step("Проверка наличие заголовка New Products")
     public NavigationPanel checkText() {
         checkToText.shouldHave(text("New Products"));
         return this;
     }
 
-    @Step("Открываем страницу New Products")
+    @Step("Открыть страницу New Products")
     public NavigationPanel findElementInList() {
         findToElementInList.click();
         return this;
     }
 
-    @Step("Открываем товар SHOP Coffee Products")
+    @Step("Открыть товар SHOP Coffee Products")
     public NavigationPanel openItem() {
         openToItem.click();
         return this;
     }
 
-    @Step("Проверяем отображение не пустого списка эементов")
+    @Step("Проверить отображение не пустого списка эементов")
     public NavigationPanel checkElementList() {
         checkToList.shouldBe(visible);
         return this;
     }
 
-    @Step("Открываем страницу SHOP HOME")
+    @Step("Открыть страницу SHOP HOME")
     public NavigationPanel openLink() {
         openToLink.click();
         return this;
     }
 
-    @Step("Проверяем наличие заголовка Coffee")
+    @Step("Проверить наличие заголовка Coffee")
     public NavigationPanel checkTextPage() {
         checkToText.shouldHave(text("Coffee"));
         return this;
