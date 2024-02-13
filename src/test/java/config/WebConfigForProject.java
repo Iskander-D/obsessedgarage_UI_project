@@ -2,6 +2,7 @@ package config;
 
 import com.codeborne.selenide.Configuration;
 import org.openqa.selenium.remote.DesiredCapabilities;
+
 import java.util.Map;
 
 public class WebConfigForProject {
@@ -17,7 +18,6 @@ public class WebConfigForProject {
         Configuration.browserVersion = webConfig.getBrowserVersion();
         Configuration.browserSize = webConfig.getBrowserSize();
         Configuration.pageLoadStrategy = "eager";
-        Configuration.holdBrowserOpen = true; // need delete
 
 
         if (webConfig.isRemote()) {

@@ -6,7 +6,6 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 
-
 @Epic("UI")
 @Owner("Aleksandr Drozenko")
 @Feature("Проверка страниц навигационной панели")

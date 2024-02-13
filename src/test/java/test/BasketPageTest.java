@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.ValueSource;
 @DisplayName("Тестирование функционала добавления и удаления товара")
 public class BasketPageTest extends TestBase {
     @Severity(SeverityLevel.NORMAL)
-    @ValueSource(strings = {"sonic","carpro"})
+    @ValueSource(strings = {"sonic", "carpro"})
     @ParameterizedTest(name = "Добавляем товар: {0}")
     @Story("Добавление товара в корзину")
     @DisplayName("Проверка наличия товара в корзине после его добавления")
@@ -27,7 +27,7 @@ public class BasketPageTest extends TestBase {
     }
 
     @Severity(SeverityLevel.NORMAL)
-    @ValueSource(strings = {"koch","tool grid"})
+    @ValueSource(strings = {"koch", "tool grid"})
     @ParameterizedTest(name = "Добавляем товар: {0}")
     @Story("Удаление товара из корзины")
     @DisplayName("Проверка наличия товара в корзине после его удаления")

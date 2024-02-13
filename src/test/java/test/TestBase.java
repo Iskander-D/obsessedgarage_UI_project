@@ -29,25 +29,25 @@ public class TestBase {
     private static final WebConfig config = ConfigReader.Instance.read();
 
 
-        @BeforeAll
-        public static void beforeAll() {
-            WebConfigForProject webConfigForProject = new WebConfigForProject(config);
-            webConfigForProject.webConfig();
+    @BeforeAll
+    public static void beforeAll() {
+        WebConfigForProject webConfigForProject = new WebConfigForProject(config);
+        webConfigForProject.webConfig();
 
-        }
-
-        @BeforeEach
-        void addListener() {
-            SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
-        }
-
-        @AfterEach
-        void addAttachments() {
-            Attach.screenshotAs("Last screenshot");
-            Attach.pageSource();
-            Attach.browserConsoleLogs();
-            Attach.addVideo();
-
-            closeWebDriver();
-        }
     }
+
+    @BeforeEach
+    void addListener() {
+        SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
+    }
+
+    @AfterEach
+    void addAttachments() {
+        Attach.screenshotAs("Last screenshot");
+        Attach.pageSource();
+        Attach.browserConsoleLogs();
+        Attach.addVideo();
+
+        closeWebDriver();
+    }
+}

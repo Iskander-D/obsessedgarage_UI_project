@@ -18,8 +18,8 @@ public class ReturnPageTest extends TestBase {
     void returnPageTest() {
         mainPage.openPage()
                 .openSupport();
-     supportPage.openReturnPage()
-             .checkTextReturnPage();
+        supportPage.openReturnPage()
+                .checkTextReturnPage();
 
     }
 

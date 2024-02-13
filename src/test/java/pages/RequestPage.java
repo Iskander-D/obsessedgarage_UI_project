@@ -2,6 +2,7 @@ package pages;
 
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
+
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 
@@ -47,7 +48,7 @@ public class RequestPage {
 
     @Step("Проверка строки 'номер заказа' ")
     public RequestPage checkResultNumberOrder() {
-        setAtName.shouldBe(visible);
+        setAtNumberOrder.shouldBe(visible);
         return this;
     }
 
@@ -59,7 +60,7 @@ public class RequestPage {
 
     @Step("Проверка строки 'наименование продукта' ")
     public RequestPage checkResultSubject() {
-        setAtName.shouldBe(visible);
+        setAtSubject.shouldBe(visible);
         return this;
 
     }

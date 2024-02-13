@@ -12,9 +12,8 @@ import static org.assertj.core.error.ShouldBe.shouldBe;
 public class MainPage {
     private final SelenideElement
             search = $(".site-header__search-input"),
-            checkSearchResult= $("#MainContent"),
+            checkSearchResult = $("#MainContent"),
             openFooterMenus = $("#FooterMenus");
-
 
 
     @Step("Открыть главную страницу")
@@ -28,11 +27,13 @@ public class MainPage {
         search.setValue(searchQuery).pressEnter();
         return this;
     }
+
     @Step("Проверяем результат поиска")
     public MainPage checkResult(String expectedName) {
         checkSearchResult.shouldHave(text(expectedName));
         return this;
     }
+
     @Step("Открываем ссылку Support")
     public MainPage openSupport() {
         openFooterMenus.find(byText("Support")).click();

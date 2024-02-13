@@ -14,9 +14,7 @@ public class NavigationPanel {
             findToElementInList = $$(".Meteor-Navigation__Link__desktop").findBy(text("NEW PRODUCTS")),
             checkToList = $(".page-width"),
             openToLink = $$(".Meteor-Navigation__Link__desktop").findBy(text("SHOP HOME")),
-
-            openToItem= $(".page-container").$(byText("SHOP Coffee Products")),
-
+            openToItem = $(".page-container").$(byText("SHOP Coffee Products")),
             checkToText = $(".section-header__title");
 
 
@@ -25,6 +23,7 @@ public class NavigationPanel {
         checkToText.shouldHave(text("New Products"));
         return this;
     }
+
     @Step("Открываем страницу New Products")
     public NavigationPanel findElementInList() {
         findToElementInList.click();
@@ -36,6 +35,7 @@ public class NavigationPanel {
         openToItem.click();
         return this;
     }
+
     @Step("Проверяем отображение не пустого списка эементов")
     public NavigationPanel checkElementList() {
         checkToList.shouldBe(visible);

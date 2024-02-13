@@ -13,8 +13,8 @@ import org.junit.jupiter.api.Test;
 public class RequestPageTest extends TestBase {
     @Test
     @Severity(SeverityLevel.NORMAL)
-    @Story("Проверка заполнение полей формы Submit a request")
-    @DisplayName("Проверка заполнение основных полей формы Submit a request")
+    @Story("Проверка заполнения полей формы Submit a request")
+    @DisplayName("Проверка заполнения основных полей формы Submit a request")
     void returnPageTest() {
         mainPage.openPage()
                 .openSupport();

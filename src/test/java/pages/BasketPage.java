@@ -17,12 +17,12 @@ public class BasketPage {
             finalCheckToBasket = $("#shopify-section-template--16098691350679__main");
 
 
-
     @Step("Выбрать товар")
     public BasketPage selectItem() {
         choseItem.click();
         return this;
     }
+
     @Step("Добавить товар в корзину ")
     public BasketPage addToBasket() {
         addBasket.click();
