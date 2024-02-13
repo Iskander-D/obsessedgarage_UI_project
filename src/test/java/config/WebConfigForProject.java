@@ -17,6 +17,8 @@ public class WebConfigForProject {
         Configuration.browserVersion = webConfig.getBrowserVersion();
         Configuration.browserSize = webConfig.getBrowserSize();
         Configuration.pageLoadStrategy = "eager";
+        Configuration.holdBrowserOpen = true; // need delete
+
 
         if (webConfig.isRemote()) {
             Configuration.remote = webConfig.getRemoteUrl();

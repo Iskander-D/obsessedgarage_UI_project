@@ -14,16 +14,20 @@ public class RequestPageTest extends TestBase {
     @Test
     @Severity(SeverityLevel.NORMAL)
     @Story("Проверка заполнение полей формы Submit a request")
-    @DisplayName("Проверка заполнение полей формы Submit a request")
+    @DisplayName("Проверка заполнение основных полей формы Submit a request")
     void returnPageTest() {
         mainPage.openPage()
                 .openSupport();
         supportPage.submitRequest();
         requestPage.setEmail(testData.userEmail)
-                .setName(testData.name);
-
+                .setName(testData.name)
+                .setNumberOrder(testData.number)
+                .setSubject(testData.subject)
+                .checkResultEmail()
+                .checkResultName()
+                .checkResultNumberOrder()
+                .checkResultSubject();
 
     }
-
 
 }

@@ -20,8 +20,6 @@ public class NavigationPanel {
             checkToText = $(".section-header__title");
 
 
-
-
     @Step("Проверяем наличие заголовка New Products")
     public NavigationPanel checkText() {
         checkToText.shouldHave(text("New Products"));
