@@ -22,7 +22,7 @@ public class NavigationPanelTest extends TestBase {
     void checkContainListPagesTest() {
         mainPage.openPage();
         navigationPanel.findElementInList()
-                .checkElementInList()
+                .checkElementList()
                 .checkText();
 
     }

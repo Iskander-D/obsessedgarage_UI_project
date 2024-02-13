@@ -15,7 +15,7 @@ public class NavigationPanel {
             checkToList = $(".page-width"),
             openToLink = $$(".Meteor-Navigation__Link__desktop").findBy(text("SHOP GARAGE")),
 
-            findToByBrand = $(".m-container").$(byText("Audio")),
+            findToByBrand = $(".meteor-menu").$(byText("Audio")),
 
             checkToText = $(".section-header__title");
 
