@@ -4,6 +4,7 @@ import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
 
 @Epic("UI")
 @Owner("Aleksandr Drozenko")
@@ -12,6 +13,7 @@ import org.junit.jupiter.api.Test;
 @DisplayName("Тестирование страницы Returns")
 public class ReturnPageTest extends TestBase {
     @Test
+    @Timeout(10000)
     @Severity(SeverityLevel.NORMAL)
     @Story("Проверка открытия страницы Returns")
     @DisplayName("Проверка элементов страницы Returns")

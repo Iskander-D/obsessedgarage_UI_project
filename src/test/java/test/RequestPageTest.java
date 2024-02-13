@@ -4,6 +4,7 @@ import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
 
 @Epic("UI")
 @Owner("Aleksandr Drozenko")
@@ -12,6 +13,7 @@ import org.junit.jupiter.api.Test;
 @DisplayName("Тестирование страницы Submit a request")
 public class RequestPageTest extends TestBase {
     @Test
+    @Timeout(10000)
     @Severity(SeverityLevel.NORMAL)
     @Story("Проверка заполнения полей формы Submit a request")
     @DisplayName("Проверка заполнения основных полей формы Submit a request")
