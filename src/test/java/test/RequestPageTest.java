@@ -13,7 +13,7 @@ import org.junit.jupiter.api.Timeout;
 @DisplayName("Тестирование страницы Submit a request")
 public class RequestPageTest extends TestBase {
     @Test
-    @Timeout(300000)
+    @Timeout(10000)
     @Severity(SeverityLevel.NORMAL)
     @Story("Проверка заполнения полей формы Submit a request")
     @DisplayName("Проверка заполнения основных полей формы Submit a request")
