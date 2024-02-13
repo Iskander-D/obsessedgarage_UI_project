@@ -6,16 +6,14 @@ import config.ConfigReader;
 import config.WebConfig;
 import config.WebConfigForProject;
 
+import data.TestData;
 import helpers.Attach;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 
 import org.junit.jupiter.api.BeforeEach;
-import pages.BasketPage;
-import pages.MainPage;
-import pages.NavigationPanel;
-import pages.ReturnPage;
+import pages.*;
 
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 
@@ -26,6 +24,8 @@ public class TestBase {
     NavigationPanel navigationPanel = new NavigationPanel();
     BasketPage basketPage = new BasketPage();
     ReturnPage supportPage = new ReturnPage();
+    RequestPage requestPage = new RequestPage();
+    TestData testData = new TestData();
     private static final WebConfig config = ConfigReader.Instance.read();
 
 
