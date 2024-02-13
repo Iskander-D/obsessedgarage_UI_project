@@ -26,20 +26,6 @@ public class MainPageTitleTest extends TestBase {
             assertThat(actualTitle).isEqualTo(expectedTitle);
         });
     }
-
-
-
-
-//
-//    @Test
-//    @Severity(SeverityLevel.NORMAL)
-//    @Story("Проверка открытия страницы <Связаться с нами>  ")
-//    @DisplayName("Проверка отображения формы для отправки запроса")
-//    void emailSubscribeTest() {
-//        mainPage.openPage()
-//                .contactMenu()
-//                .checkPage();
-//    }
 }
 
 

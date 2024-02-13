@@ -15,6 +15,7 @@ import org.junit.jupiter.api.BeforeEach;
 import pages.BasketPage;
 import pages.MainPage;
 import pages.NavigationPanel;
+import pages.ReturnPage;
 
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 
@@ -24,7 +25,7 @@ public class TestBase {
     MainPage mainPage = new MainPage();
     NavigationPanel navigationPanel = new NavigationPanel();
     BasketPage basketPage = new BasketPage();
-
+    ReturnPage supportPage = new ReturnPage();
     private static final WebConfig config = ConfigReader.Instance.read();
 
 

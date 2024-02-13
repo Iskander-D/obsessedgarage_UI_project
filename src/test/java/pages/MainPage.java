@@ -13,9 +13,8 @@ public class MainPage {
     private final SelenideElement
             search = $(".site-header__search-input"),
             checkSearchResult= $("#MainContent"),
+            openFooterMenus = $("#FooterMenus");
 
-            contactUS = $(byText("CONTACT US")),
-            checkToPage = $(".container");
 
 
     @Step("Открыть главную страницу")
@@ -34,21 +33,11 @@ public class MainPage {
         checkSearchResult.shouldHave(text(expectedName));
         return this;
     }
-
-
-
-    @Step("Находим ссылку Связаться с нами ")
-    public MainPage contactMenu() {
-        contactUS.click();
+    @Step("Открываем ссылку Support")
+    public MainPage openSupport() {
+        openFooterMenus.find(byText("Support")).click();
         return this;
     }
-
-    @Step("Проверяем что открылась страница для отправки запроса")
-    public MainPage checkPage() {
-        checkToPage.shouldBe(visible).shouldHave(text("Submit a request"));
-        return this;
-    }
-
 
 }
 

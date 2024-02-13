@@ -33,7 +33,7 @@ public class NavigationPanel {
         return this;
     }
 
-    @Step("Открываем товар  SHOP Coffee Products")
+    @Step("Открываем товар SHOP Coffee Products")
     public NavigationPanel openItem() {
         openToItem.click();
         return this;
@@ -49,7 +49,6 @@ public class NavigationPanel {
         openToLink.click();
         return this;
     }
-
 
     @Step("Проверяем наличие заголовка Coffee")
     public NavigationPanel checkTextPage() {
