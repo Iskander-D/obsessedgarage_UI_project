@@ -1,11 +1,21 @@
 package pages;
 
+
+import com.codeborne.selenide.CollectionCondition;
+import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 
+import java.util.List;
+
+import static com.codeborne.selenide.CollectionCondition.size;
+import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.$$;
+
 
 public class BasketPage {
     private final SelenideElement
@@ -14,7 +24,9 @@ public class BasketPage {
             openToBasket = $(byText("View cart")),
             checkToBasket = $(".cart__item"),
             clearToBasket = $(byText("Clear cart")),
-            finalCheckToBasket = $("#shopify-section-template--16098691350679__main");
+            finalCheckToBasket = $("#shopify-section-template--16098691350679__main"),
+            addAtQuantityItem = $(".icon-plus");
+    private ElementsCollection checkAtQuantityItem = $$(".hidden-label");
 
 
     @Step("Выбрать товар")
@@ -52,5 +64,18 @@ public class BasketPage {
         finalCheckToBasket.shouldBe(visible).shouldHave(text("Your cart is currently empty"));
         return this;
     }
+
+    @Step("Увеличить количество товар в корзине")
+    public BasketPage addQuantityItem() {
+        addAtQuantityItem.click();
+        return this;
+    }
+
+    @Step("Проверить количество товар в корзине")
+    public BasketPage checkQuantityItem() {
+        checkAtQuantityItem.shouldHave(CollectionCondition.sizeGreaterThan(1));
+        return this;
+    }
+
 
 }

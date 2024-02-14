@@ -17,7 +17,7 @@ public class NavigationPanelTest extends TestBase {
     @Severity(SeverityLevel.NORMAL)
     @Story("Проверка открытия страницы New Products")
     @DisplayName("Проверка элементов страницы New Products")
-    void checkContainListPagesTest() {
+    void checkNewProductListTest() {
         mainPage.openPage();
         navigationPanel.findElementInList()
                 .checkElementList()
@@ -29,7 +29,7 @@ public class NavigationPanelTest extends TestBase {
     @Severity(SeverityLevel.NORMAL)
     @Story("Проверка открытия страницы SHOP Coffee Products")
     @DisplayName("Проверка элементов страницы SHOP Coffee Products")
-    void checkPageHeaderTest() {
+    void checkPageCoffeeProductsTest() {
         mainPage.openPage();
         navigationPanel.openLink()
                 .openItem()

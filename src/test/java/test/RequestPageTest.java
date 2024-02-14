@@ -16,7 +16,7 @@ public class RequestPageTest extends TestBase {
     @Severity(SeverityLevel.NORMAL)
     @Story("Проверка заполнения полей формы Submit a request")
     @DisplayName("Проверка заполнения основных полей формы Submit a request")
-    void returnPageTest() {
+    void requestPageTest() {
         mainPage.openPage()
                 .openSupport();
         supportPage.submitRequest();

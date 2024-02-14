@@ -1,10 +1,12 @@
 package test;
 
+
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
+
 
 @Epic("UI")
 @Owner("Aleksandr Drozenko")
@@ -42,4 +44,20 @@ public class BasketPageTest extends TestBase {
                 .finalCheckBasket();
     }
 
+    @Severity(SeverityLevel.NORMAL)
+    @ValueSource(strings = {"Angelwax", "Pressol"})
+    @ParameterizedTest(name = "Добавляем товар: {0}")
+    @Story("Увеличение количества товаров в корзине")
+    @DisplayName("Проверка увеличения количества товара в корзине.")
+    void checkQuantityInBasket(String searchQuery) {
+        mainPage.openPage()
+                .searchItem(searchQuery);
+        basketPage.selectItem()
+                .addQuantityItem()
+                .addToBasket()
+                .openBasket()
+                .checkQuantityItem();
+
+
+    }
 }
