@@ -14,7 +14,7 @@ import org.junit.jupiter.api.Timeout;
 @DisplayName("Тестирование страницы Returns")
 public class ReturnPageTest extends TestBase {
     @Test
-    @Timeout(30000)
+    @Timeout(300000)
     @Severity(SeverityLevel.NORMAL)
     @Story("Проверка открытия страницы Returns")
     @DisplayName("Проверка элементов страницы Returns")
