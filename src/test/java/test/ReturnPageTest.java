@@ -6,7 +6,6 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 
-
 @Epic("UI")
 @Owner("Aleksandr Drozenko")
 @Feature("Тестирование страницы Returns")
@@ -19,9 +18,9 @@ public class ReturnPageTest extends TestBase {
     @DisplayName("Проверка элементов страницы Returns")
     void returnPageTest() {
         mainPage.openPage()
-                .openSupport();
-        supportPage.openReturnPage()
-                .checkTextReturnPage();
+                .openSupportPage();
+        supportPage.openReturnPage();
+        returnPage.checkTextReturnPage();
 
     }
 

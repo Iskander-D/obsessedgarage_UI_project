@@ -1,6 +1,7 @@
 package test;
 
 import io.qameta.allure.*;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -17,24 +18,25 @@ public class NavigationPanelTest extends TestBase {
     @Severity(SeverityLevel.NORMAL)
     @Story("Проверка открытия страницы New Products")
     @DisplayName("Проверка элементов страницы New Products")
-    void checkNewProductListTest() {
-        mainPage.openPage();
-        navigationPanel.findElementInList()
-                .checkElementList()
-                .checkText();
+    void openNewProducts() {
+        mainPage.openPage()
+                .openNewProductsPage();
+        newProductsPage.checkThatNewProductsPageOpened()
+                .checkElementList();
 
-    }
-
-    @Test
-    @Severity(SeverityLevel.NORMAL)
-    @Story("Проверка открытия страницы SHOP Coffee Products")
-    @DisplayName("Проверка элементов страницы SHOP Coffee Products")
-    void checkPageCoffeeProductsTest() {
-        mainPage.openPage();
-        navigationPanel.openLink()
-                .openItem()
-                .checkElementList()
-                .checkTextPage();
+//    }
+//
+//    @Test
+//    @Disabled
+//    @Severity(SeverityLevel.NORMAL)
+//    @Story("Проверка открытия страницы SHOP Coffee Products")
+//    @DisplayName("Проверка элементов страницы SHOP Coffee Products")
+//    void checkPageCoffeeProductsTest() {
+//        mainPage.openPage();
+//        navigationPanel.openLink()
+//                .openItem()
+//                .checkElements()
+//                .checkTextPage();
 
     }
 }

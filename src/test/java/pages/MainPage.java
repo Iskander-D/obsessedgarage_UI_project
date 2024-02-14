@@ -12,13 +12,19 @@ import static org.assertj.core.error.ShouldBe.shouldBe;
 public class MainPage {
     private final SelenideElement
             search = $(".site-header__search-input"),
-            checkSearchResult = $("#MainContent"),
-            openFooterMenus = $("#FooterMenus");
+            openToNewProduct = $$(".Meteor-Navigation__Link__desktop").findBy(text("NEW PRODUCTS")),
+            openToSupportPage = $("#FooterMenus");
 
 
     @Step("Открыть главную страницу")
     public MainPage openPage() {
         open(baseUrl);
+        return this;
+    }
+
+    @Step("Открыть ссылку Support")
+    public MainPage openSupportPage() {
+        openToSupportPage.find(byText("Support")).click();
         return this;
     }
 
@@ -28,17 +34,12 @@ public class MainPage {
         return this;
     }
 
-    @Step("Проверяем результат поиска")
-    public MainPage checkResult(String expectedName) {
-        checkSearchResult.shouldHave(text(expectedName));
+    @Step("Открыть страницу New Products")
+    public MainPage openNewProductsPage() {
+        openToNewProduct.click();
         return this;
     }
 
-    @Step("Открыть ссылку Support")
-    public MainPage openSupport() {
-        openFooterMenus.find(byText("Support")).click();
-        return this;
-    }
 
 }
 

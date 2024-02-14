@@ -11,7 +11,7 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 @Feature("Тестирование функционала поиска")
 @Tag("ui")
 @DisplayName("Тестирование функционала поиска")
-public class SearchMenuTest extends TestBase {
+public class SearchTest extends TestBase {
 
     @CsvFileSource(resources = "/searchResultShouldContainExpectedText.csv", delimiter = '|')
     @Severity(SeverityLevel.NORMAL)
@@ -22,7 +22,7 @@ public class SearchMenuTest extends TestBase {
     @Tag("simple")
     void searchResultShouldContainTextTest(String searchQuery, String expectedName) {
         mainPage.openPage()
-                .searchItem(searchQuery)
-                .checkResult(expectedName);
+                .searchItem(searchQuery);
+        searchPage.checkResult(expectedName);
     }
 }

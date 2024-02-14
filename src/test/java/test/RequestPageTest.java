@@ -6,7 +6,6 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 
-
 @Epic("UI")
 @Owner("Aleksandr Drozenko")
 @Feature("Тестирование страницы Submit a request")
@@ -19,8 +18,9 @@ public class RequestPageTest extends TestBase {
     @DisplayName("Проверка заполнения основных полей формы Submit a request")
     void requestPageTest() {
         mainPage.openPage()
-                .openSupport();
-        supportPage.submitRequest();
+                .openSupportPage();
+        supportPage.openReturnPage();
+        returnPage.openSubmitRequestPage();
         requestPage.setEmail(testData.userEmail)
                 .setName(testData.name)
                 .setNumberOrder(testData.number)

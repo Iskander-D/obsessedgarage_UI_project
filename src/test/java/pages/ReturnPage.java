@@ -9,15 +9,10 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class ReturnPage {
     private final SelenideElement
-            openArticles = $(".article-list "),
             textToReturnPage = $(".wysiwyg-font-size-x-large"),
             submitAtRequest = $("a.submit-a-request");
 
-    @Step("Открываем ссылку Returns ")
-    public ReturnPage openReturnPage() {
-        openArticles.find(byText("Returns")).click();
-        return this;
-    }
+
 
     @Step("Проверяем заголовок страницы Returns ")
     public ReturnPage checkTextReturnPage() {
@@ -26,7 +21,7 @@ public class ReturnPage {
     }
 
     @Step("Открываем ссылку Submit a Request")
-    public ReturnPage submitRequest() {
+    public ReturnPage openSubmitRequestPage() {
         submitAtRequest.click();
         return this;
     }

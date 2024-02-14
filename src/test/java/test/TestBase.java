@@ -23,9 +23,12 @@ public class TestBase {
     MainPage mainPage = new MainPage();
     NavigationPanel navigationPanel = new NavigationPanel();
     BasketPage basketPage = new BasketPage();
-    ReturnPage supportPage = new ReturnPage();
+    ReturnPage returnPage = new ReturnPage();
     RequestPage requestPage = new RequestPage();
     TestData testData = new TestData();
+    SupportPage supportPage = new SupportPage();
+    SearchPage searchPage = new SearchPage();
+    NewProductsPage newProductsPage = new NewProductsPage();
     private static final WebConfig config = ConfigReader.Instance.read();
 
 
