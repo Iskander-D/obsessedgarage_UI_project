@@ -17,7 +17,7 @@ public class NavigationPanelTest extends TestBase {
     @Severity(SeverityLevel.NORMAL)
     @Story("Проверка открытия страницы New Products")
     @DisplayName("Проверка элементов страницы New Products")
-    void openNewProducts() {
+    void openNewProductsTest() {
         mainPage.openPage();
         navigationPanel.openNewProductsPage();
         newProductsPage.checkThatNewProductsPageOpened()

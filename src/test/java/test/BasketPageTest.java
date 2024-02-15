@@ -48,7 +48,7 @@ public class BasketPageTest extends TestBase {
     @ParameterizedTest(name = "Добавляем товар: {0}")
     @Story("Увеличение количества товаров в корзине")
     @DisplayName("Проверка увеличения количества товара в корзине.")
-    void checkQuantityInBasket(String searchQuery) {
+    void checkQuantityInBasketTest(String searchQuery) {
         mainPage.openPage()
                 .searchItem(searchQuery);
         searchPage.openFirstProductInList();
