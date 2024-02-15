@@ -33,7 +33,7 @@ public class NavigationPanelTest extends TestBase {
         mainPage.openPage();
         navigationPanel.openShopHomePage();
         shopHomePage.openShopCoffeeProducts();
-        shopCoffeeProducts.checkThatNewShopCoffeeProductsPageOpened()
+        shopCoffeeProductsPage.checkThatNewShopCoffeeProductsPageOpened()
                 .checkElementList();
 
     }
