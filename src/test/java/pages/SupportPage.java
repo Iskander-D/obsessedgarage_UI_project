@@ -11,7 +11,6 @@ public class SupportPage {
 
             openToReturnPage = $(".article-list ");
 
-
     @Step("Открываем ссылку Returns ")
     public SupportPage openReturnPage() {
         openToReturnPage.find(byText("Returns")).click();

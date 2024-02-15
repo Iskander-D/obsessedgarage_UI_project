@@ -13,7 +13,6 @@ public class ReturnPage {
             submitAtRequest = $("a.submit-a-request");
 
 
-
     @Step("Проверяем заголовок страницы Returns ")
     public ReturnPage checkTextReturnPage() {
         textToReturnPage.shouldHave(text("How do I start a Return?"));

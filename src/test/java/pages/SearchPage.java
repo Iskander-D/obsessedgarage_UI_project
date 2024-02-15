@@ -17,6 +17,7 @@ public class SearchPage {
         checkSearchResult.shouldHave(text(expectedName));
         return this;
     }
+
     @Step("Выбрать товар")
     public SearchPage openFirstProductInList() {
         choseItem.click();
