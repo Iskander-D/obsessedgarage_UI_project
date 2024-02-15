@@ -45,7 +45,7 @@ ____
 ____
 - :white_check_mark: Проверка заголовка главной страницы
 - :white_check_mark: Параметризованная проверка поиска товара
-- :white_check_mark: Проверка наличия элементов навигационной панели
+- :white_check_mark: Проверка открытия страниц навигационной панели
 - :white_check_mark: Проверка наличия товара в корзине после его добавления
 - :white_check_mark: Проверка наличия товара в корзине после его удаления
 - :white_check_mark: Проверка увеличения количества товара в корзине 
@@ -88,7 +88,7 @@ ____
 ### *Allure TestOps Dashboard*
 
 <p align="center">  
-<img title="Allure TestOps Dashboard" src="media/screenshots/AllureTO.png">  
+<img title="Allure TestOps Dashboard" src="media/screenshots/AllureDash.png">  
 </p>  
 
 ### *Параметризованные тесты*
