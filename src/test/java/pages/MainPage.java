@@ -12,8 +12,6 @@ import static org.assertj.core.error.ShouldBe.shouldBe;
 public class MainPage {
     private final SelenideElement
             search = $(".site-header__search-input"),
-            openToNewProduct = $$(".Meteor-Navigation__Link__desktop").findBy(text("NEW PRODUCTS")),
-
             openToSupportPage = $("#FooterMenus");
 
 
@@ -35,12 +33,8 @@ public class MainPage {
         return this;
     }
 
-    @Step("Открыть страницу New Products")
-    public MainPage openNewProductsPage() {
-        openToNewProduct.click();
-        return this;
-    }
-
 }
+
+
 
 

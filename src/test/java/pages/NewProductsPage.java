@@ -13,7 +13,7 @@ import static com.codeborne.selenide.Selenide.$$;
 public class NewProductsPage {
     private final SelenideElement
             checkToText = $(".section-header__title");
-//            checkToList = $(".page-width");
+
     private ElementsCollection checkToList = $$(".grid-item__content");
 
     @Step("Проверка наличие заголовка New Products")
