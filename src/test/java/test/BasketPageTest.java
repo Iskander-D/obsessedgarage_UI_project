@@ -31,7 +31,7 @@ public class BasketPageTest extends TestBase {
     @ValueSource(strings = {"koch", "tool grid"})
     @ParameterizedTest(name = "Добавляем товар: {0}")
     @Story("Удаление товара из корзины")
-    @DisplayName("Проверка наличия товара в корзине после его удаления.")
+    @DisplayName("Проверка удаления товара из корзины.")
     void deleteItemFromBasketTest(String value) {
         mainPage.openPage()
                 .searchItem(value);

@@ -1,8 +1,11 @@
 package test;
 
 import io.qameta.allure.*;
-import org.junit.jupiter.api.*;
-import static com.codeborne.selenide.Selenide.*;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.Test;
+
+import static com.codeborne.selenide.Selenide.title;
 import static io.qameta.allure.Allure.step;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
