@@ -12,7 +12,7 @@ public class SearchPage {
             choseItem = $(".grid-product__title");
 
 
-    @Step("Проверяем результат поиска")
+    @Step("Проверить результат поиска")
     public SearchPage checkResult(String expectedName) {
         checkSearchResult.shouldHave(text(expectedName));
         return this;

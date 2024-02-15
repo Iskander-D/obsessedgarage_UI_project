@@ -12,13 +12,13 @@ public class ReturnPage {
             submitAtRequest = $("a.submit-a-request");
 
 
-    @Step("Проверяем заголовок страницы Returns ")
+    @Step("Проверить заголовок страницы Returns")
     public ReturnPage checkTextReturnPage() {
         textToReturnPage.shouldHave(text("How do I start a Return?"));
         return this;
     }
 
-    @Step("Открываем ссылку Submit a Request")
+    @Step("Открыть ссылку Submit a Request")
     public ReturnPage openSubmitRequestPage() {
         submitAtRequest.click();
         return this;

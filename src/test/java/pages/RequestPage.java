@@ -34,19 +34,19 @@ public class RequestPage {
         return this;
     }
 
-    @Step("Проверка строки Имя ")
+    @Step("Проверка строки Имя")
     public RequestPage checkResultName() {
         setAtName.shouldBe(visible);
         return this;
     }
 
-    @Step("Ввести номер заказа ")
+    @Step("Ввести номер заказа")
     public RequestPage setNumberOrder(String value) {
         setAtNumberOrder.setValue(value);
         return this;
     }
 
-    @Step("Проверка строки 'номер заказа' ")
+    @Step("Проверить строку 'номер заказа' ")
     public RequestPage checkResultNumberOrder() {
         setAtNumberOrder.shouldBe(visible);
         return this;
@@ -58,7 +58,7 @@ public class RequestPage {
         return this;
     }
 
-    @Step("Проверка строки 'наименование продукта' ")
+    @Step("Проверить строку 'наименование продукта' ")
     public RequestPage checkResultSubject() {
         setAtSubject.shouldBe(visible);
         return this;

@@ -26,19 +26,19 @@ public class BasketPage {
 
 
 
-    @Step("Перейти в корзину ")
+    @Step("Перейти в корзину")
     public BasketPage openBasket() {
         openToBasket.click();
         return this;
     }
 
-    @Step("Проверить наличие товара в корзине ")
+    @Step("Проверить наличие товара в корзине")
     public BasketPage checkBasket() {
         checkToBasket.shouldBe(exist);
         return this;
     }
 
-    @Step("Удалить товар из корзины ")
+    @Step("Удалить товар из корзины")
     public BasketPage clearBasket() {
         clearToBasket.click();
         return this;
