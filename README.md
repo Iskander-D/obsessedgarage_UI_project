@@ -71,7 +71,7 @@ ____
 <a id="jenkins"></a>
 ## <img alt="Jenkins" height="25" src="media/logo/Jenkins.svg" width="25"/></a><a name="Сборка"></a>Сборка в [Jenkins](https://jenkins.autotests.cloud/job/garage_UI_project/)</a>
 <p align="center">  
-<a href="https://jenkins.autotests.cloud/job/garage_UI_project/"><img src="media/screenshots/Jenkins.png" alt="Jenkins"/></a>  
+<a href="https://jenkins.autotests.cloud/job/garage_UI_project/"><img src="media/screenshots/JenkinsBuild.png" alt="Jenkins"/></a>  
 </p>
 
 <a id="allure"></a>
@@ -80,7 +80,7 @@ ____
 ### *Основная страница отчёта*
 
 <p align="center">  
-<img title="Allure Overview Dashboard" src="media/screenshots/AllureRep.png">  
+<img title="Allure Overview Dashboard" src="media/screenshots/AllureReport.png">  
 </p>  
 
 <a id="allure-testops"></a>
@@ -95,21 +95,21 @@ ____
 
 
 <p align="center">  
-<img title="Allure TestOps Tests" src="media/screenshots/AllurePar.png">  
+<img title="Allure TestOps Tests" src="media/screenshots/AllureParam.png">  
 </p>
 
 <a id="jira"></a>
 ## <img src="media/logo/Jira.svg" width="25" height="25"  alt="Allure"/></a>Интеграция с <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-1098">Jira</a>
 
 <p align="center">  
-<img title="Jira" src="media/screenshots/Jira.png">  
+<img title="Jira" src="media/screenshots/JiraIN.png">  
 </p>
 
 <a id="telegram"></a>
 ## <img src="media/logo/Telegram.svg" width="25" height="25"  alt="Allure"/></a>Уведомление в Telegram 
 
 <p align="center">  
-<img title="Allure Overview Dashboard" src="media/screenshots/TG.png">  
+<img title="Allure Overview Dashboard" src="media/screenshots/Telega.png">  
 </p>
 
 <a id="video"></a>
