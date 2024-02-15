@@ -29,6 +29,8 @@ public class TestBase {
     SupportPage supportPage = new SupportPage();
     SearchPage searchPage = new SearchPage();
     NewProductsPage newProductsPage = new NewProductsPage();
+    ShopHomePage shopHomePage = new ShopHomePage();
+    ShopCoffeeProducts shopCoffeeProducts = new ShopCoffeeProducts();
     private static final WebConfig config = ConfigReader.Instance.read();
 
 

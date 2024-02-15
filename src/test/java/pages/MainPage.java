@@ -13,6 +13,7 @@ public class MainPage {
     private final SelenideElement
             search = $(".site-header__search-input"),
             openToNewProduct = $$(".Meteor-Navigation__Link__desktop").findBy(text("NEW PRODUCTS")),
+
             openToSupportPage = $("#FooterMenus");
 
 
@@ -39,7 +40,6 @@ public class MainPage {
         openToNewProduct.click();
         return this;
     }
-
 
 }
 
