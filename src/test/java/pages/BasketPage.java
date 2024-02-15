@@ -19,27 +19,17 @@ import static com.codeborne.selenide.Selenide.$$;
 
 public class BasketPage {
     private final SelenideElement
-            choseItem = $(".grid-product__title"),
-            addBasket = $(".product-single__form"),
+
+
             openToBasket = $(byText("View cart")),
             checkToBasket = $(".cart__item"),
             clearToBasket = $(byText("Clear cart")),
-            finalCheckToBasket = $("#shopify-section-template--16098691350679__main"),
-            addAtQuantityItem = $(".icon-plus");
+            finalCheckToBasket = $("#shopify-section-template--16098691350679__main");
+
     private ElementsCollection checkAtQuantityItem = $$(".hidden-label");
 
 
-    @Step("Выбрать товар")
-    public BasketPage selectItem() {
-        choseItem.click();
-        return this;
-    }
 
-    @Step("Добавить товар в корзину ")
-    public BasketPage addToBasket() {
-        addBasket.click();
-        return this;
-    }
 
     @Step("Перейти в корзину ")
     public BasketPage openBasket() {
@@ -65,11 +55,6 @@ public class BasketPage {
         return this;
     }
 
-    @Step("Увеличить количество товар в корзине")
-    public BasketPage addQuantityItem() {
-        addAtQuantityItem.click();
-        return this;
-    }
 
     @Step("Проверить количество товар в корзине")
     public BasketPage checkQuantityItem() {

@@ -31,6 +31,7 @@ public class TestBase {
     NewProductsPage newProductsPage = new NewProductsPage();
     ShopHomePage shopHomePage = new ShopHomePage();
     ShopCoffeeProducts shopCoffeeProducts = new ShopCoffeeProducts();
+    ItemPage itemPage = new ItemPage();
     private static final WebConfig config = ConfigReader.Instance.read();
 
 

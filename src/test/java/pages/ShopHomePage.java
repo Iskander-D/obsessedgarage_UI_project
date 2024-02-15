@@ -13,7 +13,6 @@ public class ShopHomePage {
             openToShopCoffeeProducts = $(".page-container").$(byText("SHOP Coffee Products"));
 
 
-
     @Step("Открыть товар SHOP Coffee Products")
     public ShopHomePage openShopCoffeeProducts() {
         openToShopCoffeeProducts.click();

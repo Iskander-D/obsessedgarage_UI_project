@@ -14,11 +14,13 @@ public class ShopCoffeeProducts {
 
             checkNewShopCoffeeProductsPageOpened = $(".section-header__title");
     private ElementsCollection checkToList = $$(".grid-item__content");
+
     @Step("Проверить наличие заголовка Coffee")
     public ShopCoffeeProducts checkThatNewShopCoffeeProductsPageOpened() {
         checkNewShopCoffeeProductsPageOpened.shouldHave(text("Coffee"));
         return this;
     }
+
     @Step("Проверить отображение не пустого списка эементов")
     public ShopCoffeeProducts checkElementList() {
         checkToList.shouldHave(CollectionCondition.sizeGreaterThan(0));

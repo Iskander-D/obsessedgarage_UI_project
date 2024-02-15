@@ -9,12 +9,12 @@ import static com.codeborne.selenide.Selenide.$;
 public class SupportPage {
     private final SelenideElement
 
-            openArticles = $(".article-list ");
+            openToReturnPage = $(".article-list ");
 
 
     @Step("Открываем ссылку Returns ")
     public SupportPage openReturnPage() {
-        openArticles.find(byText("Returns")).click();
+        openToReturnPage.find(byText("Returns")).click();
         return this;
     }
 }

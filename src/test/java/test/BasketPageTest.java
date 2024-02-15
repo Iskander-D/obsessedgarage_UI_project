@@ -22,9 +22,9 @@ public class BasketPageTest extends TestBase {
     void putItemToBasketTest(String searchQuery) {
         mainPage.openPage()
                 .searchItem(searchQuery);
-        basketPage.selectItem()
-                .addToBasket()
-                .openBasket()
+        searchPage.openFirstProductInList();
+        itemPage.addToBasket();
+        basketPage.openBasket()
                 .checkBasket();
     }
 
@@ -36,9 +36,9 @@ public class BasketPageTest extends TestBase {
     void deleteItemFromBasketTest(String value) {
         mainPage.openPage()
                 .searchItem(value);
-        basketPage.selectItem()
-                .addToBasket()
-                .openBasket()
+        searchPage.openFirstProductInList();
+        itemPage.addToBasket();
+        basketPage.openBasket()
                 .checkBasket()
                 .clearBasket()
                 .finalCheckBasket();
@@ -52,10 +52,10 @@ public class BasketPageTest extends TestBase {
     void checkQuantityInBasket(String searchQuery) {
         mainPage.openPage()
                 .searchItem(searchQuery);
-        basketPage.selectItem()
-                .addQuantityItem()
-                .addToBasket()
-                .openBasket()
+        searchPage.openFirstProductInList();
+        itemPage.addQuantityItem()
+                .addToBasket();
+        basketPage.openBasket()
                 .checkQuantityItem();
 
 

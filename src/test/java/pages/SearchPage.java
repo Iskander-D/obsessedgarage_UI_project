@@ -8,11 +8,18 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class SearchPage {
     private final SelenideElement
-            checkSearchResult = $("#MainContent");
+            checkSearchResult = $("#MainContent"),
+            choseItem = $(".grid-product__title");
+
 
     @Step("Проверяем результат поиска")
     public SearchPage checkResult(String expectedName) {
         checkSearchResult.shouldHave(text(expectedName));
+        return this;
+    }
+    @Step("Выбрать товар")
+    public SearchPage openFirstProductInList() {
+        choseItem.click();
         return this;
     }
 }
