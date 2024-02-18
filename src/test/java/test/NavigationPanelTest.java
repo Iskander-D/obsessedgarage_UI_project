@@ -4,6 +4,10 @@ import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import pages.NavigationPanel;
+import pages.NewProductsPage;
+import pages.ShopCoffeeProductsPage;
+import pages.ShopHomePage;
 
 
 @Epic("UI")
@@ -12,6 +16,10 @@ import org.junit.jupiter.api.Test;
 @Tag("ui")
 @DisplayName("Тестирование функционала страниц навигационной панели")
 public class NavigationPanelTest extends TestBase {
+    ShopCoffeeProductsPage shopCoffeeProductsPage = new ShopCoffeeProductsPage();
+    ShopHomePage shopHomePage = new ShopHomePage();
+    NewProductsPage newProductsPage = new NewProductsPage();
+    NavigationPanel navigationPanel = new NavigationPanel();
 
     @Test
     @Severity(SeverityLevel.NORMAL)

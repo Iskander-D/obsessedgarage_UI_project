@@ -5,6 +5,8 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
+import pages.BasketPage;
+import pages.ItemPage;
 
 
 @Epic("UI")
@@ -13,6 +15,9 @@ import org.junit.jupiter.params.provider.ValueSource;
 @Tag("ui")
 @DisplayName("Тестирование функционала добавления и удаления товара")
 public class BasketPageTest extends TestBase {
+    ItemPage itemPage = new ItemPage();
+    BasketPage basketPage = new BasketPage();
+
     @Severity(SeverityLevel.NORMAL)
     @ValueSource(strings = {"sonic", "carpro"})
     @ParameterizedTest(name = "Добавляем товар: {0}")

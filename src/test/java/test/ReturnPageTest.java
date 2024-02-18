@@ -12,6 +12,8 @@ import org.junit.jupiter.api.Test;
 @Tag("ui")
 @DisplayName("Тестирование страницы Returns")
 public class ReturnPageTest extends TestBase {
+
+
     @Test
     @Severity(SeverityLevel.NORMAL)
     @Story("Проверка открытия страницы Returns")
