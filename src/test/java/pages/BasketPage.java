@@ -24,8 +24,6 @@ public class BasketPage {
     private ElementsCollection checkAtQuantityItem = $$(".hidden-label");
 
 
-
-
     @Step("Перейти в корзину")
     public BasketPage openBasket() {
         openToBasket.click();

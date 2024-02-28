@@ -21,11 +21,10 @@ public class RequestPageTest extends TestBase {
     @Severity(SeverityLevel.NORMAL)
     @Story("Проверка заполнения полей формы Submit a request")
     @DisplayName("Проверка заполнения основных полей формы Submit a request")
-    void requestPageTest() {
+    void requestPageTest() throws InterruptedException {
         mainPage.openPage()
-                .openSupportPage();
-        supportPage.openReturnPage();
-        returnPage.openSubmitRequestPage();
+                .openSubmitRequestPage();
+//        Thread.sleep(15000);
         requestPage.setEmail(testData.userEmail)
                 .setName(testData.name)
                 .setNumberOrder(testData.number)

@@ -11,7 +11,8 @@ import static com.codeborne.selenide.Selenide.open;
 public class MainPage {
     private final SelenideElement
             search = $(".site-header__search-input"),
-            openToSupportPage = $("#FooterMenus");
+            openToSupportPage = $(".footer__base-links"),
+            openToSubmitRequestPage = $("#FooterMenus");
 
 
     @Step("Открыть главную страницу")
@@ -29,6 +30,12 @@ public class MainPage {
     @Step("Ввести запрос в меню поиска")
     public MainPage searchItem(String searchQuery) {
         search.setValue(searchQuery).pressEnter();
+        return this;
+    }
+
+    @Step("Открыть страницу Submit a Request")
+    public MainPage openSubmitRequestPage() {
+        openToSubmitRequestPage.find(byText("Submit A Request")).click();
         return this;
     }
 

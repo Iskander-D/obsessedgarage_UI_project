@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.$;
 public class SupportPage {
     private final SelenideElement
 
-            openToReturnPage = $(".article-list ");
+            openToReturnPage = $(".articles ");
 
     @Step("Открыть ссылку Returns")
     public SupportPage openReturnPage() {
