@@ -49,7 +49,7 @@ public class BasketPageTest extends TestBase {
     }
 
     @Severity(SeverityLevel.NORMAL)
-    @ValueSource(strings = {"Angelwax", "Pressol"})
+    @ValueSource(strings = {"Angelwax", "Sonic"})
     @ParameterizedTest(name = "Добавляем товар: {0}")
     @Story("Увеличение количества товаров в корзине")
     @DisplayName("Проверка увеличения количества товара в корзине.")

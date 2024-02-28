@@ -18,9 +18,10 @@ public class ReturnPageTest extends TestBase {
     @Severity(SeverityLevel.NORMAL)
     @Story("Проверка открытия страницы Returns")
     @DisplayName("Проверка элементов страницы Returns")
-    void returnPageTest() {
+    void returnPageTest() throws InterruptedException {
         mainPage.openPage()
                 .openSupportPage();
+//        Thread.sleep(15000);
         supportPage.openReturnPage();
         returnPage.checkTextReturnPage();
 
