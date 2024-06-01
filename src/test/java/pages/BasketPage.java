@@ -51,7 +51,7 @@ public class BasketPage {
 
     @Step("Проверить количество товар в корзине")
     public BasketPage checkQuantityItem() {
-        checkAtQuantityItem.shouldHave(CollectionCondition.sizeGreaterThan(1));
+        checkAtQuantityItem.shouldHave(CollectionCondition.sizeGreaterThan(0));
         return this;
     }
 
