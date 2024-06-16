@@ -18,6 +18,7 @@ public class CurrencyTest extends TestBase {
 
     @CsvSource(value = {"koch", "tool grid"})
     @ParameterizedTest
+    @DisplayName("Проверка изменения денежной единицы")
     void changeCurrencyTest(String searchQuery) {
         mainPage.openPage()
                 .searchItem(searchQuery)
