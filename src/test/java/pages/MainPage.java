@@ -43,11 +43,6 @@ public class MainPage {
         return this;
     }
 
-    @Step("Проверить отображение денежной единицы Dhs")
-    public MainPage checkCurrency() {
-        checkToCurrency.shouldHave(text("Dhs")).shouldBe(exist);
-        return this;
-    }
 
     @Step("Открыть список  денежных единиц")
     public MainPage openListCurrency() {

@@ -18,7 +18,7 @@ public class WebConfigForProject {
         Configuration.browserVersion = webConfig.getBrowserVersion();
         Configuration.browserSize = webConfig.getBrowserSize();
         Configuration.pageLoadStrategy = "eager";
-        Configuration.holdBrowserOpen = true;
+
 
 
 

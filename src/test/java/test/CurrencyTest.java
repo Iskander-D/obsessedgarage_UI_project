@@ -21,7 +21,6 @@ public class CurrencyTest extends TestBase {
     void changeCurrencyTest(String searchQuery) {
         mainPage.openPage()
                 .searchItem(searchQuery)
-                .checkCurrency()
                 .openListCurrency()
                 .selectCurrency()
                 .checkThatCurrencyChanged();
