@@ -19,7 +19,7 @@ public class BasketPage {
             openToBasket = $(byText("View cart")),
             checkToBasket = $(".cart__item"),
             clearToBasket = $(byText("Clear cart")),
-            finalCheckToBasket = $("#shopify-section-template--16098691350679__main");
+            finalCheckToBasket = $(".section-header ");
 
     private ElementsCollection checkAtQuantityItem = $$(".hidden-label");
 
