@@ -17,7 +17,7 @@ public class NewProductsPage {
 
     @Step("Проверка наличие заголовка New Products")
     public NewProductsPage checkThatNewProductsPageOpened() {
-        checkToText.shouldHave(text("New Products"));
+        checkToText.shouldHave(text("Best Selling Appare"));
         return this;
     }
 
