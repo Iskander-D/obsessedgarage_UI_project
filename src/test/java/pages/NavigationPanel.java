@@ -11,7 +11,7 @@ public class NavigationPanel {
 
 
             openToShopHomePage = $$(".Meteor-Navigation__Link__desktop").findBy(text("SHOP HOME")),
-            openToNewProduct = $$(".Meteor-Navigation__Link__desktop").findBy(text("NEW PRODUCTS"));
+            openToNewProduct = $$("#meteor-desktop-nav").findBy(text("NEW PRODUCTS"));
 
 
     @Step("Открыть страницу SHOP HOME")

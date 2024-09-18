@@ -19,7 +19,7 @@ public class BasketPageTest extends TestBase {
     BasketPage basketPage = new BasketPage();
 
     @Severity(SeverityLevel.NORMAL)
-    @ValueSource(strings = {"sonic", "carpro"})
+    @ValueSource(strings = {"sonic", "aid"})
     @ParameterizedTest(name = "Добавляем товар: {0}")
     @Story("Добавление товара в корзину")
     @DisplayName("Проверка наличия товара в корзине после его добавления.")

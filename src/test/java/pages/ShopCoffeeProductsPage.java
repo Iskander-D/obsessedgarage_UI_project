@@ -12,12 +12,12 @@ import static com.codeborne.selenide.Selenide.$$;
 public class ShopCoffeeProductsPage {
     private final SelenideElement
 
-            checkNewShopCoffeeProductsPageOpened = $(".section-header__title");
-    private ElementsCollection checkToList = $$(".grid-item__content");
+            checkCoffeeBarPageOpened = $(".theme-block");
+    private ElementsCollection checkToList = $$(".new-grid");
 
     @Step("Проверить наличие заголовка Coffee")
-    public ShopCoffeeProductsPage checkThatNewShopCoffeeProductsPageOpened() {
-        checkNewShopCoffeeProductsPageOpened.shouldHave(text("Coffee"));
+    public ShopCoffeeProductsPage checkThatCoffeeBarPageOpened() {
+        checkCoffeeBarPageOpened.shouldHave(text("Coffee"));
         return this;
     }
 

@@ -7,14 +7,14 @@ import io.qameta.allure.Step;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 
-public class ShopHomePage {
+public class CoffeeBarPage {
     private final SelenideElement
 
-            openToShopCoffeeProducts = $(".page-container").$(byText("SHOP Coffee Products"));
+            openToCoffeeBarPage = $("#MainContent").$(byText("Shop"));
 
     @Step("Открыть товар SHOP Coffee Products")
-    public ShopHomePage openShopCoffeeProducts() {
-        openToShopCoffeeProducts.click();
+    public CoffeeBarPage openCoffeeBarPage() {
+        openToCoffeeBarPage.click();
         return this;
     }
 }
