@@ -1,5 +1,6 @@
 package test;
 
+import data.TestData;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -23,7 +24,7 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 @Tag("ui")
 @DisplayName("Проверка заголовка главной страницы")
 public class MainPageTitleTest extends TestBase {
-
+    TestData testData = new TestData();
     @Test
     @Severity(SeverityLevel.NORMAL)
     @Story("Проверка титла ")
@@ -38,16 +39,19 @@ public class MainPageTitleTest extends TestBase {
     }
     @Test
     @Severity(SeverityLevel.NORMAL)
-    @Story("Поля регистрации")
+    @Story("Регистрация")
     @DisplayName("Заполнение полей регистрации")
     void registrationTest() {
         mainPage.openPage();
         $(".site-nav").find(byText("Account")).click();
         $("#CustomerEmail").shouldBe(visible, Duration.ofSeconds(30)).click();
-        $("#CustomerEmail").sendKeys("fedor@gmail.com");
+        $("#CustomerEmail").sendKeys(testData.userEmail);
         $("#CustomerPassword").shouldBe(visible, Duration.ofSeconds(30)).click();
         $("#CustomerPassword").sendKeys("363000");
 //        $("#CustomerLoginForm").find(byText("Sign In")).click();
+//        $("#CustomerEmail").shouldHave(text(testData.userEmail));
+        $("#CustomerEmail").shouldBe(visible);
+        $("#CustomerPassword").shouldBe(visible);
 
 
     }
