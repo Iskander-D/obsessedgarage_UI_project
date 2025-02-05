@@ -13,7 +13,7 @@ public class MainPage {
     private final SelenideElement
             search = $(".site-header__search-input"),
             openToSupportPage = $(".footer__base-links"),
-            openToSubmitRequestPage = $("#FooterMenus"),
+            openToAffiliatePage = $("#FooterMenus"),
             checkToCurrency = $(".grid-product__price--from"),
             openToListCurrency = $(".disclosure-list__label"),
             selectToCurrency = $$(".disclosure-list__label").findBy(text("MUR"));
@@ -37,9 +37,9 @@ public class MainPage {
         return this;
     }
 
-    @Step("Открыть страницу Submit a Request")
-    public MainPage openSubmitRequestPage() {
-        openToSubmitRequestPage.find(byText("Submit A Request")).click();
+    @Step("Открыть страницу Affiliate")
+    public MainPage openAffiliatePage() {
+        openToAffiliatePage.find(byText("Affiliate")).click();
         return this;
     }
 
