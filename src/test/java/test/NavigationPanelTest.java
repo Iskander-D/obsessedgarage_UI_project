@@ -6,8 +6,8 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.NavigationPanel;
 import pages.NewProductsPage;
-import pages.ShopCoffeeProductsPage;
-import pages.CoffeeBarPage;
+import pages.ShopHafeleProductsPage;
+import pages.ShopHomePage;
 
 
 @Epic("UI")
@@ -16,8 +16,8 @@ import pages.CoffeeBarPage;
 @Tag("ui")
 @DisplayName("Тестирование функционала страниц навигационной панели")
 public class NavigationPanelTest extends TestBase {
-    ShopCoffeeProductsPage shopCoffeeProductsPage = new ShopCoffeeProductsPage();
-    CoffeeBarPage shopHomePage = new CoffeeBarPage();
+    ShopHafeleProductsPage shopHafeleProductsPage = new ShopHafeleProductsPage();
+    ShopHomePage shopHomePage = new ShopHomePage();
     NewProductsPage newProductsPage = new NewProductsPage();
     NavigationPanel navigationPanel = new NavigationPanel();
 
@@ -35,13 +35,13 @@ public class NavigationPanelTest extends TestBase {
 
     @Test
     @Severity(SeverityLevel.NORMAL)
-    @Story("Проверка открытия страницы The Coffee Bar")
-    @DisplayName("Проверка элементов страницы The Coffee Bar")
-    void openShopCoffeeProducts() {
+    @Story("Проверка открытия страницы Shop Hafele Products")
+    @DisplayName("Проверка элементов страницы Shop Hafele Products")
+    void openShopHafeleProductsPage()  {
         mainPage.openPage();
         navigationPanel.openShopHomePage();
-        shopHomePage.openCoffeeBarPage();
-        shopCoffeeProductsPage.checkThatCoffeeBarPageOpened()
+        shopHomePage.openShopHafeleProductsPage();
+        shopHafeleProductsPage.checkThatShopHafeleProductsPageOpened()
                 .checkElementList();
 
     }

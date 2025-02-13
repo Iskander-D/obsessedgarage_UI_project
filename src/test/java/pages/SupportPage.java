@@ -9,11 +9,11 @@ import static com.codeborne.selenide.Selenide.$;
 public class SupportPage {
     private final SelenideElement
 
-            openToReturnPage = $(".articles ");
+            openToReturnPage = $(".category");
 
-    @Step("Открыть ссылку Returns")
+    @Step("Открыть ссылку Shipping & Returns")
     public SupportPage openReturnPage() {
-        openToReturnPage.find(byText("Returns")).click();
+        openToReturnPage.find(byText("Shipping & Returns")).click();
         return this;
     }
 }

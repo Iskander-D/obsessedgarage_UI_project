@@ -12,7 +12,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class MainPage {
     private final SelenideElement
             search = $(".site-header__search-input"),
-            openToSupportPage = $(".footer__base-links"),
+            openToSupportPage = $("a[href='https://support.obsessedgarage.com']"),
             openToAffiliatePage = $("#FooterMenus"),
             checkToCurrency = $(".grid-product__price--from"),
             openToListCurrency = $(".disclosure-list__label"),
@@ -25,9 +25,9 @@ public class MainPage {
         return this;
     }
 
-    @Step("Открыть ссылку Support")
+    @Step("Открыть ссылку SUPPORT PAGE")
     public MainPage openSupportPage() {
-        openToSupportPage.find(byText("Support")).click();
+        openToSupportPage.click();
         return this;
     }
 
