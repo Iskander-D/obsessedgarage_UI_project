@@ -8,6 +8,9 @@ import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.api.Test;
 import pages.AffiliatePage;
 
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.executeJavaScript;
+
 
 @Epic("UI")
 @Owner("Aleksandr Drozenko")
@@ -24,8 +27,9 @@ public class AffiliatetPageTest extends TestBase {
     @DisplayName("Проверка заполнения основных полей формы Affiliate")
     void requestPageTest() {
 
-        mainPage.openPage()
-                .openAffiliatePage();
+        mainPage.openPage();
+        executeJavaScript("arguments[0].style.display = 'none';", $(".kl-private-reset-css-Xuajs1"));
+        mainPage   .openAffiliatePage();
         affiliatePage.signUpHere()
                 .setEmail(testData.userEmail)
                 .setName(testData.name)
