@@ -39,7 +39,7 @@ public class MainPage {
 
     @Step("Открыть страницу Affiliate")
     public MainPage openAffiliatePage() {
-        openToAffiliatePage.find(byText("Affiliate")).click();
+        openToAffiliatePage.find(byText("Affiliate")).scrollTo().click();
         return this;
     }
 
