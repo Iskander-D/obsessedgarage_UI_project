@@ -1,7 +1,6 @@
 package test;
 
 import io.qameta.allure.*;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -23,7 +22,8 @@ public class ReturnPageTest extends TestBase {
         mainPage.openPage()
                 .openSupportPage();
         supportPage.openReturnPage();
-        returnPage.checkTextReturnPage();
+        returnPage.checkTextReturnPage()
+                .checkArticleList();
 
     }
 
