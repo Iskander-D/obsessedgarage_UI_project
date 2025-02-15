@@ -4,6 +4,7 @@ import data.TestData;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.api.Test;
 import pages.AffiliatePage;
 
@@ -11,7 +12,7 @@ import pages.AffiliatePage;
 @Epic("UI")
 @Owner("Aleksandr Drozenko")
 @Feature("Тестирование страницы Affiliate")
-@Tag("ui")
+@Tags({ @Tag("ui"), @Tag("smoke") })
 @DisplayName("Тестирование страницы Affiliate")
 public class AffiliatetPageTest extends TestBase {
     TestData testData = new TestData();
