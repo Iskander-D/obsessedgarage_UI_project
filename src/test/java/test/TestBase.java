@@ -11,7 +11,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import pages.MainPage;
-import pages.ReturnPage;
+import pages.DeliveryPage;
 import pages.SearchPage;
 import pages.SupportPage;
 
@@ -21,7 +21,7 @@ import static com.codeborne.selenide.Selenide.closeWebDriver;
 public class TestBase {
 
     MainPage mainPage = new MainPage();
-    ReturnPage returnPage = new ReturnPage();
+    DeliveryPage deliveryPage = new DeliveryPage();
     SupportPage supportPage = new SupportPage();
     SearchPage searchPage = new SearchPage();
 

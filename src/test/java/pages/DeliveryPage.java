@@ -9,22 +9,22 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 
-public class ReturnPage {
+public class DeliveryPage {
     private final SelenideElement
-            textToReturnPage = $("#categoryHead");
+            textToDeliveryPage = $("#categoryHead");
 
     private ElementsCollection checkToArticleList = $$(".articleList li");
 
 
-    @Step("Проверить заголовок страницы Returns")
-    public ReturnPage checkTextReturnPage() {
-        textToReturnPage.shouldHave(text("Shipping & Returns"));
+    @Step("Проверить заголовок страницы Shipping & Delivery")
+    public DeliveryPage checkTextDeliveryPage() {
+        textToDeliveryPage.shouldHave(text("Shipping & Delivery"));
         return this;
     }
 
-    @Step("Проверить в списке  Shipping & Returns более 7 параграфов")
-    public ReturnPage checkArticleList() {
-        checkToArticleList.shouldHave(CollectionCondition.sizeGreaterThan(7));
+    @Step("Проверить в списке  Shipping & Delivery более 4 параграфов")
+    public DeliveryPage checkArticleList() {
+        checkToArticleList.shouldHave(CollectionCondition.sizeGreaterThan(4));
         return this;
     }
 }

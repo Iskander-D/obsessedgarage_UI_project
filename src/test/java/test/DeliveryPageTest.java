@@ -8,21 +8,21 @@ import org.junit.jupiter.api.Test;
 
 @Epic("UI")
 @Owner("Aleksandr Drozenko")
-@Feature("Тестирование страницы Returns")
+@Feature("Тестирование страницы Delivery")
 @Tag("ui")
-@DisplayName("Тестирование страницы Returns")
-public class ReturnPageTest extends TestBase {
+@DisplayName("Тестирование страницы Delivery")
+public class DeliveryPageTest extends TestBase {
 
 
     @Test
     @Severity(SeverityLevel.NORMAL)
-    @Story("Проверка открытия страницы Returns")
-    @DisplayName("Проверка элементов страницы Returns")
+    @Story("Проверка открытия страницы Delivery")
+    @DisplayName("Проверка элементов страницы Delivery")
     void returnPageTest() {
         mainPage.openPage()
                 .openSupportPage();
         supportPage.openReturnPage();
-        returnPage.checkTextReturnPage()
+        deliveryPage.checkTextDeliveryPage()
                 .checkArticleList();
 
     }
