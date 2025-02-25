@@ -69,11 +69,13 @@ tasks.withType(Test) {
 
 task ui_test(type: Test) {
     useJUnitPlatform {
+        includeEngines 'junit-jupiter'
         includeTags("ui")
     }
 
     task smoke_test(type: Test) {
         useJUnitPlatform {
+            includeEngines 'junit-jupiter'
             includeTags("smoke")
         }
     }
