@@ -1,8 +1,7 @@
 package test;
 
 import io.qameta.allure.*;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 import pages.BasketPage;
@@ -14,11 +13,13 @@ import pages.ItemPage;
 @Feature("Тестирование функционала корзины")
 @Tag("ui")
 @DisplayName("Тестирование функционала добавления и удаления товара")
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class BasketPageTest extends TestBase {
     ItemPage itemPage = new ItemPage();
     BasketPage basketPage = new BasketPage();
 
     @Severity(SeverityLevel.NORMAL)
+    @Order(8)
     @ValueSource(strings = {"sonic", "aid"})
     @ParameterizedTest(name = "Добавляем товар: {0}")
     @Story("Добавление товара в корзину")

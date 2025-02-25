@@ -2,9 +2,7 @@ package test;
 
 import data.TestData;
 import io.qameta.allure.*;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Tag;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 import org.junit.jupiter.params.provider.CsvSource;
@@ -23,9 +21,11 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 @Feature("Проверка заголовка главной страницы")
 @Tag("ui")
 @DisplayName("Проверка заголовка главной страницы")
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class MainPageTitleTest extends TestBase {
     TestData testData = new TestData();
     @Test
+    @Order(4)
     @Severity(SeverityLevel.NORMAL)
     @Story("Проверка титла ")
     @DisplayName("Проверка заголовка главной страницы")
@@ -38,6 +38,7 @@ public class MainPageTitleTest extends TestBase {
         });
     }
     @Test
+    @Order(5)
     @Severity(SeverityLevel.NORMAL)
     @Story("Регистрация")
     @DisplayName("Заполнение полей регистрации")
