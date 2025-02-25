@@ -1,8 +1,7 @@
 package test;
 
 import io.qameta.allure.*;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
@@ -11,8 +10,9 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 @Feature("Тестирование функционала поиска")
 @Tag("ui")
 @DisplayName("Тестирование функционала поиска")
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class SearchTest extends TestBase {
-
+    @Order(3)
     @CsvFileSource(resources = "/searchResultShouldContainExpectedText.csv", delimiter = '|')
     @Severity(SeverityLevel.NORMAL)
     @Story("Проверка поиска товара")
