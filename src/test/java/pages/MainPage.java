@@ -1,5 +1,6 @@
 package pages;
 
+import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 
@@ -15,14 +16,19 @@ public class MainPage {
             openToSupportPage = $("a[href='https://support.obsessedgarage.com']"),
             openToAffiliatePage = $("#FooterMenus"),
             checkToCurrency = $(".grid-product__price--from"),
-            openToListCurrency = $(".disclosure-list__label"),
-            selectToCurrency = $$(".disclosure-list__label").findBy(text("MUR"));
+            openToListCurrency = $(".disclosure-list__label");
 
+    private final ElementsCollection selectToCurrency = $$(".disclosure-list__label");
 
     @Step("Открыть главную страницу")
     public MainPage openPage() {
         open(baseUrl);
         return this;
+    }
+
+    @Step("Убираем Cooke")
+    public void removeCooke() {
+        executeJavaScript("arguments[0].style.display = 'none';", $(".kl-private-reset-css-Xuajs1"));
     }
 
     @Step("Открыть ссылку SUPPORT PAGE")
@@ -51,14 +57,14 @@ public class MainPage {
     }
 
     @Step("Выбрать  денежную единицу MUR")
-    public MainPage selectCurrency() {
-        selectToCurrency.click();
+    public MainPage selectCurrency(String currency) {
+        selectToCurrency.findBy(text(currency)).click();
         return this;
     }
 
     @Step("Проверить отображение денежной единицы Rs")
-    public MainPage checkThatCurrencyChanged() {
-        checkToCurrency.shouldHave(text("Rs")).shouldBe(exist);
+    public MainPage checkThatCurrencyChanged(String currency) {
+        checkToCurrency.shouldHave(text(currency)).shouldBe(exist);
         return this;
     }
 }

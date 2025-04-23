@@ -21,7 +21,7 @@ public class BasketPage {
             clearToBasket = $(byText("Clear cart")),
             finalCheckToBasket = $(".section-header ");
 
-    private ElementsCollection checkAtQuantityItem = $$(".hidden-label");
+    private final ElementsCollection checkAtQuantityItem = $$(".hidden-label");
 
 
     @Step("Перейти в корзину")
@@ -43,8 +43,8 @@ public class BasketPage {
     }
 
     @Step("Проверить что товар отсутствует в корзине")
-    public BasketPage finalCheckBasket() {
-        finalCheckToBasket.shouldBe(visible).shouldHave(text("Your cart is currently empty"));
+    public BasketPage finalCheckBasket(String value) {
+        finalCheckToBasket.shouldBe(visible).shouldHave(text(value));
         return this;
     }
 

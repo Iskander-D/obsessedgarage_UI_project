@@ -1,7 +1,7 @@
 # Проект по автоматизации тестирования для компании [Obsessedgarage](https://www.obsessedgarage.com/)
 
 <p align="center">  
-<img alt="Garage" src="/media/screenshots/OG.jpeg">
+<img alt="Garage" src="/media/screenshots/OG.jpg">
 
 
 > Obsessed Garage  разрабатывает продукты и решения высочайшего качества с акцентом на удобство использования.

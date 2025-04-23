@@ -12,7 +12,8 @@ public class TestData {
             name = faker.name().firstName(),
             number = faker.number().digits(15),
             description = faker.options().option("Best ideas", "Good idea", "Bad idea"),
-            country = faker.options().option("Afghanistan", "Bahrain", "Djibouti");
+            country = faker.options().option("Afghanistan", "Bahrain", "Djibouti"),
+            password = faker.idNumber().invalid();
 
 }
 

@@ -13,6 +13,7 @@ public class ShopHafeleProductsPage {
     private final SelenideElement
 
             checkShopHafeleProductsPageOpened = $(".enlarge-text");
+
     private final ElementsCollection checkToList = $$("#CollectionAjaxContent");
 
     @Step("Проверить наличие заголовка Premier Kitchen Organization and Hardware")

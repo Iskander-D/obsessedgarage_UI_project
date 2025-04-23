@@ -3,7 +3,8 @@ package test;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
-import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
@@ -12,20 +13,19 @@ import org.junit.jupiter.params.provider.CsvSource;
 @Feature("Проверка изменения денежной единицы")
 @Tag("ui")
 @DisplayName("Проверка изменения денежной единицы ")
-@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+
 public class CurrencyTest extends TestBase {
 
 
     @CsvSource(value = {"koch", "tool grid"})
-    @Order(7)
     @ParameterizedTest
     @DisplayName("Проверка изменения денежной единицы")
     void changeCurrencyTest(String searchQuery) {
         mainPage.openPage()
                 .searchItem(searchQuery)
                 .openListCurrency()
-                .selectCurrency()
-                .checkThatCurrencyChanged();
+                .selectCurrency("MUR")
+                .checkThatCurrencyChanged("Rs");
 
 
     }

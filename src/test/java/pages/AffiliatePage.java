@@ -27,8 +27,8 @@ public class AffiliatePage {
 
 
     @Step("Нажать Sign Up Here ")
-    public AffiliatePage signUpHere() {
-        signAtIn.find(byText("Sign Up Here")).click();
+    public AffiliatePage signUpHere(String value) {
+        signAtIn.find(byText(value)).click();
         return this;
     }
 

@@ -1,7 +1,9 @@
 package test;
 
 import io.qameta.allure.*;
-import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.Test;
 import pages.NavigationPanel;
 import pages.NewProductsPage;
 import pages.ShopHafeleProductsPage;
@@ -13,7 +15,6 @@ import pages.ShopHomePage;
 @Feature("Проверка страниц навигационной панели")
 @Tag("ui")
 @DisplayName("Тестирование функционала страниц навигационной панели")
-@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class NavigationPanelTest extends TestBase {
     ShopHafeleProductsPage shopHafeleProductsPage = new ShopHafeleProductsPage();
     ShopHomePage shopHomePage = new ShopHomePage();
@@ -21,7 +22,6 @@ public class NavigationPanelTest extends TestBase {
     NavigationPanel navigationPanel = new NavigationPanel();
 
     @Test
-    @Order(2)
     @Severity(SeverityLevel.NORMAL)
     @Story("Проверка открытия страницы New Products")
     @DisplayName("Проверка элементов страницы New Products")
@@ -34,11 +34,10 @@ public class NavigationPanelTest extends TestBase {
     }
 
     @Test
-    @Order(1)
     @Severity(SeverityLevel.NORMAL)
     @Story("Проверка открытия страницы Shop Hafele Products")
     @DisplayName("Проверка элементов страницы Shop Hafele Products")
-    void openShopHafeleProductsPage()  {
+    void openShopHafeleProductsPage() {
         mainPage.openPage();
         navigationPanel.openShopHomePage();
         shopHomePage.openShopHafeleProductsPage();
