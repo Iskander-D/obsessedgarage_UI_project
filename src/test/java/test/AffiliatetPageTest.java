@@ -18,6 +18,7 @@ public class AffiliatetPageTest extends TestBase {
     TestData testData = new TestData();
     AffiliatePage affiliatePage = new AffiliatePage();
 
+
     @Test
     @Severity(SeverityLevel.NORMAL)
     @Story("Проверка заполнения полей формы Affiliate")
