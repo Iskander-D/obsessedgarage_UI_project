@@ -29,7 +29,7 @@ public class NavigationPanelTest extends TestBase {
         mainPage.openPage();
         navigationPanel.openNewProductsPage();
         newProductsPage.checkThatNewProductsPageOpened()
-                .checkElementList();
+                       .checkElementList();
 
     }
 
@@ -42,7 +42,7 @@ public class NavigationPanelTest extends TestBase {
         navigationPanel.openShopHomePage();
         shopHomePage.openShopHafeleProductsPage();
         shopHafeleProductsPage.checkThatShopHafeleProductsPageOpened()
-                .checkElementList();
+                              .checkElementList();
 
     }
 }

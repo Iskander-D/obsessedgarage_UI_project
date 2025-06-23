@@ -29,11 +29,11 @@ public class BasketPageTest extends TestBase {
         searchPage.openFirstProductInList();
         itemPage.addToBasket();
         basketPage.openBasket()
-                .checkBasket();
+                  .checkBasket();
     }
 
     @Severity(SeverityLevel.NORMAL)
-    @Order(9)
+
     @ValueSource(strings = {"grinder", "tool grid"})
     @ParameterizedTest(name = "Добавляем товар: {0}")
     @Story("Удаление товара из корзины")
@@ -44,13 +44,12 @@ public class BasketPageTest extends TestBase {
         searchPage.openFirstProductInList();
         itemPage.addToBasket();
         basketPage.openBasket()
-                .checkBasket()
-                .clearBasket()
-                .finalCheckBasket("Your cart is currently empty");
+                  .checkBasket()
+                  .clearBasket()
+                  .finalCheckBasket("Your cart is currently empty");
     }
 
     @Severity(SeverityLevel.NORMAL)
-    @Order(10)
     @ValueSource(strings = {"Detail Brush", "Sonic"})
     @ParameterizedTest(name = "Добавляем товар: {0}")
     @Story("Увеличение количества товаров в корзине")
@@ -62,7 +61,7 @@ public class BasketPageTest extends TestBase {
         itemPage.addQuantityItem()
                 .addToBasket();
         basketPage.openBasket()
-                .checkQuantityItem();
+                  .checkQuantityItem();
 
 
     }

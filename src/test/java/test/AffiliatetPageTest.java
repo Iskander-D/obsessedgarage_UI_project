@@ -29,16 +29,16 @@ public class AffiliatetPageTest extends TestBase {
                 .removeCooke();
         mainPage.openAffiliatePage();
         affiliatePage.signUpHere("Sign Up Here")
-                .setEmail(testData.userEmail)
-                .setName(testData.name)
-                .setPassword(testData.number)
-                .setDescription(testData.description)
-                .selectCountry(testData.country)
-                .checkResultEmail()
-                .checkResultName()
-                .checkPassword()
-                .checkResultDescription()
-                .checkCountry(testData.country);
+                     .setEmail(testData.userEmail)
+                     .setName(testData.name)
+                     .setPassword(testData.number)
+                     .setDescription(testData.description)
+                     .selectCountry(testData.country)
+                     .checkResultEmail()
+                     .checkResultName()
+                     .checkPassword()
+                     .checkResultDescription()
+                     .checkCountry(testData.country);
 
     }
 

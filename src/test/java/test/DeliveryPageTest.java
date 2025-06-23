@@ -23,7 +23,7 @@ public class DeliveryPageTest extends TestBase {
                 .openSupportPage();
         supportPage.openReturnPage();
         deliveryPage.checkTextDeliveryPage()
-                .checkArticleList();
+                    .checkArticleList();
 
     }
 

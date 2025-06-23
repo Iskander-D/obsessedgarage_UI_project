@@ -25,12 +25,12 @@ public class RegistrationTest extends TestBase {
     void registrationTest() {
         mainPage.openPage();
         accountPage.openAccountPage()
-                .verifyEmailFieldIsVisible()
-                .setEmail(testData.userEmail)
-                .verifyPasswordFieldIsVisible()
-                .setPassword(testData.password)
-                .checkVisibilityEmail()
-                .checkVisibilityPassword();
+                   .verifyEmailFieldIsVisible()
+                   .setEmail(testData.userEmail)
+                   .verifyPasswordFieldIsVisible()
+                   .setPassword(testData.password)
+                   .checkVisibilityEmail()
+                   .checkVisibilityPassword();
 
 
     }
