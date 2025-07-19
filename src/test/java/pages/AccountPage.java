@@ -10,7 +10,7 @@ import static java.time.Duration.ofSeconds;
 
 public class AccountPage {
     private final SelenideElement
-            openToAccountPage = $(".site-nav").find(byText("Account")),
+            openToAccountPage = $("a[title='Account']"),
             emailInput = $("#CustomerEmail"),
             passwordInput = $("#CustomerPassword");
 

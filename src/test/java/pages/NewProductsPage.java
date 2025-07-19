@@ -11,13 +11,13 @@ import static com.codeborne.selenide.Selenide.$$;
 
 public class NewProductsPage {
     private final SelenideElement
-            checkToText = $(".section-header__title");
+            checkToText = $("#shopify-section-template--18159877292183__rich_text_yAwnji");
 
-    private ElementsCollection checkToList = $$(".grid-item__content");
+    private ElementsCollection checkToList = $$("#ProductGridContainer");
 
-    @Step("Проверка наличие заголовка New Products")
+    @Step("Проверка наличие заголовка Check Out These Other Collections")
     public NewProductsPage checkThatNewProductsPageOpened() {
-        checkToText.shouldHave(text("Best Selling Appare"));
+        checkToText.shouldHave(text("Check Out These Other Collections"));
         return this;
     }
 
