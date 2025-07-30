@@ -6,12 +6,13 @@ import io.qameta.allure.Step;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.$x;
 import static java.time.Duration.ofSeconds;
 
 public class AccountPage {
     private final SelenideElement
-            openToAccountPage = $("a[title='Account']"),
-            emailInput = $("#CustomerEmail"),
+            openToAccountPage = $x("//a[contains(@href, 'customer_authentication/login')]"),
+            emailInput = $("#email"),
             passwordInput = $("#CustomerPassword");
 
     @Step("Перейти на страницу Аккаунта ")

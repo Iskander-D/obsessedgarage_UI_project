@@ -10,13 +10,13 @@ public class NavigationPanel {
     private final SelenideElement
 
 
-            openToShopHomePage = $$(".Meteor-Navigation__Link__desktop").findBy(text("SHOP HOME")),
+            openToHomePage = $$(".block").findBy(text("Home")),
             openToNewProduct = $$("#HeaderMenu-new-products").findBy(text("New Products"));
 
 
-    @Step("Открыть страницу SHOP HOME")
-    public NavigationPanel openShopHomePage() {
-        openToShopHomePage.click();
+    @Step("Открыть страницу Home")
+    public NavigationPanel openHomePage() {
+        openToHomePage.click();
         return this;
     }
 

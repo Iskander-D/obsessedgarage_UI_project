@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Selenide.$$;
 
 public class NewProductsPage {
     private final SelenideElement
-            checkToText = $("#shopify-section-template--18159877292183__rich_text_yAwnji");
+            checkToText = $(".rich-text__heading");
 
     private ElementsCollection checkToList = $$("#ProductGridContainer");
 

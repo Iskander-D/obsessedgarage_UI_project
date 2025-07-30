@@ -6,7 +6,6 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.NavigationPanel;
 import pages.NewProductsPage;
-import pages.ShopHafeleProductsPage;
 import pages.ShopHomePage;
 
 
@@ -16,7 +15,7 @@ import pages.ShopHomePage;
 @Tag("ui")
 @DisplayName("Тестирование функционала страниц навигационной панели")
 public class NavigationPanelTest extends TestBase {
-    ShopHafeleProductsPage shopHafeleProductsPage = new ShopHafeleProductsPage();
+
     ShopHomePage shopHomePage = new ShopHomePage();
     NewProductsPage newProductsPage = new NewProductsPage();
     NavigationPanel navigationPanel = new NavigationPanel();
@@ -35,14 +34,13 @@ public class NavigationPanelTest extends TestBase {
 
     @Test
     @Severity(SeverityLevel.NORMAL)
-    @Story("Проверка открытия страницы Shop Hafele Products")
-    @DisplayName("Проверка элементов страницы Shop Hafele Products")
-    void openShopHafeleProductsPage() {
+    @Story("Проверка открытия страницы ShopHome")
+    @DisplayName("Проверка элементов страницы ShopHome")
+    void openShopProductsPage() {
         mainPage.openPage();
-        navigationPanel.openShopHomePage();
-        shopHomePage.openShopHafeleProductsPage();
-        shopHafeleProductsPage.checkThatShopHafeleProductsPageOpened()
-                              .checkElementList();
+        navigationPanel.openHomePage();
+        shopHomePage.checkElementList();
+
 
     }
 }

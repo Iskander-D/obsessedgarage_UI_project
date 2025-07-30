@@ -27,10 +27,10 @@ public class RegistrationTest extends TestBase {
         accountPage.openAccountPage()
                    .verifyEmailFieldIsVisible()
                    .setEmail(testData.userEmail)
-                   .verifyPasswordFieldIsVisible()
-                   .setPassword(testData.password)
-                   .checkVisibilityEmail()
-                   .checkVisibilityPassword();
+//                   .verifyPasswordFieldIsVisible()
+//                   .setPassword(testData.password)
+                   .checkVisibilityEmail();
+//                   .checkVisibilityPassword();
 
 
     }

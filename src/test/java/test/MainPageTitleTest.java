@@ -17,8 +17,7 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 @Tag("ui")
 @DisplayName("Проверка заголовка главной страницы")
 public class MainPageTitleTest extends TestBase {
-    TestData testData = new TestData();
-    AccountPage accountPage = new AccountPage();
+
 
     @Test
     @Severity(SeverityLevel.NORMAL)
@@ -27,7 +26,7 @@ public class MainPageTitleTest extends TestBase {
     void checkPageTitleTest() {
         mainPage.openPage();
         step("Проверяем заголовок главной страницы", () -> {
-            String expectedTitle = "Obsessed Garage | Home Of The Obsessed";
+            String expectedTitle = "Obsessed Garage | Home Of The Obsessed – Obsessed Garage";
             String actualTitle = title();
             assertThat(actualTitle).isEqualTo(expectedTitle);
         });
