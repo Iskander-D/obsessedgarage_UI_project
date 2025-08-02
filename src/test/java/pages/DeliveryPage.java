@@ -11,14 +11,14 @@ import static com.codeborne.selenide.Selenide.$$;
 
 public class DeliveryPage {
     private final SelenideElement
-            textToDeliveryPage = $("#categoryHead");
+            textToDeliveryPage = $("#main-content");
 
     private ElementsCollection checkToArticleList = $$(".articleList li");
 
 
     @Step("Проверить заголовок страницы Shipping & Delivery")
     public DeliveryPage checkTextDeliveryPage() {
-        textToDeliveryPage.shouldHave(text("Shipping & Delivery"));
+        textToDeliveryPage.shouldHave(text("How To Start a Return (RMA)"));
         return this;
     }
 

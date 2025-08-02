@@ -16,9 +16,9 @@ public class MainPage {
             openToSupportPage = $("a[href='https://support.obsessedgarage.com']"),
             openToAffiliatePage = $("#FooterMenus"),
             checkToCurrency = $(".grid-product__price--from"),
-            openToListCurrency = $(".disclosure-list__label");
+            openToListCurrency = $("..localization-form");
 
-    private final ElementsCollection selectToCurrency = $$(".disclosure-list__label");
+    private final ElementsCollection selectToCurrency = $$(".disclosure__item");
 
     @Step("Открыть главную страницу")
     public MainPage openPage() {
