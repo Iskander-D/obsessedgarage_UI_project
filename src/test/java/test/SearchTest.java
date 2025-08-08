@@ -6,6 +6,8 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
+import static com.codeborne.selenide.Selenide.switchTo;
+
 @Epic("UI")
 @Owner("Aleksandr Drozenko")
 @Feature("Тестирование функционала поиска")
@@ -24,6 +26,7 @@ public class SearchTest extends TestBase {
     void searchResultShouldContainTextTest(String searchQuery, String expectedName) {
         mainPage.openPage()
                 .searchItem(searchQuery);
+//        switchTo().window(1); //todo
         searchPage.checkResult(expectedName);
     }
 }

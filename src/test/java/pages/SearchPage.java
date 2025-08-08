@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.$;
 public class SearchPage {
     private final SelenideElement
             checkSearchResult = $("#MainContent"),
-            choseItem = $(".grid-product__title");
+            choseItem = $(".product-card");
 
 
     @Step("Проверить результат поиска")

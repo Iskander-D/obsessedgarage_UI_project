@@ -8,6 +8,7 @@ import io.qameta.allure.Step;
 
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.byText;
+import static com.codeborne.selenide.Selectors.byXpath;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 
@@ -17,11 +18,15 @@ public class BasketPage {
 
 
             openToBasket = $(byText("View cart")),
-            checkToBasket = $(".cart__item"),
-            clearToBasket = $(byText("Clear cart")),
-            finalCheckToBasket = $(".section-header ");
+            checkToBasket = $(".cart-items"),
+           clearToBasket = $(".quantity__input"),
 
-    private final ElementsCollection checkAtQuantityItem = $$(".hidden-label");
+    clearToBasket2 = $("#Remove-1"),
+            finalCheckToBasket = $("#main-cart");
+
+
+
+    private final ElementsCollection checkAtQuantityItem = $$(".quantity__input");
 
 
     @Step("Перейти в корзину")
@@ -38,7 +43,8 @@ public class BasketPage {
 
     @Step("Удалить товар из корзины")
     public BasketPage clearBasket() {
-        clearToBasket.click();
+        clearToBasket.hover();
+        clearToBasket2.click();
         return this;
     }
 

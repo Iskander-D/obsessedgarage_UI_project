@@ -17,15 +17,15 @@ import org.junit.jupiter.params.provider.CsvSource;
 public class CurrencyTest extends TestBase {
 
 
-    @CsvSource(value = {"koch", "tool grid"})
+    @CsvSource(value = {"wash", "tool grid"})
     @ParameterizedTest
-    @DisplayName("Проверка изменения денежной единицы")
+    @DisplayName("Проверка изменения денежной единицы при выборе страны")
     void changeCurrencyTest(String searchQuery) {
         mainPage.openPage()
                 .searchItem(searchQuery)
                 .openListCurrency()
-                .selectCurrency("MUR")
-                .checkThatCurrencyChanged("Rs");
+                .selectCountry("Belize")
+                .checkThatCurrencyChanged("BZD");
 
 
     }

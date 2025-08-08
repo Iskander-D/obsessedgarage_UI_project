@@ -1,5 +1,6 @@
 package pages;
 
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
@@ -15,10 +16,10 @@ public class MainPage {
             search = $("#Inline-Search"),
             openToSupportPage = $("a[href='https://support.obsessedgarage.com']"),
             openToAffiliatePage = $("#FooterMenus"),
-            checkToCurrency = $(".grid-product__price--from"),
-            openToListCurrency = $("..localization-form");
+            checkToCurrency = $(".product-grid"),
+            openToListCurrency = $(".localization-form");
 
-    private final ElementsCollection selectToCurrency = $$(".disclosure__item");
+//    private final ElementsCollection selectToCurrency = $$(".disclosure__item");
 
     @Step("Открыть главную страницу")
     public MainPage openPage() {
@@ -56,13 +57,14 @@ public class MainPage {
         return this;
     }
 
-    @Step("Выбрать  денежную единицу MUR")
-    public MainPage selectCurrency(String currency) {
-        selectToCurrency.findBy(text(currency)).click();
+    @Step("Выбрать  страну {country} ")
+    public MainPage selectCountry(String country) {
+//        selectToCurrency.findBy(text(country)).click();
+      $(byText(country)).shouldBe(Condition.visible).scrollTo().click();
         return this;
     }
 
-    @Step("Проверить отображение денежной единицы Rs")
+    @Step("Проверить отображение денежной единицы {currency}")
     public MainPage checkThatCurrencyChanged(String currency) {
         checkToCurrency.shouldHave(text(currency)).shouldBe(exist);
         return this;

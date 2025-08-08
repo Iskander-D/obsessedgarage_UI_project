@@ -46,7 +46,7 @@ public class BasketPageTest extends TestBase {
         basketPage.openBasket()
                   .checkBasket()
                   .clearBasket()
-                  .finalCheckBasket("Your cart is currently empty");
+                  .finalCheckBasket("Your cart is empty, but your garage does not have to be!");
     }
 
     @Severity(SeverityLevel.NORMAL)
