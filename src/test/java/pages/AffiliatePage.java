@@ -11,12 +11,15 @@ import static com.codeborne.selenide.Selenide.$;
 public class AffiliatePage {
 
     private final SelenideElement
-            signAtIn = $(".hero__link"),
+//            signAtIn = $(".t3 font-bold button button--primary"),
+            signAtIn = $(".rich-text__buttons"),
             setAtEmail = $("#email"),
             setAtName = $("#last_name"),
             setAtPassword = $("#password"),
             setAtDescription = $("#custom_56459"),
             selectAtCountry = $("#country");
+
+
 
     @Step("Выбрать страну  ")
     public AffiliatePage selectCountry(String value) {

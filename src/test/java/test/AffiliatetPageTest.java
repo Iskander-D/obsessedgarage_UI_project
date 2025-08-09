@@ -8,6 +8,8 @@ import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.api.Test;
 import pages.AffiliatePage;
 
+import static com.codeborne.selenide.Selenide.switchTo;
+
 
 @Epic("UI")
 @Owner("Aleksandr Drozenko")
@@ -28,8 +30,9 @@ public class AffiliatetPageTest extends TestBase {
         mainPage.openPage()
                 .removeCooke();
         mainPage.openAffiliatePage();
-        affiliatePage.signUpHere("Sign Up Here")
-                     .setEmail(testData.userEmail)
+        affiliatePage.signUpHere("Sign Up");
+        switchTo().window(1);
+        affiliatePage.setEmail(testData.userEmail)
                      .setName(testData.name)
                      .setPassword(testData.number)
                      .setDescription(testData.description)

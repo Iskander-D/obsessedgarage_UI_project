@@ -33,8 +33,7 @@ public class BasketPageTest extends TestBase {
     }
 
     @Severity(SeverityLevel.NORMAL)
-
-    @ValueSource(strings = {"grinder", "tool grid"})
+    @ValueSource(strings = {"grinder", "flex"})
     @ParameterizedTest(name = "Добавляем товар: {0}")
     @Story("Удаление товара из корзины")
     @DisplayName("Проверка удаления товара из корзины.")

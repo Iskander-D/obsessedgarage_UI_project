@@ -26,7 +26,6 @@ public class SearchTest extends TestBase {
     void searchResultShouldContainTextTest(String searchQuery, String expectedName) {
         mainPage.openPage()
                 .searchItem(searchQuery);
-//        switchTo().window(1); //todo
         searchPage.checkResult(expectedName);
     }
 }

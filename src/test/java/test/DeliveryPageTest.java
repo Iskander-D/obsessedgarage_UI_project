@@ -16,7 +16,7 @@ import static com.codeborne.selenide.Selenide.switchTo;
 @DisplayName("Тестирование страницы Delivery")
 public class DeliveryPageTest extends TestBase {
 
-@Disabled
+    @Disabled
     @Test
     @Severity(SeverityLevel.NORMAL)
     @Story("Проверка открытия страницы Delivery")

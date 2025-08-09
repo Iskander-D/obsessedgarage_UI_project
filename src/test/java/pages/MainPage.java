@@ -15,7 +15,7 @@ public class MainPage {
     private final SelenideElement
             search = $("#Inline-Search"),
             openToSupportPage = $("a[href='https://support.obsessedgarage.com']"),
-            openToAffiliatePage = $("#FooterMenus"),
+            openToAffiliatePage = $("#CollapsibleAccordion-collapsible_link_list_3H8mTj"),
             checkToCurrency = $(".product-grid"),
             openToListCurrency = $(".localization-form");
 
