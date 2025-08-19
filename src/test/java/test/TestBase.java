@@ -1,6 +1,7 @@
 package test;
 
 
+import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import config.ConfigReader;
 import config.WebConfig;
@@ -32,7 +33,7 @@ public class TestBase {
     public static void beforeAll() {
         WebConfigForProject webConfigForProject = new WebConfigForProject(config);
         webConfigForProject.webConfig();
-
+        Configuration.holdBrowserOpen = true;
     }
 
     @BeforeEach
