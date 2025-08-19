@@ -24,7 +24,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class CurrencyTest extends TestBase {
 
 
-    @CsvSource(value = {"wash"})
+    @CsvSource(value = {"wash", "audio"})
     @ParameterizedTest
     @DisplayName("Проверка изменения денежной единицы при выборе страны")
     void changeCurrencyTest(String searchQuery) {

@@ -33,7 +33,7 @@ public class TestBase {
     public static void beforeAll() {
         WebConfigForProject webConfigForProject = new WebConfigForProject(config);
         webConfigForProject.webConfig();
-        Configuration.holdBrowserOpen = true;
+
     }
 
     @BeforeEach

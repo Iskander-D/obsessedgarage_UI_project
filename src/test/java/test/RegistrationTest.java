@@ -2,6 +2,7 @@ package test;
 
 import data.TestData;
 import io.qameta.allure.*;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -18,12 +19,13 @@ public class RegistrationTest extends TestBase {
     TestData testData = new TestData();
     AccountPage accountPage = new AccountPage();
 
+//    @Disabled
     @Test
     @Severity(SeverityLevel.NORMAL)
     @Story("Регистрация")
     @DisplayName("Заполнение полей регистрации")
     void registrationTest() {
-        mainPage.openPage();
+//        mainPage.openPage();
         accountPage.openAccountPage()
                    .verifyEmailFieldIsVisible()
                    .setEmail(testData.userEmail)
