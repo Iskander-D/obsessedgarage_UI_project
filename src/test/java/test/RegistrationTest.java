@@ -19,7 +19,7 @@ public class RegistrationTest extends TestBase {
     TestData testData = new TestData();
     AccountPage accountPage = new AccountPage();
 
-//    @Disabled
+    @Disabled
     @Test
     @Severity(SeverityLevel.NORMAL)
     @Story("Регистрация")
