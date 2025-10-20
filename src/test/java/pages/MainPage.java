@@ -13,13 +13,13 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class MainPage {
     private final SelenideElement
-            search = $("#Inline-Search"),
-            openToSupportPage = $("a[href='https://support.obsessedgarage.com']"),
-            openToAffiliatePage = $("#CollapsibleAccordion-collapsible_link_list_3H8mTj"),
-            checkToCurrency = $(".product-grid"),
-            openToListCurrency = $(".localization-form");
+            search = element("#Inline-Search"),
+            openToSupportPage = element("a[href='https://support.obsessedgarage.com']"),
+            openToAffiliatePage = element("#CollapsibleAccordion-collapsible_link_list_3H8mTj"),
+            checkToCurrency = element(".product-grid"),
+            openToListCurrency = element(".localization-form");
 
-//    private final ElementsCollection selectToCurrency = $$(".disclosure__item");
+//    private final ElementsCollection selectToCurrency = elements(".disclosure__item");
 
     @Step("Открыть главную страницу")
     public MainPage openPage() {
