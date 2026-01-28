@@ -11,7 +11,7 @@ import pages.AccountPage;
 @Epic("UI")
 @Owner("Aleksandr Drozenko")
 @Feature("Заполнение регистрации")
-@Tag("smoke")
+@Tag("ui")
 @DisplayName("Проверка заполнения регистрации")
 
 public class RegistrationTest extends TestBase {

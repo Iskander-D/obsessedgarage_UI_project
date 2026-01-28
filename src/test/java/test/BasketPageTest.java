@@ -3,6 +3,7 @@ package test;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 import pages.BasketPage;
@@ -14,7 +15,7 @@ import static com.codeborne.selenide.Selenide.sleep;
 @Epic("UI")
 @Owner("Aleksandr Drozenko")
 @Feature("Тестирование функционала корзины")
-@Tag("ui")
+@Tags({@Tag("ui"), @Tag("smoke")})
 @DisplayName("Тестирование функционала добавления и удаления товара")
 public class BasketPageTest extends TestBase {
     ItemPage itemPage = new ItemPage();
@@ -30,6 +31,7 @@ public class BasketPageTest extends TestBase {
                 .searchItem(searchQuery);
         searchPage.openFirstProductInList();
         itemPage.addToBasket();
+        sleep(3000);
         basketPage.openBasket()
                   .checkBasket();
     }
@@ -43,8 +45,9 @@ public class BasketPageTest extends TestBase {
         mainPage.openPage()
                 .searchItem(value);
         searchPage.openFirstProductInList();
-        sleep(3000);
+
         itemPage.addToBasket();
+        sleep(3000);
         basketPage.openBasket()
                   .checkBasket()
                   .clearBasket()
@@ -61,8 +64,8 @@ public class BasketPageTest extends TestBase {
                 .searchItem(searchQuery);
         searchPage.openFirstProductInList();
         itemPage.addQuantityItem("2");
-        sleep(3000);
         itemPage.addToBasket();
+        sleep(3000);
         basketPage.openBasket()
                   .checkQuantityItem();
 
