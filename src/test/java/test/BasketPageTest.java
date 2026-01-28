@@ -31,9 +31,7 @@ public class BasketPageTest extends TestBase {
                 .searchItem(searchQuery);
         searchPage.openFirstProductInList();
         itemPage.addToBasket();
-        sleep(3000);
         basketPage.openBasket();
-        sleep(3000);
         basketPage.checkBasket();
     }
 
@@ -46,11 +44,8 @@ public class BasketPageTest extends TestBase {
         mainPage.openPage()
                 .searchItem(value);
         searchPage.openFirstProductInList();
-
         itemPage.addToBasket();
-        sleep(3000);
         basketPage.openBasket();
-        sleep(3000);
         basketPage.checkBasket()
                   .clearBasket()
                   .finalCheckBasket("Your cart is empty, but your garage does not have to be!");
@@ -67,7 +62,6 @@ public class BasketPageTest extends TestBase {
         searchPage.openFirstProductInList();
         itemPage.addQuantityItem("2");
         itemPage.addToBasket();
-        sleep(3000);
         basketPage.openBasket()
                   .checkQuantityItem();
 
