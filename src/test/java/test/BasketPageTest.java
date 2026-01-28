@@ -32,8 +32,9 @@ public class BasketPageTest extends TestBase {
         searchPage.openFirstProductInList();
         itemPage.addToBasket();
         sleep(3000);
-        basketPage.openBasket()
-                  .checkBasket();
+        basketPage.openBasket();
+        sleep(3000);
+        basketPage.checkBasket();
     }
 
     @Severity(SeverityLevel.NORMAL)
@@ -48,8 +49,9 @@ public class BasketPageTest extends TestBase {
 
         itemPage.addToBasket();
         sleep(3000);
-        basketPage.openBasket()
-                  .checkBasket()
+        basketPage.openBasket();
+        sleep(3000);
+        basketPage.checkBasket()
                   .clearBasket()
                   .finalCheckBasket("Your cart is empty, but your garage does not have to be!");
     }
