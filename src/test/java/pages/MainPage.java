@@ -17,9 +17,10 @@ public class MainPage {
             openToSupportPage = element("a[href='https://support.obsessedgarage.com']"),
             openToAffiliatePage = element("#CollapsibleAccordion-collapsible_link_list_3H8mTj"),
             checkToCurrency = element(".product-grid"),
-            openToListCurrency = element(".localization-form");
+            openToListCurrency = element(".localization-form"),
+            findToCountry = element("#AnnouncementLocalizationcountry-filter-input");
 
-//    private final ElementsCollection selectToCurrency = elements(".disclosure__item");
+   private final ElementsCollection selectToCountry = elements(".disclosure__item");
 
     @Step("Открыть главную страницу")
     public MainPage openPage() {
@@ -58,9 +59,9 @@ public class MainPage {
     }
 
     @Step("Выбрать  страну {country} ")
-    public MainPage selectCountry(String country) {
+    public MainPage selectввCountry(String country) {
 //        selectToCurrency.findBy(text(country)).click();
-      $(byText(country)).shouldBe(Condition.visible).scrollTo().click();
+        $(byText(country)).shouldBe(Condition.visible).scrollTo().click();
         return this;
     }
 
@@ -69,6 +70,19 @@ public class MainPage {
         checkToCurrency.shouldHave(text(currency)).shouldBe(exist);
         return this;
     }
+
+    @Step("Ввести значение страны {value} ")
+    public MainPage findCountry(String value) {
+        findToCountry.sendKeys(value);
+        return this;
+    }
+
+    @Step("Выбрать страну в списке  {value} ")
+    public MainPage selectCountry(String value) {
+        selectToCountry.find(text(value)).scrollIntoView(true).click();
+        return this;
+    }
+
 }
 
 

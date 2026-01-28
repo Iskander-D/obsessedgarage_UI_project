@@ -18,8 +18,7 @@ public class BasketPage {
 
             openToBasket = $(byText("View cart")),
             checkToBasket = $(".cart-items"),
-            clearToBasket = $(".quantity__input"),
-            clearToBasket2 = $("#Remove-1"),
+            clearToBasket = $("#Remove-1"),
             finalCheckToBasket = $(".cart__warnings");
 
 
@@ -40,8 +39,9 @@ public class BasketPage {
 
     @Step("Удалить товар из корзины")
     public BasketPage clearBasket() {
-        clearToBasket.hover();
-        clearToBasket2.click();
+        clearToBasket .scrollIntoView(true)
+                .hover()
+                .click();
         return this;
     }
 

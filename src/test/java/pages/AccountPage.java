@@ -18,7 +18,7 @@ public class AccountPage {
 
     @Step("Перейти на страницу Аккаунта ")
     public AccountPage openAccountPage() {
-        open("https://account.obsessedgarage.com/authentication/login?client_id=aabed6c6-61b5-4941-a484-69c91271311f&locale=en&redirect_uri=https://account.obsessedgarage.com/authentication/oauth/authorize%3Fclient_id%3Daabed6c6-61b5-4941-a484-69c91271311f%26consent_id%3D%26locale%3Den%26nonce%3Dbea4810a-e760-4a66-97da-f989b9c835bc%26redirect_uri%3Dhttps%253A%252F%252Fwww.obsessedgarage.com%252Fcustomer_authentication%252Fcallback%253Fsource%253Dcore%26response_type%3Dcode%26scope%3Dopenid%2Bemail%2Bcustomer-account-api%253Afull%26state%3D01K317VK6ENQ5G5TAWRM8SS8YE");
+        open("https://account.obsessedgarage.com/authentication/login?client_id=cb80a3d3-68b6-4c32-a4e6-e38b3b969334&locale=en&redirect_uri=%2Fauthentication%2Foauth%2Fauthorize%3Fclient_id%3Dcb80a3d3-68b6-4c32-a4e6-e38b3b969334%26locale%3Den%26nonce%3D574a0094-b984-431d-94d1-39b073d481e6%26redirect_uri%3Dhttps%253A%252F%252Faccount.obsessedgarage.com%252Fcallback%26region_country%3DDO%26response_type%3Dcode%26scope%3Dopenid%2Bemail%2Bcustomer-account-api%253Afull%26state%3DhWN88E0SDZKHiYcVz86BfBdy&region_country=DO");
       return this;
     }
 

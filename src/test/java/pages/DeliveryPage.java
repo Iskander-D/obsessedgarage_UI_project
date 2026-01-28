@@ -17,8 +17,8 @@ public class DeliveryPage {
 
 
     @Step("Проверить заголовок страницы Shipping & Delivery")
-    public DeliveryPage checkTextDeliveryPage() {
-        textToDeliveryPage.shouldHave(text("How To Start a Return (RMA)"));
+    public DeliveryPage checkTextDeliveryPage(String value) {
+        textToDeliveryPage.shouldHave(text(value));
         return this;
     }
 

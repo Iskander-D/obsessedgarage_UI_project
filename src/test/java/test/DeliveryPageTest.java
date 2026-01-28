@@ -26,7 +26,7 @@ public class DeliveryPageTest extends TestBase {
                 .openSupportPage();
         switchTo().window(1);
         supportPage.openReturnPage();
-        deliveryPage.checkTextDeliveryPage();
+        deliveryPage.checkTextDeliveryPage("How To Start a Return (RMA)");
 //                    .checkArticleList();
 
     }

@@ -19,7 +19,7 @@ public class BasketPageTest extends TestBase {
     BasketPage basketPage = new BasketPage();
 
     @Severity(SeverityLevel.NORMAL)
-    @ValueSource(strings = {"sonic", "aid"})
+    @ValueSource(strings = {"cleaner", "tools"})
     @ParameterizedTest(name = "Добавляем товар: {0}")
     @Story("Добавление товара в корзину")
     @DisplayName("Проверка наличия товара в корзине после его добавления.")
@@ -33,7 +33,7 @@ public class BasketPageTest extends TestBase {
     }
 
     @Severity(SeverityLevel.NORMAL)
-    @ValueSource(strings = {"grinder", "flex"})
+    @ValueSource(strings = {"karcher", "Ledermax"})
     @ParameterizedTest(name = "Добавляем товар: {0}")
     @Story("Удаление товара из корзины")
     @DisplayName("Проверка удаления товара из корзины.")
@@ -49,7 +49,7 @@ public class BasketPageTest extends TestBase {
     }
 
     @Severity(SeverityLevel.NORMAL)
-    @ValueSource(strings = {"Detail Brush", "Sonic"})
+    @ValueSource(strings = {"karcher", "cleaner"})
     @ParameterizedTest(name = "Добавляем товар: {0}")
     @Story("Увеличение количества товаров в корзине")
     @DisplayName("Проверка увеличения количества товара в корзине.")
@@ -57,7 +57,7 @@ public class BasketPageTest extends TestBase {
         mainPage.openPage()
                 .searchItem(searchQuery);
         searchPage.openFirstProductInList();
-        itemPage.addQuantityItem()
+        itemPage.addQuantityItem("2")
                 .addToBasket();
         basketPage.openBasket()
                   .checkQuantityItem();

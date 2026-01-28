@@ -19,9 +19,9 @@ public class ItemPage {
     }
 
     @Step("Увеличить количество товар в корзине")
-    public ItemPage addQuantityItem() {
+    public ItemPage addQuantityItem(String value) {
         addAtQuantityItem.clear();
-        addAtQuantityItem.setValue("3");
+        addAtQuantityItem.setValue(value);
         return this;
     }
 }

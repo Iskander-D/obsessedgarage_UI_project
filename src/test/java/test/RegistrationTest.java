@@ -11,7 +11,7 @@ import pages.AccountPage;
 @Epic("UI")
 @Owner("Aleksandr Drozenko")
 @Feature("Заполнение регистрации")
-@Tag("ui")
+@Tag("smoke")
 @DisplayName("Проверка заполнения регистрации")
 
 public class RegistrationTest extends TestBase {
@@ -19,13 +19,13 @@ public class RegistrationTest extends TestBase {
     TestData testData = new TestData();
     AccountPage accountPage = new AccountPage();
 
-    @Disabled
+
     @Test
     @Severity(SeverityLevel.NORMAL)
     @Story("Регистрация")
     @DisplayName("Заполнение полей регистрации")
     void registrationTest() {
-//        mainPage.openPage();
+//      mainPage.openPage();
         accountPage.openAccountPage()
                    .verifyEmailFieldIsVisible()
                    .setEmail(testData.userEmail)
