@@ -8,6 +8,8 @@ import org.junit.jupiter.params.provider.ValueSource;
 import pages.BasketPage;
 import pages.ItemPage;
 
+import static com.codeborne.selenide.Selenide.sleep;
+
 
 @Epic("UI")
 @Owner("Aleksandr Drozenko")
@@ -41,6 +43,7 @@ public class BasketPageTest extends TestBase {
         mainPage.openPage()
                 .searchItem(value);
         searchPage.openFirstProductInList();
+        sleep(3000);
         itemPage.addToBasket();
         basketPage.openBasket()
                   .checkBasket()
@@ -57,8 +60,9 @@ public class BasketPageTest extends TestBase {
         mainPage.openPage()
                 .searchItem(searchQuery);
         searchPage.openFirstProductInList();
-        itemPage.addQuantityItem("2")
-                .addToBasket();
+        itemPage.addQuantityItem("2");
+        sleep(3000);
+        itemPage.addToBasket();
         basketPage.openBasket()
                   .checkQuantityItem();
 
