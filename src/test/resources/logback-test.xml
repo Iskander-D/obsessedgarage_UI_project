@@ -1,0 +1,24 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<configuration>-->
+
+<!--    &lt;!&ndash; Уровень логов по умолчанию — WARN (только важные сообщения) &ndash;&gt;-->
+<!--    <root level="WARN">-->
+<!--        <appender-ref ref="CONSOLE"/>-->
+<!--    </root>-->
+
+<!--    &lt;!&ndash; Глушим спам от Selenium и CDP &ndash;&gt;-->
+<!--    <logger name="org.openqa.selenium" level="WARN"/>-->
+<!--    <logger name="org.openqa.selenium.devtools" level="WARN"/>-->
+<!--    <logger name="org.openqa.selenium.chromium" level="WARN"/>-->
+<!--    <logger name="org.openqa.selenium.remote" level="WARN"/>-->
+<!--    <logger name="com.codeborne.selenide" level="WARN"/>-->
+<!--    <logger name="org.asynchttpclient" level="WARN"/> &lt;!&ndash; Netty / HTTP клиент &ndash;&gt;-->
+
+<!--    &lt;!&ndash; Консольный вывод (можно настроить формат) &ndash;&gt;-->
+<!--    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">-->
+<!--        <encoder>-->
+<!--            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>-->
+<!--        </encoder>-->
+<!--    </appender>-->
+
+<!--</configuration>-->

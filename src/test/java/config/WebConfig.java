@@ -13,7 +13,7 @@ public interface WebConfig extends Config {
     String getBrowser();
 
     @Key("browserVersion")
-    @DefaultValue("latest")
+    @DefaultValue("")
     String getBrowserVersion();
 
     @Key("browserSize")
