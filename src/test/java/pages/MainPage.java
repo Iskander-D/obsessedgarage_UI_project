@@ -4,6 +4,7 @@ import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
+import pages.component.SearchComponent;
 
 import static com.codeborne.selenide.Condition.exist;
 import static com.codeborne.selenide.Condition.text;
@@ -12,15 +13,17 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 public class MainPage {
+  SearchComponent searchComponent = new SearchComponent();
     private final SelenideElement
-            search = element("#Inline-Search"),
+
+
             openToSupportPage = element("a[href='https://support.obsessedgarage.com']"),
             openToAffiliatePage = element("#CollapsibleAccordion-collapsible_link_list_3H8mTj"),
             checkToCurrency = element(".product-grid"),
             openToListCurrency = element(".localization-form"),
             findToCountry = element("#AnnouncementLocalizationcountry-filter-input");
 
-   private final ElementsCollection selectToCountry = elements(".disclosure__item");
+    private final ElementsCollection selectToCountry = elements(".disclosure__item");
 
     @Step("Открыть главную страницу")
     public MainPage openPage() {
@@ -36,12 +39,6 @@ public class MainPage {
     @Step("Открыть ссылку SUPPORT PAGE")
     public MainPage openSupportPage() {
         openToSupportPage.click();
-        return this;
-    }
-
-    @Step("Ввести запрос в меню поиска")
-    public MainPage searchItem(String searchQuery) {
-        search.setValue(searchQuery).pressEnter();
         return this;
     }
 
@@ -81,6 +78,12 @@ public class MainPage {
     public MainPage selectCountry(String value) {
         selectToCountry.find(text(value)).scrollIntoView(true).click();
         return this;
+    }
+
+    @Step("Ввести запрос в меню поиска")
+    public MainPage searchItem(String searchQuery) {
+        searchComponent.searchItem(searchQuery);  // делегируем компоненту
+        return this;                         // возвращаем текущий объект MainPage
     }
 
 }
