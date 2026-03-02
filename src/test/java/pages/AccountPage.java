@@ -13,7 +13,7 @@ public class AccountPage {
     private final SelenideElement
 //            openToAccountPage = $x("//a[contains(@href, 'customer_authentication/login')]"),
 
-            emailInput = element("#email"),
+            emailInput = element("#customer-authentication-web-email"),
             passwordInput = element("#CustomerPassword");
 
     @Step("Перейти на страницу Аккаунта ")
