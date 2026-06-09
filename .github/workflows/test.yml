@@ -5,10 +5,13 @@ on:
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
+  workflow_dispatch:   # можно запускать вручную
 
 jobs:
   test:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout code
@@ -17,26 +20,30 @@ jobs:
       - name: Set up JDK 21
         uses: actions/setup-java@v4
         with:
-          java-version: '21'
           distribution: 'temurin'
+          java-version: '21'
           cache: 'gradle'
 
-      - name: Grant execute permission
+      - name: Make gradlew executable
         run: chmod +x gradlew
 
       - name: Run tests
         run: ./gradlew clean test allureReport --info
 
-      - name: Upload Allure Results
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: allure-results
-          path: build/allure-results
-          retention-days: 30
-
+      # Публикация Allure отчёта
       - name: Publish Allure Report
         if: always()
-        uses: dnhn/action-allure-report@v1.2
+        uses: simple-elf/allure-report-action@master
         with:
-          allure-results: build/allure-results
+          gh_pages: gh-pages
+          allure_results: build/allure-results
+          allure_report: allure-report
+          allure_history: allure-history
+
+      - name: Deploy Allure Report to GitHub Pages
+        if: always()
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: allure-history
