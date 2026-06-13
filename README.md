@@ -125,7 +125,7 @@ ____
 
 [![Allure Report](https://img.shields.io/badge/Allure%20Report-View%20Latest-brightgreen?style=for-the-badge&logo=git&logoColor=white)](https://motec.github.io/obsessedgarage_UI_project/)
 
-Последний Allure отчёт : [Открыть Allure Report](https://motec.github.io/obsessedgarage_UI_project/)
+Последний Allure отчёт : [Открыть Allure Report](https://iskander-d.github.io/obsessedgarage_UI_project/)
 
 
 [Наверх ⬆](#наверх)
