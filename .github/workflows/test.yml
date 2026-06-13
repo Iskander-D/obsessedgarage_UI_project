@@ -42,7 +42,7 @@ jobs:
             -Dselenide.browserVersion=128.0 \
             -Dselenide.browserSize=1920x1080 \
             -Dselenide.pageLoadStrategy=eager \
-            -DbaseUrl=${{ secrets.BASEURL }} \
+            -Dselenide.baseUrl=${{ secrets.BASEURL }} \
             -DselenoidCredential=${{ secrets.SELENOIDCREDENTIAL }} \
             -DselenoidUrl=${{ secrets.SELENOIDURL }}
 
