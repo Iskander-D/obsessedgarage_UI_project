@@ -1,0 +1,17 @@
+[2026-06-13T06:04:48.472Z] [SEVERE] security - Refused to frame 'https://shop.app/' because an ancestor violates the following Content Security Policy directive: "frame-ancestors 'self' https://shop.app https://admin.shopify.com".
+
+[2026-06-13T06:04:51.251Z] [SEVERE] https://www.obsessedgarage.com/api/collect - Failed to load resource: the server responded with a status of 503 ()
+[2026-06-13T06:04:54.609Z] [SEVERE] https://www.obsessedgarage.com/products/ledermax-mild-cleaner-1-0?_pos=1&_sid=fa651ce24&_ss=r - Clear-Site-Data header on 'https://www.obsessedgarage.com/cart/add': Unrecognized type: "prefetchCache".
+[2026-06-13T06:04:54.609Z] [SEVERE] https://www.obsessedgarage.com/products/ledermax-mild-cleaner-1-0?_pos=1&_sid=fa651ce24&_ss=r - Clear-Site-Data header on 'https://www.obsessedgarage.com/cart/add': Unrecognized type: "prerenderCache".
+[2026-06-13T06:04:54.609Z] [SEVERE] https://www.obsessedgarage.com/products/ledermax-mild-cleaner-1-0?_pos=1&_sid=fa651ce24&_ss=r - Clear-Site-Data header on 'https://www.obsessedgarage.com/cart/add': No recognized types specified.
+[2026-06-13T06:04:57.123Z] [WARNING] https://www.obsessedgarage.com/cart - Each dictionary in the list "icons" should contain a non-empty UTF8 string field "sizes".
+[2026-06-13T06:04:57.124Z] [WARNING] https://www.obsessedgarage.com/cart - Each dictionary in the list "icons" should contain a non-empty UTF8 string field "type".
+[2026-06-13T06:04:57.191Z] [WARNING] https://www.obsessedgarage.com/cart - Each dictionary in the list "icons" should contain a non-empty UTF8 string field "sizes".
+[2026-06-13T06:04:57.194Z] [WARNING] https://www.obsessedgarage.com/cart - Each dictionary in the list "icons" should contain a non-empty UTF8 string field "type".
+[2026-06-13T06:04:58.205Z] [SEVERE] https://www.obsessedgarage.com/cart - Clear-Site-Data header on 'https://www.obsessedgarage.com/cart/change': Unrecognized type: "prefetchCache".
+[2026-06-13T06:04:58.205Z] [SEVERE] https://www.obsessedgarage.com/cart - Clear-Site-Data header on 'https://www.obsessedgarage.com/cart/change': Unrecognized type: "prerenderCache".
+[2026-06-13T06:04:58.205Z] [SEVERE] https://www.obsessedgarage.com/cart - Clear-Site-Data header on 'https://www.obsessedgarage.com/cart/change': No recognized types specified.
+[2026-06-13T06:04:58.220Z] [WARNING] https://www.obsessedgarage.com/cdn/shop/t/153/assets/cart.js?v=115462199248718921321753793578 0:5774 TypeError: Cannot read properties of null (reading 'querySelectorAll')
+    at getFocusableElements (https://www.obsessedgarage.com/cdn/shop/t/153/assets/global.js?v=130332988400384681171753793579:1:12392)
+    at trapFocus (https://www.obsessedgarage.com/cdn/shop/t/153/assets/global.js?v=130332988400384681171753793579:1:13258)
+    at https://www.obsessedgarage.com/cdn/shop/t/153/assets/cart.js?v=115462199248718921321753793578:1:5375

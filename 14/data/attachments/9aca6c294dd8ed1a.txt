@@ -1,0 +1,60 @@
+[2026-06-13T06:05:13.691Z] [SEVERE] security - Refused to frame 'https://shop.app/' because an ancestor violates the following Content Security Policy directive: "frame-ancestors 'self' https://shop.app https://admin.shopify.com".
+
+[2026-06-13T06:05:16.409Z] [SEVERE] https://www.obsessedgarage.com/api/collect - Failed to load resource: the server responded with a status of 503 ()
+[2026-06-13T06:05:16.724Z] [WARNING] https://www.obsessedgarage.com/cdn/shopifycloud/storefront/assets/shop_events_listener-4e26a9ce.js 0:4683 "[shop_events_listener] Error in trackViewedProductVariant: Cannot destructure property 'product' of 'findProductAndVariantInCollection(...)' as it is undefined."
+[2026-06-13T06:05:16.724Z] [WARNING] https://www.obsessedgarage.com/cdn/shopifycloud/storefront/assets/shop_events_listener-4e26a9ce.js 0:4683 "[shop_events_listener] Error in trackViewedProductVariant: Cannot destructure property 'product' of 'findProductAndVariantInCollection(...)' as it is undefined."
+[2026-06-13T06:05:16.724Z] [WARNING] https://www.obsessedgarage.com/cdn/shopifycloud/storefront/assets/shop_events_listener-4e26a9ce.js 0:4683 "[shop_events_listener] Error in trackViewedProductVariant: Cannot destructure property 'product' of 'findProductAndVariantInCollection(...)' as it is undefined."
+[2026-06-13T06:05:18.708Z] [SEVERE] https://www.obsessedgarage.com/products/og-260-hand-held-battery-powered-sprayer.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T06:05:18.713Z] [SEVERE] https://www.obsessedgarage.com/products/og-260-hand-held-battery-powered-sprayer.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T06:05:19.330Z] [SEVERE] https://www.obsessedgarage.com/products/og-260-hand-held-battery-powered-sprayer.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T06:05:19.372Z] [SEVERE] https://www.obsessedgarage.com/products/og-260-hand-held-battery-powered-sprayer.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T06:05:19.556Z] [SEVERE] https://www.obsessedgarage.com/products/og-260-hand-held-battery-powered-sprayer.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T06:05:19.608Z] [SEVERE] https://www.obsessedgarage.com/products/og-260-hand-held-battery-powered-sprayer.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T06:05:19.608Z] [SEVERE] https://www.obsessedgarage.com/products/og-260-hand-held-battery-powered-sprayer.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T06:05:19.635Z] [SEVERE] https://www.obsessedgarage.com/products/og-260-hand-held-battery-powered-sprayer.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T06:05:19.702Z] [SEVERE] https://www.obsessedgarage.com/products/og-260-hand-held-battery-powered-sprayer.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T06:05:19.719Z] [SEVERE] https://www.obsessedgarage.com/products/og-260-hand-held-battery-powered-sprayer.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T06:05:20.232Z] [SEVERE] https://www.obsessedgarage.com/products/og-260-hand-held-battery-powered-sprayer?_pos=1&_sid=75d836989&_ss=r - Clear-Site-Data header on 'https://www.obsessedgarage.com/cart/add': Unrecognized type: "prefetchCache".
+[2026-06-13T06:05:20.232Z] [SEVERE] https://www.obsessedgarage.com/products/og-260-hand-held-battery-powered-sprayer?_pos=1&_sid=75d836989&_ss=r - Clear-Site-Data header on 'https://www.obsessedgarage.com/cart/add': Unrecognized type: "prerenderCache".
+[2026-06-13T06:05:20.232Z] [SEVERE] https://www.obsessedgarage.com/products/og-260-hand-held-battery-powered-sprayer?_pos=1&_sid=75d836989&_ss=r - Clear-Site-Data header on 'https://www.obsessedgarage.com/cart/add': No recognized types specified.
+[2026-06-13T06:05:20.471Z] [SEVERE] https://www.obsessedgarage.com/products/og-260-hand-held-battery-powered-sprayer.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T06:05:20.490Z] [SEVERE] https://www.obsessedgarage.com/products/og-260-hand-held-battery-powered-sprayer.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T06:05:20.692Z] [SEVERE] https://www.obsessedgarage.com/products/og-260-hand-held-battery-powered-sprayer.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T06:05:20.715Z] [SEVERE] https://www.obsessedgarage.com/products/og-260-hand-held-battery-powered-sprayer.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T06:05:20.737Z] [SEVERE] https://www.obsessedgarage.com/products/og-260-hand-held-battery-powered-sprayer.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T06:05:20.737Z] [SEVERE] https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js 93:1823 "Failed to fetch inventory_management:" Error: HTTP 429
+    at https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js:94:1696
+    at async https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/app-embed-CzAj-q6x.js:7:8951
+    at async Promise.all (index 0)
+    at async https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/app-embed-CzAj-q6x.js:7:8867
+[2026-06-13T06:05:20.758Z] [SEVERE] https://www.obsessedgarage.com/products/og-260-hand-held-battery-powered-sprayer.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T06:05:20.770Z] [SEVERE] https://www.obsessedgarage.com/products/og-260-hand-held-battery-powered-sprayer.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T06:05:20.907Z] [SEVERE] https://www.obsessedgarage.com/products/og-260-hand-held-battery-powered-sprayer.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T06:05:20.925Z] [SEVERE] https://www.obsessedgarage.com/products/og-260-hand-held-battery-powered-sprayer.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T06:05:21.172Z] [SEVERE] https://www.obsessedgarage.com/products/og-260-hand-held-battery-powered-sprayer.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T06:05:21.194Z] [SEVERE] https://www.obsessedgarage.com/products/og-260-hand-held-battery-powered-sprayer.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T06:05:21.208Z] [SEVERE] https://www.obsessedgarage.com/products/og-260-hand-held-battery-powered-sprayer.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T06:05:21.208Z] [SEVERE] https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js 93:1823 "Failed to fetch inventory_management:" Error: HTTP 429
+    at https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js:94:1696
+    at async https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/app-embed-CzAj-q6x.js:7:3391
+[2026-06-13T06:05:21.224Z] [SEVERE] https://www.obsessedgarage.com/products/og-260-hand-held-battery-powered-sprayer.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T06:05:21.241Z] [SEVERE] https://www.obsessedgarage.com/products/og-260-hand-held-battery-powered-sprayer.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T06:05:22.745Z] [SEVERE] https://www.obsessedgarage.com/products/og-260-hand-held-battery-powered-sprayer.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T06:05:22.745Z] [SEVERE] https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js 93:1823 "Failed to fetch inventory_management:" Error: HTTP 429
+    at https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js:94:1696
+    at async https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/app-embed-CzAj-q6x.js:7:8951
+    at async Promise.all (index 0)
+    at async https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/app-embed-CzAj-q6x.js:7:8867
+[2026-06-13T06:05:22.769Z] [WARNING] https://www.obsessedgarage.com/cart - Each dictionary in the list "icons" should contain a non-empty UTF8 string field "sizes".
+[2026-06-13T06:05:22.769Z] [WARNING] https://www.obsessedgarage.com/cart - Each dictionary in the list "icons" should contain a non-empty UTF8 string field "type".
+[2026-06-13T06:05:22.810Z] [SEVERE] https://www.obsessedgarage.com/products/og-260-hand-held-battery-powered-sprayer.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T06:05:22.812Z] [SEVERE] https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js 93:1823 "Failed to fetch inventory_management:" Error: HTTP 429
+    at https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js:94:1696
+    at async https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/app-embed-CzAj-q6x.js:7:3391
+[2026-06-13T06:05:22.826Z] [SEVERE] https://www.obsessedgarage.com/cdn/shop/t/153/assets/cart.js?v=115462199248718921321753793578 0:0 Uncaught SyntaxError: Identifier 'CartItems' has already been declared
+[2026-06-13T06:05:22.855Z] [WARNING] https://www.obsessedgarage.com/cart - Each dictionary in the list "icons" should contain a non-empty UTF8 string field "sizes".
+[2026-06-13T06:05:22.855Z] [WARNING] https://www.obsessedgarage.com/cart - Each dictionary in the list "icons" should contain a non-empty UTF8 string field "type".
+[2026-06-13T06:05:23.042Z] [SEVERE] https://www.obsessedgarage.com/products/og-260-hand-held-battery-powered-sprayer.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T06:05:23.043Z] [SEVERE] https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js 93:1823 "Failed to fetch inventory_management:" Error: HTTP 429
+    at https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js:94:1696
+    at async https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js:99:49160
