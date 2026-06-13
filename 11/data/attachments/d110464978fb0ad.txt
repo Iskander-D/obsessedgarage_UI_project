@@ -1,4 +1,0 @@
-[2026-06-13T05:58:08.599Z] [SEVERE] security - Refused to frame 'https://shop.app/' because an ancestor violates the following Content Security Policy directive: "frame-ancestors 'self' https://shop.app https://admin.shopify.com".
-
-[2026-06-13T05:58:09.871Z] [WARNING] https://support.obsessedgarage.com/ - <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes">
-[2026-06-13T05:58:10.243Z] [WARNING] https://support.obsessedgarage.com/category/181-returns - <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes">

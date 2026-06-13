@@ -1,0 +1,10 @@
+[2026-06-13T05:57:55.306Z] [SEVERE] security - Refused to frame 'https://shop.app/' because an ancestor violates the following Content Security Policy directive: "frame-ancestors 'self' https://shop.app https://admin.shopify.com".
+
+[2026-06-13T05:57:58.266Z] [WARNING] https://www.obsessedgarage.com/cdn/shopifycloud/storefront/assets/shop_events_listener-4e26a9ce.js 0:4683 "[shop_events_listener] Error in trackViewedProductVariant: Cannot destructure property 'product' of 'findProductAndVariantInCollection(...)' as it is undefined."
+[2026-06-13T05:58:01.212Z] [SEVERE] https://www.obsessedgarage.com/products/bilt-hamber-trace-less?_pos=1&_sid=990eef88a&_ss=r - Clear-Site-Data header on 'https://www.obsessedgarage.com/cart/add': Unrecognized type: "prefetchCache".
+[2026-06-13T05:58:01.212Z] [SEVERE] https://www.obsessedgarage.com/products/bilt-hamber-trace-less?_pos=1&_sid=990eef88a&_ss=r - Clear-Site-Data header on 'https://www.obsessedgarage.com/cart/add': Unrecognized type: "prerenderCache".
+[2026-06-13T05:58:01.212Z] [SEVERE] https://www.obsessedgarage.com/products/bilt-hamber-trace-less?_pos=1&_sid=990eef88a&_ss=r - Clear-Site-Data header on 'https://www.obsessedgarage.com/cart/add': No recognized types specified.
+[2026-06-13T05:58:03.145Z] [WARNING] https://www.obsessedgarage.com/cart - Each dictionary in the list "icons" should contain a non-empty UTF8 string field "sizes".
+[2026-06-13T05:58:03.147Z] [WARNING] https://www.obsessedgarage.com/cart - Each dictionary in the list "icons" should contain a non-empty UTF8 string field "type".
+[2026-06-13T05:58:03.207Z] [WARNING] https://www.obsessedgarage.com/cart - Each dictionary in the list "icons" should contain a non-empty UTF8 string field "sizes".
+[2026-06-13T05:58:03.207Z] [WARNING] https://www.obsessedgarage.com/cart - Each dictionary in the list "icons" should contain a non-empty UTF8 string field "type".
