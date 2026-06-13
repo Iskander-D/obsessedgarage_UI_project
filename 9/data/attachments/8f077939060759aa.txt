@@ -1,4 +1,0 @@
-[2026-06-13T05:33:49.106Z] [SEVERE] security - Refused to frame 'https://shop.app/' because an ancestor violates the following Content Security Policy directive: "frame-ancestors 'self' https://shop.app https://admin.shopify.com".
-
-[2026-06-13T05:33:50.214Z] [SEVERE] https://www.obsessedgarage.com/collections/home - Failed to load resource: the server responded with a status of 429 ()
-[2026-06-13T05:33:50.368Z] [SEVERE] https://www.obsessedgarage.com/favicon.ico - Failed to load resource: the server responded with a status of 404 ()

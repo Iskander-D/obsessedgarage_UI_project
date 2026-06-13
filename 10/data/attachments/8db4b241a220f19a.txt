@@ -1,0 +1,19 @@
+[2026-06-13T05:55:44.935Z] [SEVERE] security - Refused to frame 'https://shop.app/' because an ancestor violates the following Content Security Policy directive: "frame-ancestors 'self' https://shop.app https://admin.shopify.com".
+
+[2026-06-13T05:55:47.969Z] [WARNING] https://www.obsessedgarage.com/cdn/shopifycloud/storefront/assets/shop_events_listener-4e26a9ce.js 0:4683 "[shop_events_listener] Error in trackViewedProductVariant: Cannot destructure property 'product' of 'findProductAndVariantInCollection(...)' as it is undefined."
+[2026-06-13T05:55:51.134Z] [SEVERE] https://www.obsessedgarage.com/products/bilt-hamber-trace-less?_pos=1&_sid=990eef88a&_ss=r - Clear-Site-Data header on 'https://www.obsessedgarage.com/cart/add': Unrecognized type: "prefetchCache".
+[2026-06-13T05:55:51.134Z] [SEVERE] https://www.obsessedgarage.com/products/bilt-hamber-trace-less?_pos=1&_sid=990eef88a&_ss=r - Clear-Site-Data header on 'https://www.obsessedgarage.com/cart/add': Unrecognized type: "prerenderCache".
+[2026-06-13T05:55:51.134Z] [SEVERE] https://www.obsessedgarage.com/products/bilt-hamber-trace-less?_pos=1&_sid=990eef88a&_ss=r - Clear-Site-Data header on 'https://www.obsessedgarage.com/cart/add': No recognized types specified.
+[2026-06-13T05:55:51.151Z] [SEVERE] https://www.obsessedgarage.com/cart.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T05:55:51.188Z] [SEVERE] https://www.obsessedgarage.com/products/bilt-hamber-trace-less?_pos=1&_sid=990eef88a&_ss=r 0:0 Uncaught SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+[2026-06-13T05:55:51.189Z] [SEVERE] https://www.obsessedgarage.com/cart.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T05:55:51.189Z] [SEVERE] https://cdn.shopify.com/extensions/019ebaf2-cc42-70b6-8914-5a913a4c8aa8/essential-cart-drawer-717/assets/app-embed-BA6dWlow.js 246:18969 "[Essential Cart] Attempt 1/3: Failed to fetch /cart.js: 429 "
+[2026-06-13T05:55:51.189Z] [SEVERE] https://cdn.shopify.com/extensions/019ebaf2-cc42-70b6-8914-5a913a4c8aa8/essential-cart-drawer-717/assets/app-embed-BA6dWlow.js 246:19059 "[Essential Cart] Client error - not retrying"
+[2026-06-13T05:55:51.190Z] [WARNING] https://cdn.shopify.com/extensions/019ebaf2-cc42-70b6-8914-5a913a4c8aa8/essential-cart-drawer-717/assets/app-embed-BA6dWlow.js 246:20800 "[Essential Cart] Failed to fetch updated cart data after add operation"
+[2026-06-13T05:55:51.508Z] [SEVERE] https://www.obsessedgarage.com/cart.json?app=mwsfees - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T05:55:51.509Z] [WARNING] https://cdn.shopify.com/extensions/019eb151-4613-7003-945a-6ac1bd03f5c5/upcharge-fees-170/assets/mws_fees_bundle.js 66:9084 "⚠️ Upcharge Fees: Rate limited (429), retrying in 500ms... (3 retries left)"
+[2026-06-13T05:55:51.552Z] [SEVERE] https://www.obsessedgarage.com/cart.json?app=mwsfees - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T05:55:51.552Z] [WARNING] https://cdn.shopify.com/extensions/019eb151-4613-7003-945a-6ac1bd03f5c5/upcharge-fees-170/assets/mws_fees_bundle.js 66:9084 "⚠️ Upcharge Fees: Rate limited (429), retrying in 500ms... (3 retries left)"
+[2026-06-13T05:55:51.652Z] [SEVERE] https://www.obsessedgarage.com/cart.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T05:55:52Z] [SEVERE] https://www.obsessedgarage.com/cart - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T05:55:52.089Z] [SEVERE] https://www.obsessedgarage.com/favicon.ico - Failed to load resource: the server responded with a status of 429 ()
