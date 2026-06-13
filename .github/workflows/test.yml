@@ -5,8 +5,7 @@ on:
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
-  workflow_dispatch:   # можно запускать вручную
-
+  workflow_dispatch:
 
 jobs:
   test:
@@ -25,11 +24,27 @@ jobs:
           java-version: '21'
           cache: 'gradle'
 
+      - name: Start Selenoid
+        uses: Xotabu4/selenoid-github-action@v2
+        with:
+          # Можно добавить версии браузеров, если нужно
+          browser: chrome
+          # browserVersion: "128.0"   # раскомментируй, если хочешь фиксированную
+
       - name: Make gradlew executable
         run: chmod +x gradlew
 
       - name: Run tests
-        run: ./gradlew clean test allureReport --info
+        run: |
+          ./gradlew clean test --info \
+            -Dselenide.remote=http://localhost:4444/wd/hub \
+            -Dselenide.browser=chrome \
+            -Dselenide.browserVersion=128.0 \
+            -Dselenide.browserSize=1920x1080 \
+            -Dselenide.pageLoadStrategy=eager \
+            -DbaseUrl=${{ secrets.BASEURL }} \
+            -DselenoidCredential=${{ secrets.SELENOIDCREDENTIAL }} \
+            -DselenoidUrl=${{ secrets.SELENOIDURL }}
 
       # Публикация Allure отчёта
       - name: Publish Allure Report
