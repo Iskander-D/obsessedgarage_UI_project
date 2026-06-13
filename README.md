@@ -119,15 +119,13 @@ ____
 <p align="center"> 
 <img title="Selenoid Video" src="media/video/Video.gif" width="650" height="350"  alt="video">  
 
-# Obsessed Garage UI Tests
+
 
 [![Java CI + Allure](https://github.com/motec/obsessedgarage_UI_project/actions/workflows/main.yml/badge.svg)](https://github.com/motec/obsessedgarage_UI_project/actions/workflows/main.yml)
 
 ## 📊 Allure Report
 
 [![Allure Report](https://img.shields.io/badge/Allure%20Report-View%20Latest-brightgreen?style=for-the-badge&logo=git&logoColor=white)](https://motec.github.io/obsessedgarage_UI_project/)
-
----
 
 Последний Allure отчёт: [Открыть Allure Report](https://motec.github.io/obsessedgarage_UI_project/)
 
