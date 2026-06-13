@@ -1,0 +1,79 @@
+[2026-06-13T05:34:05.310Z] [SEVERE] security - Refused to frame 'https://shop.app/' because an ancestor violates the following Content Security Policy directive: "frame-ancestors 'self' https://shop.app https://admin.shopify.com".
+
+[2026-06-13T05:34:08.369Z] [WARNING] https://www.obsessedgarage.com/cdn/shopifycloud/storefront/assets/shop_events_listener-4e26a9ce.js 0:4683 "[shop_events_listener] Error in trackViewedProductVariant: Cannot destructure property 'product' of 'findProductAndVariantInCollection(...)' as it is undefined."
+[2026-06-13T05:34:08.369Z] [WARNING] https://www.obsessedgarage.com/cdn/shopifycloud/storefront/assets/shop_events_listener-4e26a9ce.js 0:4683 "[shop_events_listener] Error in trackViewedProductVariant: Cannot destructure property 'product' of 'findProductAndVariantInCollection(...)' as it is undefined."
+[2026-06-13T05:34:08.889Z] [SEVERE] https://www.obsessedgarage.com/products/tool-grid-6x6-boards.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T05:34:08.890Z] [SEVERE] https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js 93:1823 "Failed to fetch inventory_management:" Error: HTTP 429
+    at https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js:94:1696
+    at async https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js:99:49160
+[2026-06-13T05:34:08.895Z] [SEVERE] https://www.obsessedgarage.com/products/tool-grid-power-tool-holders.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T05:34:08.896Z] [SEVERE] https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js 93:1823 "Failed to fetch inventory_management:" Error: HTTP 429
+    at https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js:94:1696
+    at async https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js:99:49160
+[2026-06-13T05:34:08.897Z] [SEVERE] https://www.obsessedgarage.com/products/tool-grid-tool-tip-holder.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T05:34:08.897Z] [SEVERE] https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js 93:1823 "Failed to fetch inventory_management:" Error: HTTP 429
+    at https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js:94:1696
+    at async https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js:99:49160
+[2026-06-13T05:34:08.903Z] [SEVERE] https://www.obsessedgarage.com/products/tool-grid-tool-handle-holder.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T05:34:08.903Z] [SEVERE] https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js 93:1823 "Failed to fetch inventory_management:" Error: HTTP 429
+    at https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js:94:1696
+    at async https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js:99:49160
+[2026-06-13T05:34:08.906Z] [SEVERE] https://www.obsessedgarage.com/products/tool-grid-bit-holder-set.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T05:34:08.906Z] [SEVERE] https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js 93:1823 "Failed to fetch inventory_management:" Error: HTTP 429
+    at https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js:94:1696
+    at async https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js:99:49160
+[2026-06-13T05:34:08.989Z] [SEVERE] https://www.obsessedgarage.com/products/tool-grid-socket-holder.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T05:34:08.989Z] [SEVERE] https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js 93:1823 "Failed to fetch inventory_management:" Error: HTTP 429
+    at https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js:94:1696
+    at async https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js:99:49160
+[2026-06-13T05:34:08.997Z] [SEVERE] https://www.obsessedgarage.com/products/tool-grid-6x6-boards-black.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T05:34:08.997Z] [SEVERE] https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js 93:1823 "Failed to fetch inventory_management:" Error: HTTP 429
+    at https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js:94:1696
+    at async https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js:99:49160
+[2026-06-13T05:34:09.003Z] [SEVERE] https://www.obsessedgarage.com/products/tool-grid-corner-holder-10-pack.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T05:34:09.003Z] [SEVERE] https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js 93:1823 "Failed to fetch inventory_management:" Error: HTTP 429
+    at https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js:94:1696
+    at async https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js:99:49160
+[2026-06-13T05:34:09.006Z] [SEVERE] https://www.obsessedgarage.com/products/tool-grid-container-dividers.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T05:34:09.006Z] [SEVERE] https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js 93:1823 "Failed to fetch inventory_management:" Error: HTTP 429
+    at https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js:94:1696
+    at async https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js:99:49160
+[2026-06-13T05:34:09.009Z] [SEVERE] https://www.obsessedgarage.com/products/tool-grid-small-wrench-holder-sae-10-pack.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T05:34:09.010Z] [SEVERE] https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js 93:1823 "Failed to fetch inventory_management:" Error: HTTP 429
+    at https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js:94:1696
+    at async https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js:99:49160
+[2026-06-13T05:34:09.033Z] [SEVERE] https://www.obsessedgarage.com/products/tool-grid-large-corner-holder-8-pack.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T05:34:09.034Z] [SEVERE] https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js 93:1823 "Failed to fetch inventory_management:" Error: HTTP 429
+    at https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js:94:1696
+    at async https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js:99:49160
+[2026-06-13T05:34:09.057Z] [SEVERE] https://www.obsessedgarage.com/products/tool-grid-universal-holder.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T05:34:09.057Z] [SEVERE] https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js 93:1823 "Failed to fetch inventory_management:" Error: HTTP 429
+    at https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js:94:1696
+    at async https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js:99:49160
+[2026-06-13T05:34:09.058Z] [SEVERE] https://www.obsessedgarage.com/products/tool-grid-identification-labels.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T05:34:09.059Z] [SEVERE] https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js 93:1823 "Failed to fetch inventory_management:" Error: HTTP 429
+    at https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js:94:1696
+    at async https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js:99:49160
+[2026-06-13T05:34:09.060Z] [SEVERE] https://www.obsessedgarage.com/products/tool-grid-containers.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T05:34:09.060Z] [SEVERE] https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js 93:1823 "Failed to fetch inventory_management:" Error: HTTP 429
+    at https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js:94:1696
+    at async https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js:99:49160
+[2026-06-13T05:34:09.062Z] [SEVERE] https://www.obsessedgarage.com/products/tool-grid-ratchet-head-holder.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T05:34:09.062Z] [SEVERE] https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js 93:1823 "Failed to fetch inventory_management:" Error: HTTP 429
+    at https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js:94:1696
+    at async https://cdn.shopify.com/extensions/019ebd39-276f-7d8f-8394-313da4160bb1/essential-pre-order-presale-3378/assets/browse-BTnK92mq.js:99:49160
+[2026-06-13T05:34:10.476Z] [SEVERE] https://www.obsessedgarage.com/products/tool-grid-6x6-boards.json?currency=null&origin=https:%2F%2Fwww.obsessedgarage.com - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T05:34:10.484Z] [SEVERE] https://www.obsessedgarage.com/products/tool-grid-small-wrench-holder-sae-10-pack.json?currency=null&origin=https:%2F%2Fwww.obsessedgarage.com - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T05:34:10.485Z] [SEVERE] https://www.obsessedgarage.com/products/tool-grid-socket-holder.json?currency=null&origin=https:%2F%2Fwww.obsessedgarage.com - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T05:34:10.486Z] [SEVERE] https://www.obsessedgarage.com/products/tool-grid-6x6-boards-black.json?currency=null&origin=https:%2F%2Fwww.obsessedgarage.com - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T05:34:10.486Z] [SEVERE] https://www.obsessedgarage.com/products/tool-grid-tool-handle-holder.json?currency=null&origin=https:%2F%2Fwww.obsessedgarage.com - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T05:34:10.486Z] [SEVERE] https://www.obsessedgarage.com/products/tool-grid-universal-holder.json?currency=null&origin=https:%2F%2Fwww.obsessedgarage.com - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T05:34:10.487Z] [SEVERE] https://www.obsessedgarage.com/products/tool-grid-ratchet-head-holder.json?currency=null&origin=https:%2F%2Fwww.obsessedgarage.com - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T05:34:10.487Z] [SEVERE] https://www.obsessedgarage.com/products/tool-grid-identification-labels.json?currency=null&origin=https:%2F%2Fwww.obsessedgarage.com - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T05:34:10.488Z] [SEVERE] https://www.obsessedgarage.com/products/tool-grid-power-tool-holders.json?currency=null&origin=https:%2F%2Fwww.obsessedgarage.com - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T05:34:10.488Z] [SEVERE] https://www.obsessedgarage.com/products/tool-grid-corner-holder-10-pack.json?currency=null&origin=https:%2F%2Fwww.obsessedgarage.com - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T05:34:10.489Z] [SEVERE] https://www.obsessedgarage.com/products/tool-grid-bit-holder-set.json?currency=null&origin=https:%2F%2Fwww.obsessedgarage.com - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T05:34:10.489Z] [SEVERE] https://www.obsessedgarage.com/products/tool-grid-containers.json?currency=null&origin=https:%2F%2Fwww.obsessedgarage.com - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T05:34:10.490Z] [SEVERE] https://www.obsessedgarage.com/products/tool-grid-tool-tip-holder.json?currency=null&origin=https:%2F%2Fwww.obsessedgarage.com - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T05:34:10.490Z] [SEVERE] https://www.obsessedgarage.com/products/tool-grid-large-corner-holder-8-pack.json?currency=null&origin=https:%2F%2Fwww.obsessedgarage.com - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T05:34:10.490Z] [SEVERE] https://www.obsessedgarage.com/products/tool-grid-container-dividers.json?currency=null&origin=https:%2F%2Fwww.obsessedgarage.com - Failed to load resource: the server responded with a status of 429 ()

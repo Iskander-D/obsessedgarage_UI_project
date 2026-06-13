@@ -1,0 +1,6 @@
+[2026-06-13T05:32:52.012Z] [SEVERE] security - Refused to frame 'https://shop.app/' because an ancestor violates the following Content Security Policy directive: "frame-ancestors 'self' https://shop.app https://admin.shopify.com".
+
+[2026-06-13T05:32:54.901Z] [SEVERE] https://www.obsessedgarage.com/api/collect - Failed to load resource: the server responded with a status of 503 ()
+[2026-06-13T05:32:55.225Z] [WARNING] https://www.obsessedgarage.com/cdn/shopifycloud/storefront/assets/shop_events_listener-4e26a9ce.js 0:4683 "[shop_events_listener] Error in trackViewedProductVariant: Cannot destructure property 'product' of 'findProductAndVariantInCollection(...)' as it is undefined."
+[2026-06-13T05:32:55.549Z] [SEVERE] https://www.obsessedgarage.com/products/bilt-hamber-trace-less?_pos=1&_sid=990eef88a&_ss=r - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T05:32:55.670Z] [SEVERE] https://www.obsessedgarage.com/favicon.ico - Failed to load resource: the server responded with a status of 404 ()

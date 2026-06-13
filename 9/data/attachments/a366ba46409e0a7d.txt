@@ -1,0 +1,12 @@
+[2026-06-13T05:32:24.628Z] [SEVERE] security - Refused to frame 'https://shop.app/' because an ancestor violates the following Content Security Policy directive: "frame-ancestors 'self' https://shop.app https://admin.shopify.com".
+
+[2026-06-13T05:32:27.756Z] [WARNING] https://www.obsessedgarage.com/cdn/shopifycloud/storefront/assets/shop_events_listener-4e26a9ce.js 0:4683 "[shop_events_listener] Error in trackViewedProductVariant: Cannot destructure property 'product' of 'findProductAndVariantInCollection(...)' as it is undefined."
+[2026-06-13T05:32:27.756Z] [WARNING] https://www.obsessedgarage.com/cdn/shopifycloud/storefront/assets/shop_events_listener-4e26a9ce.js 0:4683 "[shop_events_listener] Error in trackViewedProductVariant: Cannot destructure property 'product' of 'findProductAndVariantInCollection(...)' as it is undefined."
+[2026-06-13T05:32:33.273Z] [SEVERE] https://www.obsessedgarage.com/products/og-260-hand-held-battery-powered-sprayer?_pos=1&_sid=75d836989&_ss=r - Clear-Site-Data header on 'https://www.obsessedgarage.com/cart/add': Unrecognized type: "prefetchCache".
+[2026-06-13T05:32:33.273Z] [SEVERE] https://www.obsessedgarage.com/products/og-260-hand-held-battery-powered-sprayer?_pos=1&_sid=75d836989&_ss=r - Clear-Site-Data header on 'https://www.obsessedgarage.com/cart/add': Unrecognized type: "prerenderCache".
+[2026-06-13T05:32:33.273Z] [SEVERE] https://www.obsessedgarage.com/products/og-260-hand-held-battery-powered-sprayer?_pos=1&_sid=75d836989&_ss=r - Clear-Site-Data header on 'https://www.obsessedgarage.com/cart/add': No recognized types specified.
+[2026-06-13T05:32:35.798Z] [WARNING] https://www.obsessedgarage.com/cart - Each dictionary in the list "icons" should contain a non-empty UTF8 string field "sizes".
+[2026-06-13T05:32:35.799Z] [WARNING] https://www.obsessedgarage.com/cart - Each dictionary in the list "icons" should contain a non-empty UTF8 string field "type".
+[2026-06-13T05:32:35.863Z] [SEVERE] https://www.obsessedgarage.com/cdn/shop/t/153/assets/cart.js?v=115462199248718921321753793578 0:0 Uncaught SyntaxError: Identifier 'CartItems' has already been declared
+[2026-06-13T05:32:35.971Z] [WARNING] https://www.obsessedgarage.com/cart - Each dictionary in the list "icons" should contain a non-empty UTF8 string field "sizes".
+[2026-06-13T05:32:35.971Z] [WARNING] https://www.obsessedgarage.com/cart - Each dictionary in the list "icons" should contain a non-empty UTF8 string field "type".

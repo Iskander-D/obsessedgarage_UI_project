@@ -1,0 +1,6 @@
+[2026-06-13T05:31:56.538Z] [SEVERE] security - Refused to frame 'https://shop.app/' because an ancestor violates the following Content Security Policy directive: "frame-ancestors 'self' https://shop.app https://admin.shopify.com".
+
+[2026-06-13T05:32:02.374Z] [SEVERE] https://www.obsessedgarage.com/cart/add - Failed to load resource: the server responded with a status of 503 ()
+[2026-06-13T05:32:02.374Z] [SEVERE] https://cdn.shopify.com/extensions/019ebaf2-cc42-70b6-8914-5a913a4c8aa8/essential-cart-drawer-717/assets/app-embed-BA6dWlow.js 246:28410 "[Essential Cart] Cart operation failed: 503  for /cart/add"
+[2026-06-13T05:32:02.412Z] [SEVERE] https://www.obsessedgarage.com/cdn/shop/t/153/assets/product-form.js?v=32239286139039718521753793578 0:4697 SyntaxError: Unexpected token '<', "<!--
+  The"... is not valid JSON
