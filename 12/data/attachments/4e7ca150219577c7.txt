@@ -1,3 +1,0 @@
-[2026-06-13T05:57:21.826Z] [SEVERE] security - Refused to frame 'https://shop.app/' because an ancestor violates the following Content Security Policy directive: "frame-ancestors 'self' https://shop.app https://admin.shopify.com".
-
-[2026-06-13T05:57:25.211Z] [WARNING] https://obsessedgarage.refersion.com/?oid=70660 - [.WebGL-0x3d8013ea300]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels

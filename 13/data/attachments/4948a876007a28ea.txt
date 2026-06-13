@@ -1,0 +1,1408 @@
+<html lang="en"><head>
+
+		
+		<meta charset="utf-8">
+		<title>Obsessed Garage Affiliate Program - Powered by Refersion</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<!-- Le styles -->
+		<link href="https://obsessedgarage.refersion.com/css/bootstrap.css?v=20230302" rel="stylesheet">
+		<link href="https://obsessedgarage.refersion.com/css/font-awesome-ie7.css?v=20230302" rel="stylesheet">
+		<link href="https://obsessedgarage.refersion.com/css/responsive.css?v=20230302" rel="stylesheet">
+		<link href="https://obsessedgarage.refersion.com/css/app.css?v=20230302" rel="stylesheet">
+
+		
+		<link href="//fonts.googleapis.com/css?family=Lato:400,900italic,900,700italic,700,300italic,400italic,100italic,100,300" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.2/css/all.css?v=20230302" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+		
+		<!-- jQuery -->
+		<script async="" src="//www.google-analytics.com/analytics.js"></script><script src="https://obsessedgarage.refersion.com/js/jquery.min.js"></script>
+
+		<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+		<script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<meta property="og:url" content="https://obsessedgarage.refersion.com/?utm_source=social_media&amp;utm_medium=affiliate&amp;utm_campaign=link">
+		<meta property="og:title" content="Obsessed Garage">		<meta property="og:image" content="https://cdn.refersion.com/43181/content/10-30-19-12-38-22_OG-logo@3xBlack.png">				<meta property="og:type" content="website">
+
+
+		
+	</head>
+
+	<body style="padding-top: 0px;" class="  pace-done"><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="width: 100%;">
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div>
+<script src="https://obsessedgarage.refersion.com/js/pace.min.js"></script>
+<script src="https://obsessedgarage.refersion.com/js/numb.min.js"></script>
+<script src="https://obsessedgarage.refersion.com/js/jquery.min.js"></script>
+<script src="https://obsessedgarage.refersion.com/js/bootstrap.min.js"></script>
+<script src="https://obsessedgarage.refersion.com/js/bootstrap-datepicker.js"></script>
+<script src="https://obsessedgarage.refersion.com/js/jquery.customSelect.min.js"></script>
+<script src="https://obsessedgarage.refersion.com/js/passwordStrengthVerifier.js"></script>
+<script src="https://obsessedgarage.refersion.com/js/url-and-social-media-handle-validation.js"></script>
+<script>
+window._translations = {
+	err_valid_url_or_handle: "Please provide either a valid website URL or a social media handle",
+	err_pw_min_length: "The password must have more than 9 characters",
+	err_pw_max_length: "The password must not have more than 72 characters",
+	err_pw_complexity: "The password should contain at least: 1 uppercase, 1 lowercase, 1 number and 1 special character",
+	err_pw_repeated_chars: "The password must not have the same character repeated more than 3 times in a row.",
+	err_pw_equals_email: "The password must not be equal to the e-mail",
+	errors_occurred: "Errors occurred!"};
+</script>
+<link href="https://obsessedgarage.refersion.com/css/bootstrap-wysihtml5.css?v=abd19d89
+" type="text/css" rel="stylesheet">
+<link href="https://obsessedgarage.refersion.com/css/affiliate/language-switcher.css?v=abd19d89" rel="stylesheet">
+
+<script>
+
+	jQuery.fn.preventDoubleSubmission = function () {
+		$(this).on('submit', function (e) {
+			var $form = $(this);
+			if ($form.data('submitted') === true) {
+				e.preventDefault();
+			} else {
+				$form.data('submitted', true);
+			}
+		});
+	return this;
+};
+
+	// RFSN-16: Detect iOS devices
+	var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+	if (isIOS) {
+		document.documentElement.classList.add('ios-device');
+	}
+
+	$(document).ready(function () {
+		// Prevent double submit
+		$('form').preventDoubleSubmission();
+
+	// Country/state select
+	// Only use customSelect on non-iOS devices
+	if (!isIOS) {
+		$('select').customSelect();
+	}
+
+	// Show first panel
+	$('.accordion-body').removeClass('in');
+	$('.accordion-body').first().addClass('in');
+
+	$("#state").on("click", function () {
+		if (!$("#state").hasClass("states_loaded")) {
+		alert("Please select a country first.");
+	return false;
+		}
+	});
+
+	checkIsValidUrlOrHandle();
+});
+
+</script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.datepicker').datepicker()
+	});
+</script>
+
+<style>
+	body { padding-top: 5px!important; }
+
+	.control-label-datepicker {
+		margin-top: 10px;
+	}
+
+	.control-input-datepicker {
+		background-color: #ffffff;
+		border: 1px solid #cccccc;
+		width: 96% !important;
+		padding: 5px !important;
+		height: 42px !important;
+		box-sizing: border-box;
+		margin-left: 0px;
+	}
+
+	@media (max-width: 767px) {
+		input, select, .customSelect {
+			width: 94%!important;
+		}
+		.mobile-align-center {
+			text-align: center!important;
+		}
+		.checkbox input[type="checkbox"] {
+			width: initial !important;
+			padding-right: 5px !important;
+		}
+		.control-input-datepicker {
+			margin-left: 2% !important;
+		}
+		/* RFSN-16: Fix select dropdown on iOS */
+		.ios-device select {
+			position: relative !important;
+			opacity: 1 !important;
+			z-index: 10;
+			font-size: 16px;
+			height: 42px;
+			min-height: 42px;
+			padding: 8px 35px 8px 12px;
+			background: #fff url("/images/dropdown_arrow.png") 95% center no-repeat;
+			-webkit-appearance: none !important;
+			appearance: none !important;
+			color: #333;
+			margin-left: 2%;
+		}
+		.ios-device .customSelect {
+			display: none !important;
+		}
+	}
+		.main-aff-reg { color: #333333; }
+	.main-aff-reg a { color: #3a71ac; }
+	.main-aff-reg .cta-button { background-color: #fbda80; background-image: none !important; border: none !important; }
+	.main-aff-reg .cta-button { color: #503b18; }
+	.pace .pace-progress { background-color: #3a71ac!important; }
+	body { background-color: #f3f5f6; }
+	.main-aff-reg { background-color: #ffffff; }
+	.footer { color: #000000; }
+	
+	#turnstile-container {
+		margin: 10px 0;
+	}
+
+	.customSelectInner{
+		width:100% !important;
+		overflow: hidden !important;
+	}
+	@media screen and (max-width: 767px) {
+		small {
+			float: left;
+			width: 96%;
+			margin-left: 2%;
+			margin-right: 2%;
+			margin-bottom: 50px;
+			text-align: center;
+		}
+	}
+
+    .button {
+        border: none;
+        padding: 20px 34px;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 2px;
+        cursor: pointer;
+        background-color: #ffffff;
+		color: #3a71ac;
+    }
+
+    .main-aff-reg .accordion-toggle {
+        font-weight: bold;
+        width: 99%;
+        text-align: left;
+    }
+
+    h1.override-h1 {
+        margin: 0px;
+        background-color: #ffffff;
+        color: #3a71ac;
+    }
+
+</style>
+
+
+<div class="language-switcher no-translate">
+	<select id="language-switcher-select" onchange="document.getElementById('lang-switcher-input').value=this.value;document.getElementById('lang-switcher-form').submit();" class="hasCustomSelect" style="appearance: menulist-button; width: 93px; position: absolute; opacity: 0; height: 20px; font-size: 14px;">
+					<option value="EN" selected="">🇺🇸 English (US)</option>
+					<option value="EN_GB">🇬🇧 English (UK)</option>
+					<option value="EN_CA">🇨🇦 English (Canada)</option>
+					<option value="BG">🇧🇬 Български</option>
+					<option value="HR">🇭🇷 Hrvatski</option>
+					<option value="CS">🇨🇿 Čeština</option>
+					<option value="DA">🇩🇰 Dansk</option>
+					<option value="NL">🇳🇱 Nederlands</option>
+					<option value="ET">🇪🇪 Eesti</option>
+					<option value="FI">🇫🇮 Suomi</option>
+					<option value="FR">🇫🇷 Français (France)</option>
+					<option value="FR_CA">🇨🇦 Français (Canada)</option>
+					<option value="DE">🇩🇪 Deutsch</option>
+					<option value="EL">🇬🇷 Ελληνικά</option>
+					<option value="HU">🇭🇺 Magyar</option>
+					<option value="GA">🇮🇪 Gaeilge</option>
+					<option value="IT">🇮🇹 Italiano</option>
+					<option value="LV">🇱🇻 Latviešu</option>
+					<option value="LT">🇱🇹 Lietuvių</option>
+					<option value="MT">🇲🇹 Malti</option>
+					<option value="PL">🇵🇱 Polski</option>
+					<option value="PT">🇵🇹 Português (Portugal)</option>
+					<option value="PT_BR">🇧🇷 Português (Brasil)</option>
+					<option value="RO">🇷🇴 Română</option>
+					<option value="SK">🇸🇰 Slovenčina</option>
+					<option value="SL">🇸🇮 Slovenščina</option>
+					<option value="ES">🇪🇸 Español (España)</option>
+					<option value="ES_LATAM">🌎 Español (Latinoamérica)</option>
+					<option value="SV">🇸🇪 Svenska</option>
+					<option value="TR">🇹🇷 Türkçe</option>
+					<option value="NO">🇳🇴 Norsk</option>
+			</select><span class="customSelect" style="display: inline-block;"><span class="customSelectInner" style="width: 1829px; display: inline-block;">🇺🇸 English (US)</span></span>
+	<form id="lang-switcher-form" method="post" action="https://obsessedgarage.refersion.com/affiliate/set_language" style="display:none;">
+		<input type="hidden" name="lang" id="lang-switcher-input" value="">
+				<input type="hidden" name="redirect" value="https://obsessedgarage.refersion.com/index.php?oid=70660">
+		<input type="hidden" name="refersion_csrf_test" value="f0b537f0d42876751a5c65def0f1ec54">
+	</form>
+</div>
+
+<div class="container top-bar">
+
+	<div class="row-fluid">
+
+		<div class="span6 mobile-align-center">
+						<a href="http://obsessedgarage.com" id="logo" target="_blank"><img src="https://cdn.refersion.com/43181/content/10-30-19-12-38-22_OG-logo@3xBlack.png" alt="" style="margin-bottom: 10px; margin-left: -10px;"></a>
+			
+		</div>
+
+		<div class="span6 mobile-align-center" style="text-align: right;">
+
+			<div style="margin: 15px 0;">
+				<a href="https://obsessedgarage.refersion.com/affiliate" class="login">Already registered? <strong>Login <i class="icon-signout"></i></strong></a>
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+<div class="container main-aff-reg">
+
+	
+	
+	<div class="row-fluid">
+
+		<div class="span6">
+
+						<h4>Program Application</h4>
+			
+			<br>
+
+			<form class="no-bottom-margin registration-form" method="post" id="registration-form" autocomplete="off">
+
+				<input type="hidden" name="refersion_csrf_test" value="f0b537f0d42876751a5c65def0f1ec54">
+				<input type="hidden" name="numb" id="numb" value="49df087627d4a88d677b4ea6eeab6f9f">
+
+								<div id="password-errors" class="alert alert-error" style="display: block;">
+					<p><strong><i class="icon-remove"></i> Errors occurred!</strong></p>
+					<ul><li>The password should contain at least: 1 uppercase, 1 lowercase, 1 number and 1 special character</li></ul>
+				</div>
+
+								<script>
+
+					$(document).ready(function(){
+
+						$('form').populate({
+							'first_name':'',
+							'last_name':'',
+							'email':''
+						});
+					});
+
+				</script>
+				
+				
+				<div class="row-fluid">
+
+					<div class="span6">
+
+						<div class="control-group">
+
+							<label class="control-label" for="first_name">First Name <i class="icon-asterisk red"></i></label>
+							<div class="controls">
+								<input type="text" class="required" style="width: 84%" name="first_name" id="first_name" value="" required="">
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="span6">
+
+						<div class="control-group">
+
+							<label class="control-label" for="last_name">Last Name <i class="icon-asterisk red"></i></label>
+							<div class="controls">
+								<input type="text" class="required" style="width: 84%" name="last_name" id="last_name" value="" required="">
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="row-fluid">
+
+					<div class="control-group">
+
+						<label class="control-label" for="email">Email <i class="icon-asterisk red"></i></label>
+						<div class="controls">
+							<input type="email" class="required" style="width: 92%" name="email" id="email" value="" required="">
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="row-fluid">
+					<div class="control-group">
+
+						<label class="control-label" for="password">Password <i class="icon-asterisk red"></i></label>
+						<div class="controls">
+							<input type="password" class="required" style="width: 92%" name="password" id="password" value="" required="">
+						</div>
+
+					</div>
+				</div>
+
+				<div class="row-fluid">
+					<div class="control-group">
+
+						<label class="control-label" for="password2">Confirm Password <i class="icon-asterisk red"></i></label>
+						<div class="controls">
+							<input type="password" class="required" style="width: 92%" name="password2" id="password2" value="" required="">
+						</div>
+
+					</div>
+				</div>
+
+				
+				<!-- CUSTOM FIELDS -->
+
+											<div class="row-fluid">
+							<div class="control-group offer-70660-48927">
+
+							
+								
+								<label class="control-label" for="paypal_email_48927">PayPal Email <i class="icon-asterisk red"></i></label>
+								<div class="controls">
+									<input type="email" class="required" style="width: 92%" name="paypal_email" id="paypal_email_48927" value="" required="">
+								</div>
+
+							
+						
+
+						
+					</div>
+
+				</div>
+
+				
+				<!-- CUSTOM FIELDS -->
+
+											<div class="row-fluid">
+							<div class="control-group offer-70660-48926">
+
+							
+								
+								<label class="control-label" for="company_48926">Company </label>
+								<div class="controls">
+									<input type="text" class="" style="width: 92%" name="company" id="company_48926" value="">
+								</div>
+
+							
+						
+
+						
+					</div>
+
+				</div>
+
+				
+				<!-- CUSTOM FIELDS -->
+
+											<div class="row-fluid">
+							<div class="control-group offer-70660-48930">
+
+							
+								
+								<label class="control-label" for="country">
+									Country									<i class="icon-asterisk red"></i>								</label>
+								<div class="controls">
+									<select id="country" name="country" style="appearance: menulist-button; width: 547px; position: absolute; opacity: 0; height: 42px; font-size: 14px;" onchange="load_states(this, 'https://obsessedgarage.refersion.com/ajax/get_states', 'refersion_csrf_test=f0b537f0d42876751a5c65def0f1ec54','')" required="" class="hasCustomSelect">
+
+
+										
+	<option value="">--</option>
+
+
+		<option value="AF">Afghanistan</option>
+		
+		<option value="AL">Albania</option>
+		
+		<option value="DZ">Algeria</option>
+		
+		<option value="AS">American Samoa</option>
+		
+		<option value="AD">Andorra</option>
+		
+		<option value="AO">Angola</option>
+		
+		<option value="AR">Argentina</option>
+		
+		<option value="AU">Australia</option>
+		
+		<option value="AT">Austria</option>
+		
+		<option value="BS">Bahamas</option>
+		
+		<option value="BH">Bahrain</option>
+		
+		<option value="BD">Bangladesh</option>
+		
+		<option value="BB">Barbados</option>
+		
+		<option value="BY">Belarus</option>
+		
+		<option value="BE">Belgium</option>
+		
+		<option value="BZ">Belize</option>
+		
+		<option value="BM">Bermuda</option>
+		
+		<option value="BO">Bolivia, Plurinational State Of</option>
+		
+		<option value="BA">Bosnia and Herzegovina</option>
+		
+		<option value="BW">Botswana</option>
+		
+		<option value="BR">Brazil</option>
+		
+		<option value="BG">Bulgaria</option>
+		
+		<option value="CM">Cameroon</option>
+		
+		<option value="CA">Canada</option>
+		
+		<option value="KY">Cayman Islands</option>
+		
+		<option value="TD">Chad</option>
+		
+		<option value="CL">Chile</option>
+		
+		<option value="CN">China</option>
+		
+		<option value="CO">Colombia</option>
+		
+		<option value="KM">Comoros</option>
+		
+		<option value="CG">Congo</option>
+		
+		<option value="CD">Congo, The Democratic Republic Of The</option>
+		
+		<option value="CR">Costa Rica</option>
+		
+		<option value="CI">Côte d'Ivoire</option>
+		
+		<option value="HR">Croatia</option>
+		
+		<option value="CY">Cyprus</option>
+		
+		<option value="CZ">Czech Republic</option>
+		
+		<option value="DK">Denmark</option>
+		
+		<option value="DJ">Djibouti</option>
+		
+		<option value="DM">Dominica</option>
+		
+		<option value="DO">Dominican Republic</option>
+		
+		<option value="EC">Ecuador</option>
+		
+		<option value="EG">Egypt</option>
+		
+		<option value="SV">El Salvador</option>
+		
+		<option value="EE">Estonia</option>
+		
+		<option value="ET">Ethiopia</option>
+		
+		<option value="FO">Faroe Islands</option>
+		
+		<option value="FJ">Fiji</option>
+		
+		<option value="FI">Finland</option>
+		
+		<option value="FR">France</option>
+		
+		<option value="GE">Georgia</option>
+		
+		<option value="DE">Germany</option>
+		
+		<option value="GH">Ghana</option>
+		
+		<option value="GI">Gibraltar</option>
+		
+		<option value="GR">Greece</option>
+		
+		<option value="GL">Greenland</option>
+		
+		<option value="GU">Guam</option>
+		
+		<option value="GT">Guatemala</option>
+		
+		<option value="GG">Guernsey</option>
+		
+		<option value="HT">Haiti</option>
+		
+		<option value="VA">Holy See (Vatican City State)</option>
+		
+		<option value="HN">Honduras</option>
+		
+		<option value="HK">Hong Kong</option>
+		
+		<option value="HU">Hungary</option>
+		
+		<option value="IS">Iceland</option>
+		
+		<option value="IN">India</option>
+		
+		<option value="ID">Indonesia</option>
+		
+		<option value="IQ">Iraq</option>
+		
+		<option value="IE">Ireland</option>
+		
+		<option value="IM">Isle of Man</option>
+		
+		<option value="IL">Israel</option>
+		
+		<option value="IT">Italy</option>
+		
+		<option value="JM">Jamaica</option>
+		
+		<option value="JP">Japan</option>
+		
+		<option value="JE">Jersey</option>
+		
+		<option value="JO">Jordan</option>
+		
+		<option value="KZ">Kazakhstan</option>
+		
+		<option value="KE">Kenya</option>
+		
+		<option value="KW">Kuwait</option>
+		
+		<option value="LV">Latvia</option>
+		
+		<option value="LB">Lebanon</option>
+		
+		<option value="LS">Lesotho</option>
+		
+		<option value="LR">Liberia</option>
+		
+		<option value="LY">Libyan Arab Jamahiriya</option>
+		
+		<option value="LI">Liechtenstein</option>
+		
+		<option value="LT">Lithuania</option>
+		
+		<option value="LU">Luxembourg</option>
+		
+		<option value="MW">Malawi</option>
+		
+		<option value="MY">Malaysia</option>
+		
+		<option value="MV">Maldives</option>
+		
+		<option value="MT">Malta</option>
+		
+		<option value="MH">Marshall Islands</option>
+		
+		<option value="MR">Mauritania</option>
+		
+		<option value="MU">Mauritius</option>
+		
+		<option value="MX">Mexico</option>
+		
+		<option value="FM">Micronesia, Federated States Of</option>
+		
+		<option value="MC">Monaco</option>
+		
+		<option value="MN">Mongolia</option>
+		
+		<option value="MA">Morocco</option>
+		
+		<option value="MZ">Mozambique</option>
+		
+		<option value="NA">Namibia</option>
+		
+		<option value="NL">Netherlands</option>
+		
+		<option value="NZ">New Zealand</option>
+		
+		<option value="NG">Nigeria</option>
+		
+		<option value="MK">North Macedonia</option>
+		
+		<option value="MP">Northern Mariana Islands</option>
+		
+		<option value="NO">Norway</option>
+		
+		<option value="OM">Oman</option>
+		
+		<option value="PK">Pakistan</option>
+		
+		<option value="PW">Palau</option>
+		
+		<option value="PA">Panama</option>
+		
+		<option value="PY">Paraguay</option>
+		
+		<option value="PE">Peru</option>
+		
+		<option value="PH">Philippines</option>
+		
+		<option value="PL">Poland</option>
+		
+		<option value="PT">Portugal</option>
+		
+		<option value="PR">Puerto Rico</option>
+		
+		<option value="QA">Qatar</option>
+		
+		<option value="RO">Romania</option>
+		
+		<option value="RU">Russian Federation</option>
+		
+		<option value="KN">Saint Kitts And Nevis</option>
+		
+		<option value="LC">Saint Lucia</option>
+		
+		<option value="WS">Samoa</option>
+		
+		<option value="SM">San Marino</option>
+		
+		<option value="SA">Saudi Arabia</option>
+		
+		<option value="RS">Serbia</option>
+		
+		<option value="SC">Seychelles</option>
+		
+		<option value="SL">Sierra Leone</option>
+		
+		<option value="SG">Singapore</option>
+		
+		<option value="SK">Slovakia</option>
+		
+		<option value="SI">Slovenia</option>
+		
+		<option value="SO">Somalia</option>
+		
+		<option value="ZA">South Africa</option>
+		
+		<option value="KR">South Korea</option>
+		
+		<option value="ES">Spain</option>
+		
+		<option value="LK">Sri Lanka</option>
+		
+		<option value="SD">Sudan</option>
+		
+		<option value="SZ">Swaziland</option>
+		
+		<option value="SE">Sweden</option>
+		
+		<option value="CH">Switzerland</option>
+		
+		<option value="TW">Taiwan</option>
+		
+		<option value="TZ">Tanzania, United Republic of</option>
+		
+		<option value="TH">Thailand</option>
+		
+		<option value="TT">Trinidad and Tobago</option>
+		
+		<option value="TN">Tunisia</option>
+		
+		<option value="TR">Turkey</option>
+		
+		<option value="UG">Uganda</option>
+		
+		<option value="UA">Ukraine</option>
+		
+		<option value="AE">United Arab Emirates</option>
+		
+		<option value="GB">United Kingdom</option>
+		
+		<option value="US">United States</option>
+		
+		<option value="UY">Uruguay</option>
+		
+		<option value="UZ">Uzbekistan</option>
+		
+		<option value="VE">Venezuela, Bolivarian Republic of</option>
+		
+		<option value="VN">Vietnam</option>
+		
+		<option value="VG">Virgin Islands, British</option>
+		
+		<option value="VI">Virgin Islands, U.S.</option>
+		
+		<option value="YE">Yemen</option>
+		
+		<option value="ZW">Zimbabwe</option>
+		
+									</select><span class="customSelect customSelectHover customSelectFocus customSelectChanged" style="width: 92%; display: inline-block;"><span class="customSelectInner" style="width: 538px; display: inline-block;">Afghanistan</span></span>
+								</div>
+
+							
+						
+
+						
+					</div>
+
+				</div>
+
+				
+				<!-- CUSTOM FIELDS -->
+
+											<div class="row-fluid">
+							<div class="control-group offer-70660-48928">
+
+							
+								
+								<label class="control-label" for="address1_48928">Address <i class="icon-asterisk red"></i></label>
+								<div class="controls">
+									<input type="text" class="required" style="width: 92%" name="address1" id="address1_48928" value="" required="">
+								</div>
+
+							
+						
+
+						
+					</div>
+
+				</div>
+
+				
+				<!-- CUSTOM FIELDS -->
+
+											<div class="row-fluid">
+							<div class="control-group offer-70660-48929">
+
+							
+								
+								<label class="control-label" for="city_48929">City <i class="icon-asterisk red"></i></label>
+								<div class="controls">
+									<input type="text" class="required" style="width: 92%" name="city" id="city_48929" value="" required="">
+								</div>
+
+							
+						
+
+						
+					</div>
+
+				</div>
+
+				
+				<!-- CUSTOM FIELDS -->
+
+											<div class="row-fluid">
+							<div class="control-group offer-70660-48931">
+
+							
+								
+								<label class="control-label" for="state">
+									State									<i class="icon-asterisk red"></i>								</label>
+								<div class="controls">
+
+									<select name="state" style="appearance: menulist-button; position: absolute; opacity: 0; height: 47px; font-size: 14px; width: 547px;" id="state" required="" class="hasCustomSelect states_loaded"><option value="" selected="selected">--</option>
+
+		<option value="BDS">Badakhshan</option>
+				<option value="BDG">Badghis</option>
+				<option value="BGL">Baghlan</option>
+				<option value="BAL">Balkh</option>
+				<option value="BAM">Bamian</option>
+				<option value="DAY">Daykondi</option>
+				<option value="FRA">Farah</option>
+				<option value="FYB">Faryab</option>
+				<option value="GHA">Ghazni</option>
+				<option value="GHO">Ghowr</option>
+				<option value="HEL">Helmand</option>
+				<option value="HER">Herat</option>
+				<option value="JOW">Jowzjan</option>
+				<option value="KAB">Kabul [Kabol]</option>
+				<option value="KAN">Kandahar</option>
+				<option value="KAP">Kapisa</option>
+				<option value="KHO">Khowst</option>
+				<option value="KNR">Konar [Kunar]</option>
+				<option value="KDZ">Kondoz [Kunduz]</option>
+				<option value="LAG">Laghman</option>
+				<option value="LOW">Lowgar</option>
+				<option value="NAN">Nangrahar [Nangarhar]</option>
+				<option value="NIM">Nimruz</option>
+				<option value="NUR">Nurestan</option>
+				<option value="ORU">Oruzgan [Uruzgan]</option>
+				<option value="PIA">Paktia</option>
+				<option value="PKA">Paktika</option>
+				<option value="PAN">Panjshir</option>
+				<option value="PAR">Parwan</option>
+				<option value="SAM">Samangan</option>
+				<option value="SAR">Sar-e Pol</option>
+				<option value="TAK">Takhar</option>
+				<option value="WAR">Wardak [Wardag]</option>
+				<option value="ZAB">Zabol [Zabul]</option>
+		</select><span class="customSelect" style="width: 92%; display: inline-block;"><span class="customSelectInner" style="width: 1836px; display: inline-block;">--</span></span>								</div>
+
+							
+						
+
+						
+					</div>
+
+				</div>
+
+				
+				<!-- CUSTOM FIELDS -->
+
+											<div class="row-fluid">
+							<div class="control-group offer-70660-48932">
+
+							
+								
+								<label class="control-label" for="zip_48932">ZIP <i class="icon-asterisk red"></i></label>
+								<div class="controls">
+									<input type="text" class="required" style="width: 92%" name="zip" id="zip_48932" value="" required="">
+								</div>
+
+							
+						
+
+						
+					</div>
+
+				</div>
+
+				
+				<!-- CUSTOM FIELDS -->
+
+											<div class="row-fluid">
+							<div class="control-group offer-70660-48935">
+
+							
+
+						
+							
+								<label class="control-label" for="custom_48935">YouTube Subscribers <i class="icon-asterisk red"></i></label>
+								<div class="controls">
+									<input type="text" name="custom_48935" id="custom_48935" value="" class="required" style="width: 92%" required="">
+								</div>
+
+							
+							
+							
+						
+					</div>
+
+				</div>
+
+				
+				<!-- CUSTOM FIELDS -->
+
+											<div class="row-fluid">
+							<div class="control-group offer-70660-48937">
+
+							
+
+						
+							
+								<label class="control-label" for="custom_48937">YouTube URL </label>
+								<div class="controls">
+									<input type="text" name="custom_48937" id="custom_48937" value="" class="" style="width: 92%">
+								</div>
+
+							
+							
+							
+						
+					</div>
+
+				</div>
+
+				
+				<!-- CUSTOM FIELDS -->
+
+											<div class="row-fluid">
+							<div class="control-group offer-70660-48934">
+
+							
+
+						
+							
+								<label class="control-label" for="custom_48934">Email List Size <i class="icon-asterisk red"></i></label>
+								<div class="controls">
+									<input type="text" name="custom_48934" id="custom_48934" value="" class="required" style="width: 92%" required="">
+								</div>
+
+							
+							
+							
+						
+					</div>
+
+				</div>
+
+				
+				<!-- CUSTOM FIELDS -->
+
+											<div class="row-fluid">
+							<div class="control-group offer-70660-48933">
+
+							
+
+						
+							
+								<label class="control-label" for="custom_48933">Social Followers (FB, IG, Other) <i class="icon-asterisk red"></i></label>
+								<div class="controls">
+									<input type="text" name="custom_48933" id="custom_48933" value="" class="required" style="width: 92%" required="">
+								</div>
+
+							
+							
+							
+						
+					</div>
+
+				</div>
+
+				
+				<!-- CUSTOM FIELDS -->
+
+											<div class="row-fluid">
+							<div class="control-group offer-70660-48939">
+
+							
+
+						
+							
+								<label class="control-label" for="custom_48939">Facebook URL </label>
+								<div class="controls">
+									<input type="text" name="custom_48939" id="custom_48939" value="" class="" style="width: 92%">
+								</div>
+
+							
+							
+							
+						
+					</div>
+
+				</div>
+
+				
+				<!-- CUSTOM FIELDS -->
+
+											<div class="row-fluid">
+							<div class="control-group offer-70660-49395">
+
+							
+
+						
+							
+								<label class="control-label" for="custom_49395">Instagram Handle <i class="icon-asterisk red"></i></label>
+								<div class="controls">
+									<input type="text" name="custom_49395" id="custom_49395" value="" class="required" style="width: 92%" required="">
+								</div>
+
+							
+							
+							
+						
+					</div>
+
+				</div>
+
+				
+				<!-- CUSTOM FIELDS -->
+
+											<div class="row-fluid">
+							<div class="control-group offer-70660-48936">
+
+							
+
+						
+							
+								<label class="control-label" for="custom_48936">Website URL </label>
+								<div class="controls">
+									<input type="text" name="custom_48936" id="custom_48936" value="" class="" style="width: 92%">
+								</div>
+
+							
+							
+							
+						
+					</div>
+
+				</div>
+
+				
+				<!-- CUSTOM FIELDS -->
+
+											<div class="row-fluid">
+							<div class="control-group offer-70660-49525">
+
+							
+
+						
+							
+								<label class="control-label" for="custom_49525">Brief explanation on how you plan on utilizing referral links: <i class="icon-asterisk red"></i></label>
+								<div class="controls">
+									<input type="text" name="custom_49525" id="custom_49525" value="" class="required" style="width: 92%" required="">
+								</div>
+
+							
+							
+							
+						
+					</div>
+
+				</div>
+
+				
+				<!-- CUSTOM FIELDS -->
+
+											<div class="row-fluid">
+							<div class="control-group offer-70660-56459">
+
+							
+
+						
+							
+							
+								<label class="control-label" for="custom_56459">How did you hear about Obsessed Garage &amp; how did you discover our affiliate program? </label>
+								<div class="controls">
+									<textarea rows="5" name="custom_56459" id="custom_56459" class="" style="width: 92%"></textarea>
+								</div>
+
+							
+							
+						
+					</div>
+
+				</div>
+
+				
+				<div class="control-group">
+					<div class="controls">
+						<label class="checkbox" for="affiliate_tos" style="width: auto;">
+                            <input type="checkbox" name="affiliate_tos" id="affiliate_tos" value="TRUE" required=""> By registering you agree to the Refersion <a href="https://www.refersion.com/terms" target="_blank">Terms of Service</a> and its incorporated policies.<i class="icon-asterisk red"></i>
+						</label>
+					</div>
+				</div>
+
+                <br>
+								<div id="turnstile-container"><div><input type="hidden" name="cf-turnstile-response" id="cf-chl-widget-azg1v_response"></div></div>
+				
+									<input type="submit" class="btn btn-large btn-yellow bold cta-button disabled" value="Apply" disabled="">
+				
+								<br>
+					<small>This site is protected by Cloudflare Turnstile and the Cloudflare						<a href="https://www.cloudflare.com/privacypolicy/">Privacy Policy</a> and						<a href="https://www.cloudflare.com/website-terms/">Terms of Service</a> apply.					</small>
+				
+				<br>
+				<br>
+				<br>
+
+			</form>
+
+		</div>
+
+		<div class="span6">
+
+			<div id="accordion2" class="accordion" style="margin-top: 10px;">
+
+									<div class="accordion-group">
+						<div class="accordion-heading">
+							<h1 class="override-h1">
+								<button class="accordion-toggle button" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+									Commission &amp; Business Details <i class="icon-list-alt pull-right"></i>
+								</button>
+							</h1>
+						</div>
+						<div id="collapseOne" class="accordion-body collapse in">
+							<div class="accordion-inner">
+
+								<table class="table" style="box-shadow: 0 0 0; background: transparent;">
+									<tbody><tr>
+										<th width="150">Conversion action</th>
+										<td>Online purchase with processed valid payment</td>
+									</tr>
+									<tr>
+                                        <th>Attribution Window</th>
+										<td>
+                                            15 days										</td>
+									</tr>
+									<tr>
+										<th>Commission type</th>
+										<td>
+											Variable, depending on your 365 day(s) sales volume.										</td>
+									</tr>
+
+																		
+										<tr>
+											<th>Base commission</th>
+											<td>
+
+																																					Starting at 5%													and <a href="javascript:;" onclick="loadMoreInfoTiersModal()">based on sales volume</a>
+																																				
+
+											</td>
+
+										</tr>
+
+									
+								</tbody></table>
+
+																											<div><div>Standard Affiliate commissions are tiered beginning at $0.&nbsp;</div><div>$0-$10,000 - 5% of Sale</div><div>$10,000-$20,000 - 6% of Sale</div><div>$20,000-$30,000 - 7% of Sale</div><div>$30,000-$40,000 - 8% of Sale</div><div>$40,000-$50,000 - 9% of Sale</div><div>$50,000+ - 10% of Sale</div></div>
+																	
+							</div>
+						</div>
+					</div>
+				
+				
+									<div class="accordion-group">
+						<div class="accordion-heading">
+							<h1 class="override-h1">
+								<button class="accordion-toggle button" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+									Program Terms &amp; Conditions <i class="icon-legal pull-right"></i>
+								</button>
+							</h1>
+						</div>
+						<div id="collapseTwo" class="accordion-body collapse">
+							<div class="accordion-inner">
+								<div><ul><li><div>OBSESSED GARAGE AFFILIATE PROGRAM AGREEMENT</div><div><br></div><div>PLEASE READ THE ENTIRE AGREEMENT.</div><div>YOU MAY PRINT THIS PAGE FOR YOUR RECORDS.</div><div>THIS IS A LEGAL AGREEMENT BETWEEN YOU AND OBSESSED GARAGE LLC.</div><div>BY SUBMITTING THE ONLINE APPLICATION IN Refersion AND/OR PARTICIPATING IN THE PROGRAM, YOU CONFIRM YOU HAVE READ, UNDERSTAND, AND AGREE TO BE LEGALLY BOUND BY THESE TERMS.</div><div><br></div>Effective Date: January 1, 2022<div>Website: obsessedgarage.com</div><div>Program (“Program”) Owner: Obsessed Garage LLC (“Obsessed Garage,” “we,” “us,” “our”)</div><div>You/Your: approved affiliate</div><div><br></div><div>⸻</div><div><br></div><div>1) Overview</div><div><br></div><div>This Agreement contains the complete terms for participation in the Obsessed Garage Affiliate Program. The Program allows you to use Refersion tracking links (HTML or otherwise) from your website or channels to the Obsessed Garage website.</div><div><br></div><div>⸻</div><div><br></div><div>2) Enrollment &amp; Eligibility</div><div> • Apply via Refersion. We may approve, request more info, or reject at our sole discretion. Participation is non-transferable.</div><div> • We may decline or terminate if your site or activity is unsuitable, including content that is illegal; infringes IP; promotes sexually explicit materials, violence, or discrimination; uses “Obsessed Garage” (or misspellings/variants) in a domain; is harmful, defamatory, obscene, harassing, or otherwise objectionable; or contains software that could divert commissions.</div><div> • You may not design or operate any site that resembles or is likely to cause confusion with Obsessed Garage, nor imply you are Obsessed Garage or an affiliated business.</div><div><br></div><div>⸻</div><div><br></div><div>3) Program Rules — Traffic, Promotions &amp; Advertising</div><div><br></div><div>3.1 Non-Paid Traffic Only (Core Rule)</div><div><br></div><div>Obsessed Garage does not pay commissions on any order where the customer session originated from a search engine or paid media. Ineligible sources include:</div><div> • Search engines and their properties (e.g., google.com, bing.com, duckduckgo.com, yahoo.com) and any ads platform/placement.</div><div> • Traffic marked as paid by UTM or ad click identifiers (e.g., utm_medium=cpc/paid_social/display/shopping, gclid, msclkid, fbclid, ttclid) unless we give prior written approval.</div><div> • Paid search, paid social, shopping ads, boosted posts, whitelisting/allow-listing, programmatic/retargeting/display, or direct-linking ads to our site.</div><div><br></div><div>3.2 Allowed Traffic (Non-Paid Examples)</div><div><br></div><div>Original, non-paid content you publish: editorial on your site, organic YouTube, organic social, relevant forums/subreddits you actively contribute to (no spam), and opt-in email newsletters you own (must comply with FTC/CAN-SPAM/anti-spam laws).</div><div><br></div><div>3.3 Email, Forums &amp; Identity</div><div><br></div><div>You may email your own subscribers and post where commercial messages are welcome. You must accurately represent your identity, domain, and return email. No spam of any kind.</div><div><br></div><div>3.4 Coupon/Deal Policy</div><div><br></div><div>Coupon/deal, cashback, toolbar, or extension sites are prohibited unless explicitly approved in writing. No code scraping, posting non-public or expired codes, or coupon arbitrage. No self-purchases to earn commission, and no tactics that repeatedly pay the same individual via discount cycles.</div><div><br></div><div>3.5 Brand Bidding &amp; Trademark Use</div><div> • No bidding on “Obsessed Garage,” our domains, misspellings, or branded product terms in any ad platform.</div><div> • No use of our brand terms in ad copy, display URLs, or as paid destinations.</div><div> • No direct-linking paid ads to our site.</div><div><br></div><div>3.6 Software Interference &amp; “Parasiteware”</div><div><br></div><div>No interstitials, toolbars, add-ons, shopping wallets, deceptive pop-ups/unders, hidden iframes, or applications that set/overwrite cookies or inject/replace/obscure content. This includes any software that:</div><div>(a) overwrites tracking cookies other than via a user-initiated click;</div><div>(b) intercepts searches to redirect traffic or place cookies;</div><div>(c) sets cookies via iframes/hidden links/auto pop-ups;</div><div>(d) targets text on third-party sites for contextual marketing; or</div><div>(e) removes/replaces/blocks affiliate banners not owned by the app owner.</div><div><br></div><div>⸻</div><div><br></div><div>4) Links, Assets &amp; Site Monitoring</div><div><br></div><div>Use only the Refersion links/HTML and approved creatives we provide. We may review your placements and require changes. You are responsible for maintaining and updating your properties and for complying with all IP and other applicable laws; you must have permission for any third-party materials you use.</div><div><br></div><div>⸻</div><div><br></div><div>5) Tracking, Attribution, Cookie, and Reversals</div><div> • Attribution: Last-click in Refersion at the time of purchase.</div><div> • Cookie window: 15 days.</div><div> • Reversals/Non-Qualifying Orders: Fraudulent, high-risk, cancelled, refunded, or chargebacked orders are ineligible or may be reversed.</div><div> • If any paid media (3.1) appears anywhere in the customer path before purchase, no commission is payable—even if your link is later in the path.</div><div> • We may review traffic quality, request source substantiation, and withhold or reverse commissions while under review.</div><div><br></div><div>⸻</div><div><br></div><div>6) Offers, Coupons &amp; Pricing</div><div><br></div><div>Promote only public offers or codes assigned to you. If a shopper uses a different code or a public promo, commission is payable only if your click is last-click and all rules are met. Pricing, promos, and availability may change without notice.</div><div><br></div><div>⸻</div><div><br></div><div>7) Commissions &amp; Payments</div><div> • Commission rate: 5% starting; up to 10% may be earned per Obsessed Garage written tier/bonus rules.</div><div> • Minimum payout: $20.</div><div> • Schedule: Net 30 after the order ships and the return window passes.</div><div> • Tracking and payouts are handled via Refersion; its platform terms apply in addition to this Agreement. You are responsible for accurate payment details and any related fees.</div><div><br></div><div>⸻</div><div><br></div><div>8) Access to Affiliate Account Interface</div><div><br></div><div>You will create a password for Refersion’s secure affiliate dashboard, where you can access links, creatives, coupon tracking, and reports describing our calculation of commissions due.</div><div><br></div><div>⸻</div><div><br></div><div>9) Rights, Suspension &amp; Termination</div><div><br></div><div>We may monitor your properties for compliance and require changes. We may suspend or terminate your participation at any time for any reason, including suspected fraud, abuse, policy violations, or failure to implement requested changes. Either party may terminate with written notice (email suffices). If fraud/abuse is detected, commissions tied to such activity will not be paid. Upon termination, unpaid commissions tied to non-qualifying traffic are void.</div><div><br></div><div>⸻</div><div><br></div><div>10) Modifications</div><div><br></div><div>We may modify this Agreement (including commission rates, cookie window, and rules) at any time in our discretion. We will notify you (e.g., by email or posting). Your continued participation after notice constitutes acceptance. If unacceptable, your remedy is to terminate participation.</div><div><br></div><div>⸻</div><div><br></div><div>11) License &amp; Brand Materials</div><div><br></div><div>We grant you a non-exclusive, non-transferable, revocable license to (i) access our site via Program links and (ii) use our approved logos, trade names, and marks solely to promote Obsessed Garage under this Agreement. All goodwill in the marks inures to Obsessed Garage. Do not use either party’s proprietary materials in a disparaging, misleading, or obscene manner.</div><div><br></div><div>⸻</div><div><br></div><div>12) FTC Compliance &amp; Content Accuracy</div><div><br></div><div>You must comply with FTC endorsement/disclosure rules (clear, conspicuous disclosures such as “affiliate link” or “#ad”). Keep product information accurate and do not make unsupported claims.</div><div><br></div><div>⸻</div><div><br></div><div>13) Taxes &amp; Forms</div><div><br></div><div>You are responsible for all taxes on your earnings. We may require applicable tax forms before releasing payments.</div><div><br></div><div>⸻</div><div><br></div><div>14) Disclaimer</div><div><br></div><div>Obsessed Garage provides the Program, site, and materials “as is” without warranties of any kind, express or implied, including merchantability, fitness for a particular purpose, and non-infringement. We do not warrant uninterrupted or error-free operation.</div><div><br></div><div>⸻</div><div><br></div><div>15) Limitations of Liability</div><div><br></div><div>To the maximum extent permitted by law, Obsessed Garage is not liable for indirect, incidental, consequential, special, or exemplary damages (including loss of revenue, profits, goodwill, or business), even if advised of the possibility. In no event will Obsessed Garage’s cumulative liability exceed the total commissions actually paid to you under this Agreement.</div><div><br></div><div>⸻</div><div><br></div><div>16) Representations &amp; Warranties (by You)</div><div><br></div><div>You represent and warrant that: (a) this Agreement is duly executed and binding; (b) you have full authority to enter and perform; and (c) you have sufficient rights in the materials and channels you use to promote Obsessed Garage.</div><div><br></div><div>⸻</div><div><br></div><div>17) Indemnification</div><div><br></div><div>You will defend, indemnify, and hold harmless Obsessed Garage and its affiliates, officers, directors, employees, agents, owners, and representatives from claims, damages, costs, and expenses (including reasonable attorneys’ fees) arising out of your sites, content, promotions, or breach of this Agreement, including IP infringement claims related to your materials.</div><div><br></div><div>⸻</div><div><br></div><div>18) Confidentiality</div><div><br></div><div>Non-public business, technical, financial, or customer information marked or reasonably understood as confidential will be kept confidential and used only for Program performance.</div><div><br></div><div>⸻</div><div><br></div><div>19) Miscellaneous</div><div> • Independent Contractor: You are independent; no partnership, joint venture, agency, franchise, sales rep, or employment relationship exists. You may not bind Obsessed Garage.</div><div> • Assignment: Neither party may assign without written consent, except to a successor acquiring substantially all business/assets.</div><div> • Entire Agreement: This is the complete agreement and supersedes prior communications.</div><div> • Amendments/Waivers: Must be in writing and signed by Obsessed Garage; no waiver by conduct.</div><div> • Headings: For convenience only.</div><div> • Severability: If any provision is unenforceable, it will be limited/eliminated to the minimum extent necessary; the remainder remains in effect.</div><div> • Governing Law &amp; Venue: Florida law (without regard to conflicts rules). Exclusive venue/jurisdiction lies in the state or federal courts located in Florida.</div></li></ul><p></p></div>
+							</div>
+						</div>
+					</div>
+													<div class="accordion-group">
+						<div class="accordion-heading">
+							<h1 class="override-h1">
+								<button class="accordion-toggle button" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+									Privacy Policy <i class="icon-legal pull-right"></i>
+								</button>
+							</h1>
+						</div>
+						<div id="collapseThree" class="accordion-body collapse">
+							<div class="accordion-inner">
+								<div>Easy to understand Privacy Policy.<p>When you signup to our affiliate program, we receive some personally identifiable information about you such as your email address, first name and last name. This is the information which you add in the signup form for joining our affiliate program.</p><p>So, what we do with your information?</p><p>Simply put, we do not share or rent your personal information to third parties for spamming you. However, we may share your personal information with third parties when we use their services. This includes PayPal, MailChimp and Klaviyo. MailChimp and Klaviyo are email services. We may store your email address in our emails list and can send you periodic emails about our products, new releases, promotions and anything else that can help you with your affiliate marketing.&nbsp;You can unsubscribe from these emails anytime.</p><p>Also please note that, when you signup to our affiliate program, you are also registered as an affiliate in the database of Refersion. Refersion is the software which we use to track your affiliate orders and pay commissions. The team at Refersion&nbsp;may also send you periodic emails which can help you do affiliate marketing more efficiently. You can unsubscribe from these emails anytime.</p><p><br></p><p><br></p></div>
+							</div>
+						</div>
+					</div>
+							</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+<div id="tiers_modal" class="modal hide fade modal-large" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-header">
+		<a class="close" data-dismiss="modal">×</a>
+		<h3>Tier Commission Details</h3>
+	</div>
+	<div class="modal-body">
+		
+		<table class="table table-hover table-striped table-bordered">
+
+			<thead>
+				<tr>
+					<th>Tier Structure</th>
+					<th>Amount</th>
+					<th>Commission Type</th>
+				</tr>
+			</thead>
+
+			<tbody>
+								<tr>
+					<td>Minimum Commission Amount</td>
+					<td>
+						5.00%					</td>
+					<td>
+						Percent of Sale					</td>
+				</tr>
+								<tr>
+					<td>10,000 to 20,000</td>
+					<td>
+						6.00%					</td>
+					<td>
+						Percent of Sale					</td>
+				</tr>
+								<tr>
+					<td>20,000 to 30,000</td>
+					<td>
+						7.00%					</td>
+					<td>
+						Percent of Sale					</td>
+				</tr>
+								<tr>
+					<td>30,000 to 40,000</td>
+					<td>
+						8.00%					</td>
+					<td>
+						Percent of Sale					</td>
+				</tr>
+								<tr>
+					<td>40,000 to 50,000</td>
+					<td>
+						9.00%					</td>
+					<td>
+						Percent of Sale					</td>
+				</tr>
+									<tr>
+						<td>Maximum Commission Amount</td>
+						<td>
+							10.00%						</td>
+						<td>
+							Percent of Sale						</td>
+					</tr>
+							</tbody>
+
+		</table>
+
+	</div>
+	<div class="modal-footer">
+		<a class="btn" data-dismiss="modal">Close</a>
+	</div>
+</div>
+
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-117327999-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+
+<script>
+	$(window).bind("load",function(){new Numb({swfPath:"https://obsessedgarage.refersion.com//fnumb.swf"}).get(function(n,o){$("#numb").val(n)})});
+</script>
+<script>
+
+	$('form').submit(function () {
+		$(this).find(':submit').attr('disabled', 'disabled');
+	});
+
+	$("form").bind("invalid-form.validate", function () {
+		$(this).find(':submit').prop('disabled', false);
+	});
+
+	function loadMoreInfoModal()
+	{
+		$('#sku_modal').modal('show');
+	}
+
+	function loadMoreInfoTiersModal()
+	{
+		$('#tiers_modal').modal('show');
+	}
+
+	checkPassword($('#password'), $('#email'));
+
+</script>
+		<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async="" defer=""></script>
+	<script>
+		(function initTurnstile() {
+			var attempts = 0;
+			var maxAttempts = 50;
+			var form = document.getElementById('registration-form');
+			var submitBtn = form ? form.querySelector('input[type="submit"]') : null;
+			var container = document.getElementById('turnstile-container');
+
+			function tryRender() {
+				if (typeof turnstile !== 'undefined' && container) {
+					turnstile.render('#turnstile-container', {
+						sitekey: '0x4AAAAAABfG9ic6mwLeKjMG',
+						callback: function(token) {
+							var existing = form.querySelector('input[name="cf-turnstile-response"]');
+							if (existing) {
+								existing.value = token;
+							} else {
+								var input = document.createElement('input');
+								input.type = 'hidden';
+								input.name = 'cf-turnstile-response';
+								input.value = token;
+								form.prepend(input);
+							}
+							if (submitBtn) {
+								submitBtn.disabled = false;
+								submitBtn.classList.remove('disabled');
+							}
+							if (typeof ga === 'function') {
+								ga('send', 'event', 'affiliate', 'registration', 'refersion');
+							}
+						},
+						'expired-callback': function() {
+							if (submitBtn) {
+								submitBtn.disabled = true;
+								submitBtn.classList.add('disabled');
+							}
+							var existing = form.querySelector('input[name="cf-turnstile-response"]');
+							if (existing) {
+								existing.value = '';
+							}
+						}
+					});
+
+					if (submitBtn) {
+						submitBtn.disabled = true;
+						submitBtn.classList.add('disabled');
+					}
+				} else if (++attempts < maxAttempts) {
+					setTimeout(tryRender, 100);
+				} else if (submitBtn) {
+					submitBtn.disabled = false;
+					submitBtn.classList.remove('disabled');
+				}
+			}
+
+			tryRender();
+		})();
+	</script>
+	     <div class="container footer" style="margin-top: 20px;">
+          <div class="row-fluid" style="font-size: 12px;">
+                              <div class="span9 mobile-align-center">
+                    <p><strong>Refersion - Advanced Affiliate Marketing Made Simple</strong></p>
+                    <p>
+                    	Copyright © 2013 - 2026  ·  Refersion Inc.<br>
+                    	All trademarks and registered trademarks are the property of their respective owners.
+                    </p>
+               </div>
+               <div class="span3 mobile-align-center" style="text-align: right;">
+
+                    <a href="https://www.refersion.com/" target="_blank"><img src="//cdn.refersion.com/hq/images/logos/poweredby.svg" alt="Powered by Refersion" style=""></a>
+
+               </div>
+		             </div>
+     </div>
+
+     <!-- Le javascript
+     ================================================== -->
+     <script src="https://obsessedgarage.refersion.com/js/bootstrap.min.js"></script>
+     <script src="https://obsessedgarage.refersion.com/js/jquery.populate.pack.js"></script>
+     <script src="https://obsessedgarage.refersion.com/js/app.js"></script>
+
+     
+
+
+</body></html>
