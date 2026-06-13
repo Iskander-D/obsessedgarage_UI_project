@@ -1,0 +1,7 @@
+[2026-06-13T05:57:12.009Z] [SEVERE] https://www.obsessedgarage.com/api/collect - Failed to load resource: the server responded with a status of 503 ()
+[2026-06-13T05:57:13.175Z] [SEVERE] https://www.obsessedgarage.com/api/collect - Failed to load resource: the server responded with a status of 503 ()
+[2026-06-13T05:57:15.231Z] [SEVERE] https://www.obsessedgarage.com/api/collect - Failed to load resource: the server responded with a status of 503 ()
+[2026-06-13T05:57:15.526Z] [WARNING] https://www.obsessedgarage.com/cdn/shopifycloud/storefront/assets/shop_events_listener-4e26a9ce.js 0:4683 "[shop_events_listener] Error in trackViewedProductVariant: Cannot destructure property 'product' of 'findProductAndVariantInCollection(...)' as it is undefined."
+[2026-06-13T05:57:15.526Z] [WARNING] https://www.obsessedgarage.com/cdn/shopifycloud/storefront/assets/shop_events_listener-4e26a9ce.js 0:4683 "[shop_events_listener] Error in trackViewedProductVariant: Cannot destructure property 'product' of 'findProductAndVariantInCollection(...)' as it is undefined."
+[2026-06-13T05:57:15.905Z] [SEVERE] https://www.obsessedgarage.com/products/karcher-k1700?_pos=1&_sid=d29b24db8&_ss=r - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T05:57:16.088Z] [SEVERE] https://www.obsessedgarage.com/favicon.ico - Failed to load resource: the server responded with a status of 404 ()

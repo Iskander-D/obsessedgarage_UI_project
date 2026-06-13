@@ -1,0 +1,18 @@
+[2026-06-13T05:57:25.665Z] [SEVERE] https://www.obsessedgarage.com/api/collect - Failed to load resource: the server responded with a status of 503 ()
+[2026-06-13T05:57:26.031Z] [WARNING] https://www.obsessedgarage.com/cdn/shopifycloud/storefront/assets/shop_events_listener-4e26a9ce.js 0:4683 "[shop_events_listener] Error in trackViewedProductVariant: Cannot destructure property 'product' of 'findProductAndVariantInCollection(...)' as it is undefined."
+[2026-06-13T05:57:27.794Z] [SEVERE] https://www.obsessedgarage.com/products/bilt-hamber-trace-less.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T05:57:27.796Z] [SEVERE] https://www.obsessedgarage.com/products/bilt-hamber-trace-less.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T05:57:28.116Z] [SEVERE] https://www.obsessedgarage.com/products/bilt-hamber-trace-less.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T05:57:28.180Z] [SEVERE] https://www.obsessedgarage.com/products/bilt-hamber-trace-less.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T05:57:28.478Z] [SEVERE] https://www.obsessedgarage.com/products/bilt-hamber-trace-less.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T05:57:28.489Z] [SEVERE] https://www.obsessedgarage.com/products/bilt-hamber-trace-less.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T05:57:28.683Z] [SEVERE] https://www.obsessedgarage.com/products/bilt-hamber-trace-less.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T05:57:28.696Z] [SEVERE] https://www.obsessedgarage.com/products/bilt-hamber-trace-less.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T05:57:29.161Z] [SEVERE] https://www.obsessedgarage.com/cart/add - Failed to load resource: the server responded with a status of 503 ()
+[2026-06-13T05:57:29.162Z] [SEVERE] https://cdn.shopify.com/extensions/019ebaf2-cc42-70b6-8914-5a913a4c8aa8/essential-cart-drawer-717/assets/app-embed-BA6dWlow.js 246:28410 "[Essential Cart] Cart operation failed: 503  for /cart/add"
+[2026-06-13T05:57:29.226Z] [SEVERE] https://www.obsessedgarage.com/cdn/shop/t/153/assets/product-form.js?v=32239286139039718521753793578 0:4697 SyntaxError: Unexpected token '<', "<!--
+  The"... is not valid JSON
+[2026-06-13T05:57:29.418Z] [SEVERE] https://www.obsessedgarage.com/products/bilt-hamber-trace-less.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T05:57:29.485Z] [SEVERE] https://www.obsessedgarage.com/products/bilt-hamber-trace-less.js - Failed to load resource: the server responded with a status of 429 ()
+[2026-06-13T05:57:32.665Z] [SEVERE] https://www.obsessedgarage.com/api/collect - Failed to load resource: the server responded with a status of 503 ()
+[2026-06-13T05:57:33.769Z] [SEVERE] https://www.obsessedgarage.com/api/collect - Failed to load resource: the server responded with a status of 503 ()
