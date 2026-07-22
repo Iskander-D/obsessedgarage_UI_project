@@ -55,8 +55,6 @@ dependencies {
 }
 
 
-
-
 tasks.withType(Test) {
     systemProperties(System.getProperties())
     useJUnitPlatform()
@@ -80,7 +78,12 @@ task ui_test(type: Test) {
             includeEngines 'junit-jupiter'
             includeTags("smoke")
         }
+        task title_test(type: Test) {
+            useJUnitPlatform {
+                includeEngines 'junit-jupiter'
+                includeTags("title")
+            }
+        }
+
     }
-
-
 }

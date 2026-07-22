@@ -14,7 +14,7 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 @Epic("UI")
 @Owner("Aleksandr Drozenko")
 @Feature("Проверка заголовка главной страницы")
-@Tag("ui")
+@Tag("title")
 @DisplayName("Проверка заголовка главной страницы")
 public class MainPageTitleTest extends TestBase {
 
