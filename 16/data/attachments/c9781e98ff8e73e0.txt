@@ -1,0 +1,2 @@
+[2026-07-25T11:12:25.902Z] [SEVERE] https://www.obsessedgarage.com/ - Failed to load resource: the server responded with a status of 429 ()
+[2026-07-25T11:12:25.993Z] [SEVERE] https://www.obsessedgarage.com/favicon.ico - Failed to load resource: the server responded with a status of 404 ()
